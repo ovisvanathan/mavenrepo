@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.jboss.narayana.jta</groupId>
+  <artifactId>org.jboss.narayana.jta</artifactId>
+  <versioning>
+    <release>5.6.4.Final</release>
+    <versions>
+      <version>5.6.4.Final</version>
+    </versions>
+    <lastUpdated>20180726063430</lastUpdated>
+  </versioning>
+</metadata>

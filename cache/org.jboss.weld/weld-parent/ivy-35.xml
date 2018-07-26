@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.jboss.weld"
+		module="weld-parent"
+		revision="35"
+		status="release"
+		publication="20160825141138"
+	>
+		<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="http://weld.cdi-spec.org">
+		The parent POM for Weld, specifying the build parameters
+		</description>
+		<m:properties__maven.scm.provider.gitexe>1.9.5</m:properties__maven.scm.provider.gitexe>
+		<m:properties__shade.plugin.version>2.4.3</m:properties__shade.plugin.version>
+		<m:properties__install.plugin.version>2.5.2</m:properties__install.plugin.version>
+		<m:properties__source.plugin.version>3.0.1</m:properties__source.plugin.version>
+		<m:properties__compiler.version>3.5.1</m:properties__compiler.version>
+		<m:properties__jetty.plugin.version>6.1.26</m:properties__jetty.plugin.version>
+		<m:properties__clean.plugin.version>3.0.0</m:properties__clean.plugin.version>
+		<m:properties__javadoc.doclint>-Xdoclint:none</m:properties__javadoc.doclint>
+		<m:properties__build.helper.plugin.version>1.12</m:properties__build.helper.plugin.version>
+		<m:properties__cargo.plugin.version>1.5.0</m:properties__cargo.plugin.version>
+		<m:properties__jboss.plugin.version>1.5.0</m:properties__jboss.plugin.version>
+		<m:properties__manifest.specification.title>JSR-346 Contexts and Dependency Injection for the Java EE platform</m:properties__manifest.specification.title>
+		<m:properties__maven.compiler.source>1.7</m:properties__maven.compiler.source>
+		<m:properties__findbugs.plugin.version>3.0.4</m:properties__findbugs.plugin.version>
+		<m:properties__deploy.plugin.version>2.8.2</m:properties__deploy.plugin.version>
+		<m:properties__remote.resources.version>1.5</m:properties__remote.resources.version>
+		<m:properties__enforcer.plugin.version>1.4.1</m:properties__enforcer.plugin.version>
+		<m:properties__minimum.maven.version>3.2.5</m:properties__minimum.maven.version>
+		<m:properties__selenium.plugin.version>2.3</m:properties__selenium.plugin.version>
+		<m:properties__buildnumber.plugin.version>1.4</m:properties__buildnumber.plugin.version>
+		<m:properties__scm.plugin.version>1.9.5</m:properties__scm.plugin.version>
+		<m:properties__pdf.name>${project.artifactId}.pdf</m:properties__pdf.name>
+		<m:properties__embedded.glassfish.plugin.version>3.1.1</m:properties__embedded.glassfish.plugin.version>
+		<m:properties__jar.plugin.version>3.0.2</m:properties__jar.plugin.version>
+		<m:properties__surefire.version>2.19.1</m:properties__surefire.version>
+		<m:properties__tomcat.plugin.version>1.1</m:properties__tomcat.plugin.version>
+		<m:properties__resources.plugin.version>3.0.1</m:properties__resources.plugin.version>
+		<m:properties__release.version>2.5.3</m:properties__release.version>
+		<m:properties__ejb.plugin.version>2.5.1</m:properties__ejb.plugin.version>
+		<m:properties__maven.build.timestamp.format>yyyyMMdd-HHmm</m:properties__maven.build.timestamp.format>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__bundle.plugin.version>3.2.0</m:properties__bundle.plugin.version>
+		<m:properties__jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</m:properties__jboss.releases.repo.url>
+		<m:properties__antrun.plugin.version>1.8</m:properties__antrun.plugin.version>
+		<m:properties__nexus.plugin.version>2.1</m:properties__nexus.plugin.version>
+		<m:properties__javadoc.plugin.version>2.10.4</m:properties__javadoc.plugin.version>
+		<m:properties__jdocbook.plugin.version>2.3.10</m:properties__jdocbook.plugin.version>
+		<m:properties__jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</m:properties__jboss.snapshots.repo.url>
+		<m:properties__site.plugin.version>3.5.1</m:properties__site.plugin.version>
+		<m:properties__war.plugin.version>2.6</m:properties__war.plugin.version>
+		<m:properties__archetype.plugin.version>2.4</m:properties__archetype.plugin.version>
+		<m:properties__manifest.specification.version>1.2</m:properties__manifest.specification.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__dependency.plugin.version>2.10</m:properties__dependency.plugin.version>
+		<m:properties__exec.plugin.version>1.5.0</m:properties__exec.plugin.version>
+		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
+		<m:properties__checkstyle.version>7.1</m:properties__checkstyle.version>
+		<m:properties__assembly.plugin.version>2.6</m:properties__assembly.plugin.version>
+		<m:properties__ear.plugin.version>2.10.1</m:properties__ear.plugin.version>
+		<m:properties__checkstyle.plugin.version>2.17</m:properties__checkstyle.plugin.version>
+		<m:properties__build.config.version>11</m:properties__build.config.version>
+		<m:properties__gpg.plugin.version>1.6</m:properties__gpg.plugin.version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|null__maven-remote-resources-plugin__1.5</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

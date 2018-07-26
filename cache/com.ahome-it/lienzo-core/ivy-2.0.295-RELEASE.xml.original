@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ahome-it</groupId>
+  <artifactId>lienzo-core</artifactId>
+  <version>2.0.295-RELEASE</version>
+  <name>Lienzo-Core</name>
+  <description>Ahome Lienzo Core - GWT library for high-speed Structued Graphics based on the Canvas element.</description>
+  <url>https://github.com/ahome-it/lienzo-core</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>sprocketnyc</id>
+      <name>Dean S. Jones</name>
+      <email>deansjones@gmail.com</email>
+      <url>https://www.lienzo-core.com</url>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git@github.com:ahome-it/lienzo-core.git</connection>
+    <developerConnection>scm:git@github.com:ahome-it/lienzo-core.git</developerConnection>
+    <url>scm:git@github.com:ahome-it/lienzo-core.git</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.ahome-it</groupId>
+      <artifactId>ahome-tooling-nativetools</artifactId>
+      <version>1.0.195-RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-user</artifactId>
+      <version>2.7.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

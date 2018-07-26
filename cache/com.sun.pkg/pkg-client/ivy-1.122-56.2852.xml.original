@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sun.pkg</groupId>
+  <artifactId>pkg-client</artifactId>
+  <version>1.122-56.2852</version>
+  <name>pkg(5) Java Client</name>
+  <description>Java client for the Image Packaging System (pkg)</description>
+  <packaging>jar</packaging>
+  <url>http://java.net/projects/updatecenter2</url>
+  <organization>
+    <name>Oracle</name>
+    <url>http://www.oracle.com</url>
+  </organization>
+  <scm>
+    <url>http://java.net/projects/updatecenter2/sources</url>
+    <connection>https://svn.java.net/svn/updatecenter2~svn</connection>
+  </scm>
+  <licenses>
+    <license>
+      <name>CDDL+GPL</name>
+      <url>http://glassfish.java.net/public/CDDL+GPL.html</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <url>http://java.net/projects/updatecenter/</url>
+      <organization>Oracle Corporation</organization>
+    </developer>
+  </developers> 
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://java.net/jira/browse/UPDATECENTER2</url>
+  </issueManagement>
+</project>

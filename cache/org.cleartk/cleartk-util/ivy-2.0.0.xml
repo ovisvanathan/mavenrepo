@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.cleartk"
+		module="cleartk-util"
+		revision="2.0.0"
+		status="release"
+		publication="20140507183759"
+	>
+		<license name="The BSD 3-Clause License" url="http://cleartk.googlecode.com/git/cleartk-util/LICENSE" />
+		<description homepage="http://cleartk.googlecode.com/">
+		ClearTK basic readers, annotators and utility code
+		</description>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
+		<m:properties__maven.compiler.source>1.7</m:properties__maven.compiler.source>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-javadoc-plugin__2.9.1|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-javadoc-plugin__2.9.1</m:maven.plugins>
+		<m:dependency.management__org.jdom__jdom__version>2.0.2</m:dependency.management__org.jdom__jdom__version>
+		<m:dependency.management__com.lexicalscope.jewelcli__jewelcli__version>0.8.9</m:dependency.management__com.lexicalscope.jewelcli__jewelcli__version>
+		<m:dependency.management__org.apache.uima__uimaj-core__version>2.5.0</m:dependency.management__org.apache.uima__uimaj-core__version>
+		<m:dependency.management__org.apache.uima__uimaj-document-annotation__version>2.5.0</m:dependency.management__org.apache.uima__uimaj-document-annotation__version>
+		<m:dependency.management__org.apache.uima__uimafit-core__version>2.0.0</m:dependency.management__org.apache.uima__uimafit-core__version>
+		<m:dependency.management__com.google.guava__guava__version>17.0</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__com.google.guava__guava__exclusion_0>com.google.code.findbugs__jsr305</m:dependency.management__com.google.guava__guava__exclusion_0>
+		<m:dependency.management__commons-io__commons-io__version>2.4</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.cleartk__cleartk-test-util__version>2.0.0</m:dependency.management__org.cleartk__cleartk-test-util__version>
+		<m:dependency.management__org.cleartk__cleartk-util__version>2.0.0</m:dependency.management__org.cleartk__cleartk-util__version>
+		<m:dependency.management__org.cleartk__cleartk-ml__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-opennlp-maxent__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-opennlp-maxent__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-svmlight__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-svmlight__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-tksvmlight__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-tksvmlight__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-liblinear__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-liblinear__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-libsvm__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-libsvm__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-libsvm-tk__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-libsvm-tk__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-mallet__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-mallet__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-crfsuite__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-crfsuite__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-weka__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-weka__version>
+		<m:dependency.management__org.cleartk__cleartk-eval__version>2.0.0</m:dependency.management__org.cleartk__cleartk-eval__version>
+		<m:dependency.management__org.cleartk__cleartk-type-system__version>2.0.0</m:dependency.management__org.cleartk__cleartk-type-system__version>
+		<m:dependency.management__org.cleartk__cleartk-corpus__version>2.0.0</m:dependency.management__org.cleartk__cleartk-corpus__version>
+		<m:dependency.management__org.cleartk__cleartk-feature__version>2.0.0</m:dependency.management__org.cleartk__cleartk-feature__version>
+		<m:dependency.management__org.cleartk__cleartk-snowball__version>2.0.0</m:dependency.management__org.cleartk__cleartk-snowball__version>
+		<m:dependency.management__org.cleartk__cleartk-opennlp-tools__version>2.0.0</m:dependency.management__org.cleartk__cleartk-opennlp-tools__version>
+		<m:dependency.management__org.cleartk__cleartk-berkeleyparser__version>2.0.0</m:dependency.management__org.cleartk__cleartk-berkeleyparser__version>
+		<m:dependency.management__org.cleartk__cleartk-clearnlp__version>2.0.0</m:dependency.management__org.cleartk__cleartk-clearnlp__version>
+		<m:dependency.management__org.cleartk__cleartk-maltparser__version>2.0.0</m:dependency.management__org.cleartk__cleartk-maltparser__version>
+		<m:dependency.management__org.cleartk__cleartk-stanford-corenlp__version>2.0.0</m:dependency.management__org.cleartk__cleartk-stanford-corenlp__version>
+		<m:dependency.management__org.cleartk__cleartk-token__version>2.0.0</m:dependency.management__org.cleartk__cleartk-token__version>
+		<m:dependency.management__org.cleartk__cleartk-summarization__version>2.0.0</m:dependency.management__org.cleartk__cleartk-summarization__version>
+		<m:dependency.management__org.cleartk__cleartk-timeml__version>2.0.0</m:dependency.management__org.cleartk__cleartk-timeml__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="cleartk-util" type="jar" ext="jar" conf="master"/>
+		<artifact name="cleartk-util" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="cleartk-util" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.apache.uima" name="uimaj-core" rev="2.5.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.uima" name="uimafit-core" rev="2.0.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.google.guava" name="guava" rev="17.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="com.google.code.findbugs" module="jsr305" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="commons-io" name="commons-io" rev="2.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.cleartk" name="cleartk-test-util" rev="2.0.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.uima" name="uimaj-document-annotation" rev="2.5.0" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.jdom" module="jdom" matcher="exact" rev="2.0.2"/>
+		<override org="com.lexicalscope.jewelcli" module="jewelcli" matcher="exact" rev="0.8.9"/>
+		<override org="org.apache.uima" module="uimaj-core" matcher="exact" rev="2.5.0"/>
+		<override org="org.apache.uima" module="uimaj-document-annotation" matcher="exact" rev="2.5.0"/>
+		<override org="org.apache.uima" module="uimafit-core" matcher="exact" rev="2.0.0"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="17.0"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.4"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.11"/>
+		<override org="org.cleartk" module="cleartk-test-util" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-util" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml-opennlp-maxent" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml-svmlight" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml-tksvmlight" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml-liblinear" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml-libsvm" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml-libsvm-tk" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml-mallet" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml-crfsuite" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-ml-weka" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-eval" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-type-system" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-corpus" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-feature" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-snowball" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-opennlp-tools" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-berkeleyparser" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-clearnlp" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-maltparser" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-stanford-corenlp" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-token" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-summarization" matcher="exact" rev="2.0.0"/>
+		<override org="org.cleartk" module="cleartk-timeml" matcher="exact" rev="2.0.0"/>
+	</dependencies>
+</ivy-module>

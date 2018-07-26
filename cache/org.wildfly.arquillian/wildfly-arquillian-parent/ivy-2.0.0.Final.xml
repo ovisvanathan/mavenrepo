@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.wildfly.arquillian"
+		module="wildfly-arquillian-parent"
+		revision="2.0.0.Final"
+		status="release"
+		publication="20160408052607"
+	>
+		<license name="Apache License Version 2.0" url="http://repository.jboss.org/licenses/apache-2.0.txt" />
+		<description homepage="" />
+		<m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-ejb__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-ejb__version>
+		<m:dependency.management__org.jboss__jboss-vfs__exclusion_0>org.jboss.logging__jboss-logging</m:dependency.management__org.jboss__jboss-vfs__exclusion_0>
+		<m:dependency.management__io.undertow__undertow-servlet__exclusion_0>io.undertow__undertow-build-config</m:dependency.management__io.undertow__undertow-servlet__exclusion_0>
+		<m:properties__maven.test.redirectTestOutputToFile>true</m:properties__maven.test.redirectTestOutputToFile>
+		<m:dependency.management__io.undertow__undertow-servlet__exclusion_1>org.jboss.spec.javax.servlet.jsp__jboss-jsp-api_2.2_spec</m:dependency.management__io.undertow__undertow-servlet__exclusion_1>
+		<m:dependency.management__org.wildfly.core__wildfly-core-security-api__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-core-security-api__version>
+		<m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-api__version>1.1.2</m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-api__version>
+		<m:properties__version.org.jboss.shrinkwrap.descriptors>2.0.0-alpha-8</m:properties__version.org.jboss.shrinkwrap.descriptors>
+		<m:dependency.management__org.wildfly.core__wildfly-version__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-version__version>
+		<m:dependency.management__org.jboss.classfilewriter__jboss-classfilewriter__version>1.1.2.Final</m:dependency.management__org.jboss.classfilewriter__jboss-classfilewriter__version>
+		<m:dependency.management__org.wildfly.core__wildfly-launcher__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-launcher__version>
+		<m:dependency.management__org.wildfly.common__wildfly-common__version>1.1.0.Final</m:dependency.management__org.wildfly.common__wildfly-common__version>
+		<m:dependency.management__org.jboss.logging__jboss-logging__version>3.3.0.Final</m:dependency.management__org.jboss.logging__jboss-logging__version>
+		<m:dependency.management__org.jboss.remotingjmx__remoting-jmx__version>2.0.1.Final</m:dependency.management__org.jboss.remotingjmx__remoting-jmx__version>
+		<m:properties__version.injection.plugin>1.0.2</m:properties__version.injection.plugin>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__org.apache.httpcomponents__httpmime__version>4.5</m:dependency.management__org.apache.httpcomponents__httpmime__version>
+		<m:dependency.management__org.wildfly.core__wildfly-management-client-content__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-management-client-content__version>
+		<m:dependency.management__org.wildfly.core__wildfly-logging__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-logging__version>
+		<m:dependency.management__org.eclipse.aether__aether-transport-http__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-transport-http__version>
+		<m:properties__version.javacc.plugin>2.6</m:properties__version.javacc.plugin>
+		<m:dependency.management__org.jboss.byteman__byteman-install__scope>test</m:dependency.management__org.jboss.byteman__byteman-install__scope>
+		<m:dependency.management__org.jboss.logging__jboss-logging-annotations__version>2.0.1.Final</m:dependency.management__org.jboss.logging__jboss-logging-annotations__version>
+		<m:dependency.management__org.wildfly.core__wildfly-domain-http-error-context__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-domain-http-error-context__version>
+		<m:properties__version.compiler.plugin>3.1</m:properties__version.compiler.plugin>
+		<m:dependency.management__org.wildfly.core__wildfly-domain-management__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-domain-management__version>
+		<m:dependency.management__org.wildfly.core__wildfly-network__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-network__version>
+		<m:properties__version.org.jboss.arquillian.core>1.1.10.Final</m:properties__version.org.jboss.arquillian.core>
+		<m:properties__version.buildnumber.plugin>1.3</m:properties__version.buildnumber.plugin>
+		<m:dependency.management__org.jboss__jboss-ejb-client__version>2.0.2.Final</m:dependency.management__org.jboss__jboss-ejb-client__version>
+		<m:properties__org.wildfly.version>${version.org.wildfly.core.full}</m:properties__org.wildfly.version>
+		<m:dependency.management__org.jboss.metadata__jboss-metadata-common__version>10.0.0.Final</m:dependency.management__org.jboss.metadata__jboss-metadata-common__version>
+		<m:properties__version.org.jboss.ejb-client>2.0.2.Final</m:properties__version.org.jboss.ejb-client>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-common__version>2.0.0.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-common__version>
+		<m:dependency.management__org.codehaus.woodstox__stax2-api__exclusion_0>javax.xml.stream__stax-api</m:dependency.management__org.codehaus.woodstox__stax2-api__exclusion_0>
+		<m:dependency.management__org.wildfly.security__wildfly-elytron__exclusion_0>*__*</m:dependency.management__org.wildfly.security__wildfly-elytron__exclusion_0>
+		<m:dependency.management__org.wildfly.core__wildfly-io__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-io__version>
+		<m:dependency.management__org.codehaus.plexus__plexus-utils__version>3.0.21</m:dependency.management__org.codehaus.plexus__plexus-utils__version>
+		<m:dependency.management__org.apache.maven__maven-aether-provider__exclusion_3>org.sonatype.aether__aether-impl</m:dependency.management__org.apache.maven__maven-aether-provider__exclusion_3>
+		<m:dependency.management__org.apache.maven__maven-aether-provider__exclusion_2>org.sonatype.aether__aether-spi</m:dependency.management__org.apache.maven__maven-aether-provider__exclusion_2>
+		<m:dependency.management__com.google.guava__guava__exclusion_0>com.google.code.findbugs__jsr305</m:dependency.management__com.google.guava__guava__exclusion_0>
+		<m:dependency.management__org.apache.maven__maven-aether-provider__exclusion_1>org.sonatype.aether__aether-util</m:dependency.management__org.apache.maven__maven-aether-provider__exclusion_1>
+		<m:dependency.management__org.apache.maven__maven-aether-provider__exclusion_0>org.sonatype.aether__aether-api</m:dependency.management__org.apache.maven__maven-aether-provider__exclusion_0>
+		<m:properties__version.resources.plugin>2.7</m:properties__version.resources.plugin>
+		<m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-core__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-core__version>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling__version>1.4.10.Final</m:dependency.management__org.jboss.marshalling__jboss-marshalling__version>
+		<m:dependency.management__io.undertow__undertow-core__exclusion_0>io.undertow__undertow-build-config</m:dependency.management__io.undertow__undertow-core__exclusion_0>
+		<m:dependency.management__org.jboss.logging__jboss-logging-annotations__scope>provided</m:dependency.management__org.jboss.logging__jboss-logging-annotations__scope>
+		<m:dependency.management__org.wildfly.core__wildfly-subsystem-test__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-subsystem-test__version>
+		<m:dependency.management__org.picketbox__picketbox-infinispan__exclusion_3>org.picketbox__picketbox-spi-bare</m:dependency.management__org.picketbox__picketbox-infinispan__exclusion_3>
+		<m:dependency.management__org.picketbox__picketbox-infinispan__exclusion_2>org.picketbox__jbosssx-bare</m:dependency.management__org.picketbox__picketbox-infinispan__exclusion_2>
+		<m:dependency.management__org.picketbox__picketbox-infinispan__exclusion_1>org.jboss.logging__jboss-logging-spi</m:dependency.management__org.picketbox__picketbox-infinispan__exclusion_1>
+		<m:dependency.management__com.google.guava__guava__version>16.0.1</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__org.picketbox__picketbox-infinispan__exclusion_0>org.infinispan__infinispan-core</m:dependency.management__org.picketbox__picketbox-infinispan__exclusion_0>
+		<m:dependency.management__org.apache.maven__maven-aether-provider__version>3.2.1</m:dependency.management__org.apache.maven__maven-aether-provider__version>
+		<m:properties__version.org.wildfly.core.full>10.0.0.Final</m:properties__version.org.wildfly.core.full>
+		<m:properties__version.jxr.plugin>2.5</m:properties__version.jxr.plugin>
+		<m:properties__version.source.plugin>2.4</m:properties__version.source.plugin>
+		<m:properties__version.org.wildfly.build-tools>1.1.2.Final</m:properties__version.org.wildfly.build-tools>
+		<m:dependency.management__org.picketbox__picketbox-infinispan__version>4.9.4.Final</m:dependency.management__org.picketbox__picketbox-infinispan__version>
+		<m:dependency.management__org.jboss.spec.javax.sql__jboss-javax-sql-api_7.0_spec__version>2.0.0.Final</m:dependency.management__org.jboss.spec.javax.sql__jboss-javax-sql-api_7.0_spec__version>
+		<m:dependency.management__org.wildfly.core__wildfly-core-test-runner__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-core-test-runner__version>
+		<m:properties__version.javancss.plugin>2.1</m:properties__version.javancss.plugin>
+		<m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-container__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-container__exclusion_0>
+		<m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-impl-base__version>2.0.0-alpha-8</m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-impl-base__version>
+		<m:dependency.management__org.jboss.arquillian.test__arquillian-test-impl-base__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.test__arquillian-test-impl-base__version>
+		<m:properties__version.com.google.guava>16.0.1</m:properties__version.com.google.guava>
+		<m:properties__version.org.jboss.spec.javax.ejb.jboss-ejb-api_3.2_spec>1.0.0.Final</m:properties__version.org.jboss.spec.javax.ejb.jboss-ejb-api_3.2_spec>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-impl-base__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-impl-base__version>
+		<m:dependency.management__org.jboss__jboss-vfs__version>3.2.11.Final</m:dependency.management__org.jboss__jboss-vfs__version>
+		<m:dependency.management__org.wildfly.core__wildfly-deployment-scanner__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-deployment-scanner__version>
+		<m:dependency.management__org.mockito__mockito-all__version>1.9.5</m:dependency.management__org.mockito__mockito-all__version>
+		<m:dependency.management__org.jboss.xnio__xnio-api__version>3.3.4.Final</m:dependency.management__org.jboss.xnio__xnio-api__version>
+		<m:dependency.management__org.jboss.remoting__jboss-remoting__version>4.0.18.Final</m:dependency.management__org.jboss.remoting__jboss-remoting__version>
+		<m:properties__version.ear.plugin>2.10</m:properties__version.ear.plugin>
+		<m:properties__version.enforcer.plugin>1.4</m:properties__version.enforcer.plugin>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.5</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:properties__version.war.plugin>2.6</m:properties__version.war.plugin>
+		<m:dependency.management__org.codehaus.woodstox__woodstox-core-asl__exclusion_0>javax.xml.stream__stax-api</m:dependency.management__org.codehaus.woodstox__woodstox-core-asl__exclusion_0>
+		<m:properties__jdk.min.version>${maven.compiler.argument.source}</m:properties__jdk.min.version>
+		<m:dependency.management__org.jboss.modules__jboss-modules__version>1.5.1.Final</m:dependency.management__org.jboss.modules__jboss-modules__version>
+		<m:properties__version.clean.plugin>2.6.1</m:properties__version.clean.plugin>
+		<m:dependency.management__org.wildfly.core__wildfly-self-contained__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-self-contained__version>
+		<m:dependency.management__org.jboss.spec.javax.ejb__jboss-ejb-api_3.2_spec__scope>test</m:dependency.management__org.jboss.spec.javax.ejb__jboss-ejb-api_3.2_spec__scope>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-remote__version>2.0.0.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-remote__version>
+		<m:dependency.management__org.jboss.byteman__byteman-bmunit__scope>test</m:dependency.management__org.jboss.byteman__byteman-bmunit__scope>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-domain-managed__version>2.0.0.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-domain-managed__version>
+		<m:dependency.management__xerces__xercesImpl__exclusion_0>xml-apis__xml-apis</m:dependency.management__xerces__xercesImpl__exclusion_0>
+		<m:dependency.management__org.syslog4j__syslog4j__scope>test</m:dependency.management__org.syslog4j__syslog4j__scope>
+		<m:dependency.management__org.jboss.arquillian.core__arquillian-core-api__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.core__arquillian-core-api__version>
+		<m:properties__version.pir.plugin>2.8</m:properties__version.pir.plugin>
+		<m:dependency.management__org.jboss.arquillian.test__arquillian-test-spi__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.test__arquillian-test-spi__version>
+		<m:properties__jboss.home>${basedir}/target/${org.wildfly.dist-name}</m:properties__jboss.home>
+		<m:properties__targetJdk>${maven.compiler.argument.target}</m:properties__targetJdk>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.7.jbossorg-1</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.eclipse.aether__aether-impl__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-impl__version>
+		<m:dependency.management__org.jboss.arquillian.protocol__arquillian-protocol-jmx__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.protocol__arquillian-protocol-jmx__version>
+		<m:properties__version.org.eclipse.m2e.lifecycle-mapping>1.0.0</m:properties__version.org.eclipse.m2e.lifecycle-mapping>
+		<m:dependency.management__org.jboss.stdio__jboss-stdio__version>1.0.2.GA</m:dependency.management__org.jboss.stdio__jboss-stdio__version>
+		<m:dependency.management__io.undertow__undertow-core__version>1.3.15.Final</m:dependency.management__io.undertow__undertow-core__version>
+		<m:dependency.management__org.wildfly.core__wildfly-subsystem-test-framework__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-subsystem-test-framework__version>
+		<m:dependency.management__org.jboss.byteman__byteman-submit__version>2.2.1</m:dependency.management__org.jboss.byteman__byteman-submit__version>
+		<m:dependency.management__org.jboss.aesh__aesh__version>0.66.4</m:dependency.management__org.jboss.aesh__aesh__version>
+		<m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-container__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-container__exclusion_0>
+		<m:dependency.management__org.wildfly.legacy.test__wildfly-legacy-spi__version>1.0.0.Final</m:dependency.management__org.wildfly.legacy.test__wildfly-legacy-spi__version>
+		<m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-container__exclusion_1>org.jboss.logging__jboss-logging-tools</m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-container__exclusion_1>
+		<m:dependency.management__org.testng__testng__version>6.8.8</m:dependency.management__org.testng__testng__version>
+		<m:properties__version.deploy.plugin>2.8.2</m:properties__version.deploy.plugin>
+		<m:dependency.management__org.wildfly.core__wildfly-core-model-test-framework__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-core-model-test-framework__version>
+		<m:properties__version.exec.plugin>1.4.0</m:properties__version.exec.plugin>
+		<m:dependency.management__org.wildfly.core__wildfly-domain-management__scope>provided</m:dependency.management__org.wildfly.core__wildfly-domain-management__scope>
+		<m:dependency.management__org.syslog4j__syslog4j__version>0.9.30</m:dependency.management__org.syslog4j__syslog4j__version>
+		<m:dependency.management__org.wildfly.core__wildfly-host-controller__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-host-controller__version>
+		<m:dependency.management__org.jboss.xnio__xnio-nio__version>3.3.4.Final</m:dependency.management__org.jboss.xnio__xnio-nio__version>
+		<m:dependency.management__org.eclipse.aether__aether-util__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-util__version>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-protocol-jmx__version>2.0.0.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-protocol-jmx__version>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpcore__exclusion_0>
+		<m:properties__version.checkstyle.plugin>2.15</m:properties__version.checkstyle.plugin>
+		<m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-container__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-container__version>
+		<m:properties__org.wildfly.artifactId>wildfly-servlet-feature-pack</m:properties__org.wildfly.artifactId>
+		<m:properties__version.gpg.plugin>1.6</m:properties__version.gpg.plugin>
+		<m:properties__downloadSources>true</m:properties__downloadSources>
+		<m:dependency.management__org.jboss.remotingjmx__remoting-jmx__exclusion_0>org.jboss.logging__jboss-logging-processor</m:dependency.management__org.jboss.remotingjmx__remoting-jmx__exclusion_0>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__version>4.4.1</m:dependency.management__org.apache.httpcomponents__httpcore__version>
+		<m:dependency.management__org.jboss.remotingjmx__remoting-jmx__exclusion_1>org.jboss.logmanager__jboss-logmanager</m:dependency.management__org.jboss.remotingjmx__remoting-jmx__exclusion_1>
+		<m:properties__arguments>-Pjboss-release</m:properties__arguments>
+		<m:dependency.management__org.mockito__mockito-all__scope>test</m:dependency.management__org.mockito__mockito-all__scope>
+		<m:dependency.management__org.jboss.arquillian.protocol__arquillian-protocol-servlet__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.protocol__arquillian-protocol-servlet__version>
+		<m:properties__version.bundle.plugin>2.5.4</m:properties__version.bundle.plugin>
+		<m:dependency.management__org.wildfly.core__wildfly-request-controller__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-request-controller__version>
+		<m:properties__maven.min.version>3.0.4</m:properties__maven.min.version>
+		<m:dependency.management__org.wildfly.core__wildfly-deployment-repository__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-deployment-repository__version>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-managed__version>2.0.0.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-managed__version>
+		<m:dependency.management__org.eclipse.aether__aether-connector-basic__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-connector-basic__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>
+		<m:properties__jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</m:properties__jboss.releases.repo.url>
+		<m:dependency.management__org.wildfly.core__wildfly-core-feature-pack__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-core-feature-pack__version>
+		<m:properties__version.org.wildfly.checkstyle-config>1.0.4.Final</m:properties__version.org.wildfly.checkstyle-config>
+		<m:properties__version.javax.enterprise>1.2</m:properties__version.javax.enterprise>
+		<m:dependency.management__org.eclipse.aether__aether-api__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-api__version>
+		<m:dependency.management__org.wildfly.core__wildfly-process-controller__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-process-controller__version>
+		<m:dependency.management__org.jboss.logmanager__jboss-logmanager__version>2.0.3.Final</m:dependency.management__org.jboss.logmanager__jboss-logmanager__version>
+		<m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-cdi__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-cdi__version>
+		<m:properties__version.assembly.plugin>2.5.5</m:properties__version.assembly.plugin>
+		<m:properties__maven.compiler.source>1.8</m:properties__maven.compiler.source>
+		<m:properties__version.org.jboss.spec.javax.servlet.jboss-servlet-api_3.1_spec>1.0.0.Final</m:properties__version.org.jboss.spec.javax.servlet.jboss-servlet-api_3.1_spec>
+		<m:properties__useReleaseProfile>false</m:properties__useReleaseProfile>
+		<m:dependency.management__org.wildfly.core__wildfly-remoting__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-remoting__version>
+		<m:dependency.management__org.wildfly.core__wildfly-threads__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-threads__version>
+		<m:dependency.management__log4j__log4j__scope>test</m:dependency.management__log4j__log4j__scope>
+		<m:dependency.management__org.picketbox__picketbox__version>4.9.4.Final</m:dependency.management__org.picketbox__picketbox__version>
+		<m:properties__version.dependency.plugin>2.10</m:properties__version.dependency.plugin>
+		<m:properties__provisioning.config.dir>${project.parent.basedir}</m:properties__provisioning.config.dir>
+		<m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-initialcontext__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-initialcontext__version>
+		<m:properties__maven.compiler.argument.source>${maven.compiler.source}</m:properties__maven.compiler.argument.source>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.7.7.jbossorg-1</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__org.jboss.arquillian.core__arquillian-core-impl-base__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.core__arquillian-core-impl-base__version>
+		<m:properties__version.cobertura.plugin>2.7</m:properties__version.cobertura.plugin>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:dependency.management__org.jboss.aesh__aesh__exclusion_0>junit__junit</m:dependency.management__org.jboss.aesh__aesh__exclusion_0>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-domain-remote__version>2.0.0.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-domain-remote__version>
+		<m:dependency.management__org.apache.httpcomponents__httpcore-nio__version>4.4.1</m:dependency.management__org.apache.httpcomponents__httpcore-nio__version>
+		<m:dependency.management__org.jboss.msc__jboss-msc__version>1.2.6.Final</m:dependency.management__org.jboss.msc__jboss-msc__version>
+		<m:dependency.management__org.wildfly.core__wildfly-domain-management__exclusion_0>org.jboss__jboss-common-core</m:dependency.management__org.wildfly.core__wildfly-domain-management__exclusion_0>
+		<m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-resource__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-resource__version>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-common-domain__version>2.0.0.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-common-domain__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-spi__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-spi__version>
+		<m:properties__version.org.wildfly.plugins.wildfly-maven-plugin>1.1.0.Alpha7</m:properties__version.org.wildfly.plugins.wildfly-maven-plugin>
+		<m:dependency.management__org.jboss.logmanager__log4j-jboss-logmanager__version>1.1.2.Final</m:dependency.management__org.jboss.logmanager__log4j-jboss-logmanager__version>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-testenricher-msc__version>2.0.0.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-testenricher-msc__version>
+		<m:dependency.management__org.jboss.byteman__byteman-bmunit__version>2.2.1</m:dependency.management__org.jboss.byteman__byteman-bmunit__version>
+		<m:dependency.management__org.wildfly.core__wildfly-patching__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-patching__version>
+		<m:dependency.management__org.wildfly.core__wildfly-controller-client__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-controller-client__version>
+		<m:dependency.management__org.jboss__jboss-ejb-client__exclusion_0>org.jboss.remoting3__jboss-remoting</m:dependency.management__org.jboss__jboss-ejb-client__exclusion_0>
+		<m:properties__version.site.plugin>3.4</m:properties__version.site.plugin>
+		<m:dependency.management__org.wildfly.core__wildfly-model-test__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-model-test__version>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:properties__version.javadoc.plugin>2.10.3</m:properties__version.javadoc.plugin>
+		<m:dependency.management__log4j__log4j__version>1.2.16</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__org.wildfly.core__wildfly-core-model-test-controller-optional__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-core-model-test-controller-optional__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-container-spi__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.container__arquillian-container-spi__version>
+		<m:dependency.management__org.jboss.slf4j__slf4j-jboss-logmanager__version>1.0.3.GA</m:dependency.management__org.jboss.slf4j__slf4j-jboss-logmanager__version>
+		<m:dependency.management__org.fusesource.jansi__jansi__version>1.11</m:dependency.management__org.fusesource.jansi__jansi__version>
+		<m:dependency.management__org.wildfly.core__wildfly-domain-http-interface__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-domain-http-interface__version>
+		<m:properties__version.buildhelper.plugin>1.9.1</m:properties__version.buildhelper.plugin>
+		<m:dependency.management__org.wildfly.security__wildfly-elytron__version>1.0.2.Final</m:dependency.management__org.wildfly.security__wildfly-elytron__version>
+		<m:properties__version.ejb.plugin>2.5</m:properties__version.ejb.plugin>
+		<m:dependency.management__org.wildfly.core__wildfly-core-security__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-core-security__version>
+		<m:properties__maven.compiler.target>1.8</m:properties__maven.compiler.target>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.wildfly.core__wildfly-core-dist__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-core-dist__version>
+		<m:dependency.management__org.jboss__staxmapper__version>1.2.0.Final</m:dependency.management__org.jboss__staxmapper__version>
+		<m:dependency.management__org.wildfly.core__wildfly-core-testsuite-shared__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-core-testsuite-shared__version>
+		<m:properties__version.shade.plugin>2.3</m:properties__version.shade.plugin>
+		<m:dependency.management__commons-lang__commons-lang__version>2.6</m:dependency.management__commons-lang__commons-lang__version>
+		<m:dependency.management__org.wildfly.core__wildfly-core-build__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-core-build__version>
+		<m:dependency.management__org.jboss.spec.javax.servlet__jboss-servlet-api_3.1_spec__scope>test</m:dependency.management__org.jboss.spec.javax.servlet__jboss-servlet-api_3.1_spec__scope>
+		<m:properties__version.rar.plugin>2.4</m:properties__version.rar.plugin>
+		<m:dependency.management__org.apache.httpcomponents__httpmime__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpmime__exclusion_0>
+		<m:dependency.management__org.jboss.invocation__jboss-invocation__version>1.4.1.Final</m:dependency.management__org.jboss.invocation__jboss-invocation__version>
+		<m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-core__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-core__version>
+		<m:dependency.management__org.jboss.spec.javax.ejb__jboss-ejb-api_3.2_spec__version>1.0.0.Final</m:dependency.management__org.jboss.spec.javax.ejb__jboss-ejb-api_3.2_spec__version>
+		<m:dependency.management__org.jboss.byteman__byteman-submit__scope>test</m:dependency.management__org.jboss.byteman__byteman-submit__scope>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:dependency.management__org.jboss.threads__jboss-threads__version>2.2.1.Final</m:dependency.management__org.jboss.threads__jboss-threads__version>
+		<m:dependency.management__io.undertow__undertow-websockets-jsr__version>1.3.15.Final</m:dependency.management__io.undertow__undertow-websockets-jsr__version>
+		<m:properties__version.pmd.plugin>3.4</m:properties__version.pmd.plugin>
+		<m:dependency.management__org.apache.httpcomponents__httpcore-nio__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpcore-nio__exclusion_0>
+		<m:properties__version.checkstyle>6.7</m:properties__version.checkstyle>
+		<m:dependency.management__org.wildfly.core__wildfly-controller__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-controller__version>
+		<m:dependency.management__org.wildfly.core__wildfly-cli__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-cli__version>
+		<m:dependency.management__org.wildfly.core__wildfly-server__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-server__version>
+		<m:dependency.management__org.jboss__jboss-dmr__version>1.3.0.Final</m:dependency.management__org.jboss__jboss-dmr__version>
+		<m:dependency.management__org.wildfly.core__wildfly-platform-mbean__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-platform-mbean__version>
+		<m:properties__org.wildfly.dist-name>wildfly</m:properties__org.wildfly.dist-name>
+		<m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-container__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-container__version>
+		<m:properties__version.license.plugin>1.8</m:properties__version.license.plugin>
+		<m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-impl-base__version>1.1.2</m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-impl-base__version>
+		<m:dependency.management__io.undertow__undertow-websockets-jsr__exclusion_0>io.undertow__undertow-build-config</m:dependency.management__io.undertow__undertow-websockets-jsr__exclusion_0>
+		<m:properties__version.eclipse.plugin>2.10</m:properties__version.eclipse.plugin>
+		<m:dependency.management__javax.enterprise__cdi-api__scope>test</m:dependency.management__javax.enterprise__cdi-api__scope>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-embedded__version>2.0.0.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-embedded__version>
+		<m:properties__version.antrun.plugin>1.8</m:properties__version.antrun.plugin>
+		<m:properties__version.org.testng>6.8.8</m:properties__version.org.testng>
+		<m:dependency.management__log4j__log4j__exclusion_0>ant__ant-nodeps</m:dependency.management__log4j__log4j__exclusion_0>
+		<m:dependency.management__log4j__log4j__exclusion_1>ant-contrib__ant-contrib</m:dependency.management__log4j__log4j__exclusion_1>
+		<m:properties__version.release.plugin>2.5.2</m:properties__version.release.plugin>
+		<m:dependency.management__log4j__log4j__exclusion_2>ant__ant-junit</m:dependency.management__log4j__log4j__exclusion_2>
+		<m:dependency.management__log4j__log4j__exclusion_3>sun.jdk__tools</m:dependency.management__log4j__log4j__exclusion_3>
+		<m:properties__version.idlj.plugin>1.2.1</m:properties__version.idlj.plugin>
+		<m:dependency.management__org.codehaus.woodstox__woodstox-core-asl__version>4.4.1</m:dependency.management__org.codehaus.woodstox__woodstox-core-asl__version>
+		<m:properties__version.findbugs.plugin>3.0.1</m:properties__version.findbugs.plugin>
+		<m:dependency.management__org.wildfly.common__wildfly-common__exclusion_0>org.wildfly.security__wildfly-security-manager</m:dependency.management__org.wildfly.common__wildfly-common__exclusion_0>
+		<m:dependency.management__javax.inject__javax.inject__version>1</m:dependency.management__javax.inject__javax.inject__version>
+		<m:properties__version.sonar.plugin>2.5</m:properties__version.sonar.plugin>
+		<m:dependency.management__org.eclipse.aether__aether-spi__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-spi__version>
+		<m:properties__version.jar.plugin>2.6</m:properties__version.jar.plugin>
+		<m:dependency.management__org.jboss.byteman__byteman__scope>test</m:dependency.management__org.jboss.byteman__byteman__scope>
+		<m:dependency.management__org.wildfly.core__wildfly-embedded__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-embedded__version>
+		<m:properties__maven.compiler.argument.target>${maven.compiler.target}</m:properties__maven.compiler.argument.target>
+		<m:dependency.management__org.jboss__jandex__version>2.0.1.Final</m:dependency.management__org.jboss__jandex__version>
+		<m:dependency.management__org.wildfly.core__wildfly-jmx__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-jmx__version>
+		<m:dependency.management__xml-resolver__xml-resolver__version>1.2</m:dependency.management__xml-resolver__xml-resolver__version>
+		<m:properties__version.help.plugin>2.2</m:properties__version.help.plugin>
+		<m:dependency.management__org.jboss.byteman__byteman-install__version>2.2.1</m:dependency.management__org.jboss.byteman__byteman-install__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-api__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-api__version>
+		<m:dependency.management__org.jboss.arquillian.core__arquillian-core-spi__version>1.1.10.Final</m:dependency.management__org.jboss.arquillian.core__arquillian-core-spi__version>
+		<m:dependency.management__xerces__xercesImpl__version>2.11.0.SP4</m:dependency.management__xerces__xercesImpl__version>
+		<m:properties__version.jdepend.plugin>2.0</m:properties__version.jdepend.plugin>
+		<m:dependency.management__commons-io__commons-io__version>2.4</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__org.wildfly.checkstyle__wildfly-checkstyle-config__version>1.0.4.Final</m:dependency.management__org.wildfly.checkstyle__wildfly-checkstyle-config__version>
+		<m:dependency.management__javax.enterprise__cdi-api__version>1.2</m:dependency.management__javax.enterprise__cdi-api__version>
+		<m:properties__version.plugin.plugin>3.4</m:properties__version.plugin.plugin>
+		<m:properties__jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</m:properties__jboss.snapshots.repo.url>
+		<m:dependency.management__io.undertow__undertow-servlet__version>1.3.15.Final</m:dependency.management__io.undertow__undertow-servlet__version>
+		<m:properties__version.junit>4.12</m:properties__version.junit>
+		<m:properties__version.clover2.plugin>4.0.4</m:properties__version.clover2.plugin>
+		<m:dependency.management__org.wildfly.core__wildfly-protocol__version>2.0.10.Final</m:dependency.management__org.wildfly.core__wildfly-protocol__version>
+		<m:dependency.management__org.eclipse.aether__aether-transport-file__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-transport-file__version>
+		<m:dependency.management__org.jboss.spec.javax.interceptor__jboss-interceptors-api_1.2_spec__version>1.0.0.Final</m:dependency.management__org.jboss.spec.javax.interceptor__jboss-interceptors-api_1.2_spec__version>
+		<m:properties__org.wildfly.groupId>org.wildfly</m:properties__org.wildfly.groupId>
+		<m:dependency.management__org.codehaus.woodstox__stax2-api__version>3.1.4</m:dependency.management__org.codehaus.woodstox__stax2-api__version>
+		<m:dependency.management__org.jboss.logging__jul-to-slf4j-stub__version>1.0.1.Final</m:dependency.management__org.jboss.logging__jul-to-slf4j-stub__version>
+		<m:properties__version.surefire.plugin>2.18.1</m:properties__version.surefire.plugin>
+		<m:dependency.management__org.jboss.byteman__byteman__version>2.2.1</m:dependency.management__org.jboss.byteman__byteman__version>
+		<m:properties__version.failsafe.plugin>${version.surefire.plugin}</m:properties__version.failsafe.plugin>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__version.install.plugin>2.5.2</m:properties__version.install.plugin>
+		<m:dependency.management__org.jboss.logging__jboss-logging-processor__version>2.0.1.Final</m:dependency.management__org.jboss.logging__jboss-logging-processor__version>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling-river__version>1.4.10.Final</m:dependency.management__org.jboss.marshalling__jboss-marshalling-river__version>
+		<m:properties__version.org.wildfly.core>2.0.10.Final</m:properties__version.org.wildfly.core>
+		<m:dependency.management__org.jboss.spec.javax.servlet__jboss-servlet-api_3.1_spec__version>1.0.0.Final</m:dependency.management__org.jboss.spec.javax.servlet__jboss-servlet-api_3.1_spec__version>
+		<m:dependency.management__org.jboss.logging__jboss-logging-processor__scope>provided</m:dependency.management__org.jboss.logging__jboss-logging-processor__scope>
+		<m:dependency.management__org.jboss.sasl__jboss-sasl__version>1.0.5.Final</m:dependency.management__org.jboss.sasl__jboss-sasl__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.jboss.arquillian.core" name="arquillian-core-api" rev="1.1.10.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-common" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-container-embedded" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-container-managed" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-container-remote" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-common-domain" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-container-domain-managed" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-container-domain-remote" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-protocol-jmx" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-testenricher-msc" matcher="exact" rev="2.0.0.Final"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="16.0.1"/>
+		<override org="org.jboss" module="jboss-vfs" matcher="exact" rev="3.2.11.Final"/>
+		<override org="io.undertow" module="undertow-servlet" matcher="exact" rev="1.3.15.Final"/>
+		<override org="org.wildfly.core" module="wildfly-core-security-api" matcher="exact" rev="2.0.10.Final"/>
+		<override org="io.undertow" module="undertow-servlet" matcher="exact" rev="1.3.15.Final"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-api" matcher="exact" rev="1.1.2"/>
+		<override org="org.wildfly.core" module="wildfly-version" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss.classfilewriter" module="jboss-classfilewriter" matcher="exact" rev="1.1.2.Final"/>
+		<override org="org.wildfly.core" module="wildfly-launcher" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.common" module="wildfly-common" matcher="exact" rev="1.1.0.Final"/>
+		<override org="org.jboss.logging" module="jboss-logging" matcher="exact" rev="3.3.0.Final"/>
+		<override org="org.jboss.remotingjmx" module="remoting-jmx" matcher="exact" rev="2.0.1.Final"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.12"/>
+		<override org="org.apache.httpcomponents" module="httpmime" matcher="exact" rev="4.5"/>
+		<override org="org.wildfly.core" module="wildfly-management-client-content" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-logging" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.eclipse.aether" module="aether-transport-http" matcher="exact" rev="1.0.0.v20140518"/>
+		<override org="org.jboss.byteman" module="byteman-install" matcher="exact" rev="2.2.1"/>
+		<override org="org.jboss.logging" module="jboss-logging-annotations" matcher="exact" rev="2.0.1.Final"/>
+		<override org="org.wildfly.core" module="wildfly-domain-http-error-context" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-domain-management" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-network" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss.metadata" module="jboss-metadata-common" matcher="exact" rev="10.0.0.Final"/>
+		<override org="org.codehaus.woodstox" module="stax2-api" matcher="exact" rev="3.1.4"/>
+		<override org="org.wildfly.security" module="wildfly-elytron" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.wildfly.core" module="wildfly-io" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.codehaus.plexus" module="plexus-utils" matcher="exact" rev="3.0.21"/>
+		<override org="org.apache.maven" module="maven-aether-provider" matcher="exact" rev="3.2.1"/>
+		<override org="org.apache.maven" module="maven-aether-provider" matcher="exact" rev="3.2.1"/>
+		<override org="org.apache.maven" module="maven-aether-provider" matcher="exact" rev="3.2.1"/>
+		<override org="org.apache.maven" module="maven-aether-provider" matcher="exact" rev="3.2.1"/>
+		<override org="org.jboss.marshalling" module="jboss-marshalling" matcher="exact" rev="1.4.10.Final"/>
+		<override org="io.undertow" module="undertow-core" matcher="exact" rev="1.3.15.Final"/>
+		<override org="org.wildfly.core" module="wildfly-subsystem-test" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss.logging" module="jboss-logging-annotations" matcher="exact" rev="2.0.1.Final"/>
+		<override org="org.picketbox" module="picketbox-infinispan" matcher="exact" rev="4.9.4.Final"/>
+		<override org="org.picketbox" module="picketbox-infinispan" matcher="exact" rev="4.9.4.Final"/>
+		<override org="org.picketbox" module="picketbox-infinispan" matcher="exact" rev="4.9.4.Final"/>
+		<override org="org.picketbox" module="picketbox-infinispan" matcher="exact" rev="4.9.4.Final"/>
+		<override org="org.apache.maven" module="maven-aether-provider" matcher="exact" rev="3.2.1"/>
+		<override org="org.picketbox" module="picketbox-infinispan" matcher="exact" rev="4.9.4.Final"/>
+		<override org="org.jboss.spec.javax.sql" module="jboss-javax-sql-api_7.0_spec" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.wildfly.core" module="wildfly-core-test-runner" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-deployment-scanner" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss" module="jboss-vfs" matcher="exact" rev="3.2.11.Final"/>
+		<override org="org.mockito" module="mockito-all" matcher="exact" rev="1.9.5"/>
+		<override org="org.jboss.xnio" module="xnio-api" matcher="exact" rev="3.3.4.Final"/>
+		<override org="org.jboss.remoting" module="jboss-remoting" matcher="exact" rev="4.0.18.Final"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.5"/>
+		<override org="org.codehaus.woodstox" module="woodstox-core-asl" matcher="exact" rev="4.4.1"/>
+		<override org="org.jboss.modules" module="jboss-modules" matcher="exact" rev="1.5.1.Final"/>
+		<override org="org.wildfly.core" module="wildfly-self-contained" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss.byteman" module="byteman-bmunit" matcher="exact" rev="2.2.1"/>
+		<override org="xerces" module="xercesImpl" matcher="exact" rev="2.11.0.SP4"/>
+		<override org="org.syslog4j" module="syslog4j" matcher="exact" rev="0.9.30"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.7.jbossorg-1"/>
+		<override org="org.eclipse.aether" module="aether-impl" matcher="exact" rev="1.0.0.v20140518"/>
+		<override org="org.jboss.stdio" module="jboss-stdio" matcher="exact" rev="1.0.2.GA"/>
+		<override org="io.undertow" module="undertow-core" matcher="exact" rev="1.3.15.Final"/>
+		<override org="org.wildfly.core" module="wildfly-subsystem-test-framework" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss.byteman" module="byteman-submit" matcher="exact" rev="2.2.1"/>
+		<override org="org.jboss.aesh" module="aesh" matcher="exact" rev="0.66.4"/>
+		<override org="org.wildfly.legacy.test" module="wildfly-legacy-spi" matcher="exact" rev="1.0.0.Final"/>
+		<override org="org.wildfly.core" module="wildfly-core-model-test-framework" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-host-controller" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.syslog4j" module="syslog4j" matcher="exact" rev="0.9.30"/>
+		<override org="org.jboss.xnio" module="xnio-nio" matcher="exact" rev="3.3.4.Final"/>
+		<override org="org.eclipse.aether" module="aether-util" matcher="exact" rev="1.0.0.v20140518"/>
+		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.4.1"/>
+		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.4.1"/>
+		<override org="org.jboss.remotingjmx" module="remoting-jmx" matcher="exact" rev="2.0.1.Final"/>
+		<override org="org.jboss.remotingjmx" module="remoting-jmx" matcher="exact" rev="2.0.1.Final"/>
+		<override org="org.mockito" module="mockito-all" matcher="exact" rev="1.9.5"/>
+		<override org="org.wildfly.core" module="wildfly-request-controller" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-deployment-repository" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.eclipse.aether" module="aether-connector-basic" matcher="exact" rev="1.0.0.v20140518"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.5"/>
+		<override org="org.wildfly.core" module="wildfly-core-feature-pack" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.eclipse.aether" module="aether-api" matcher="exact" rev="1.0.0.v20140518"/>
+		<override org="org.wildfly.core" module="wildfly-process-controller" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss.logmanager" module="jboss-logmanager" matcher="exact" rev="2.0.3.Final"/>
+		<override org="org.wildfly.core" module="wildfly-remoting" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-threads" matcher="exact" rev="2.0.10.Final"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.16"/>
+		<override org="org.picketbox" module="picketbox" matcher="exact" rev="4.9.4.Final"/>
+		<override org="org.slf4j" module="jcl-over-slf4j" matcher="exact" rev="1.7.7.jbossorg-1"/>
+		<override org="org.jboss.aesh" module="aesh" matcher="exact" rev="0.66.4"/>
+		<override org="org.apache.httpcomponents" module="httpcore-nio" matcher="exact" rev="4.4.1"/>
+		<override org="org.jboss.msc" module="jboss-msc" matcher="exact" rev="1.2.6.Final"/>
+		<override org="org.jboss.logmanager" module="log4j-jboss-logmanager" matcher="exact" rev="1.1.2.Final"/>
+		<override org="org.jboss.byteman" module="byteman-bmunit" matcher="exact" rev="2.2.1"/>
+		<override org="org.wildfly.core" module="wildfly-patching" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-controller-client" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-model-test" matcher="exact" rev="2.0.10.Final"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.12"/>
+		<override org="org.wildfly.core" module="wildfly-core-model-test-controller-optional" matcher="exact" rev="2.0.10.Final"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.16"/>
+		<override org="org.jboss.slf4j" module="slf4j-jboss-logmanager" matcher="exact" rev="1.0.3.GA"/>
+		<override org="org.fusesource.jansi" module="jansi" matcher="exact" rev="1.11"/>
+		<override org="org.wildfly.core" module="wildfly-domain-http-interface" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.security" module="wildfly-elytron" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.wildfly.core" module="wildfly-core-security" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-core-dist" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss" module="staxmapper" matcher="exact" rev="1.2.0.Final"/>
+		<override org="org.wildfly.core" module="wildfly-core-testsuite-shared" matcher="exact" rev="2.0.10.Final"/>
+		<override org="commons-lang" module="commons-lang" matcher="exact" rev="2.6"/>
+		<override org="org.wildfly.core" module="wildfly-core-build" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.apache.httpcomponents" module="httpmime" matcher="exact" rev="4.5"/>
+		<override org="org.jboss.invocation" module="jboss-invocation" matcher="exact" rev="1.4.1.Final"/>
+		<override org="org.jboss.byteman" module="byteman-submit" matcher="exact" rev="2.2.1"/>
+		<override org="org.jboss.threads" module="jboss-threads" matcher="exact" rev="2.2.1.Final"/>
+		<override org="io.undertow" module="undertow-websockets-jsr" matcher="exact" rev="1.3.15.Final"/>
+		<override org="org.apache.httpcomponents" module="httpcore-nio" matcher="exact" rev="4.4.1"/>
+		<override org="org.wildfly.core" module="wildfly-controller" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-cli" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.wildfly.core" module="wildfly-server" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss" module="jboss-dmr" matcher="exact" rev="1.3.0.Final"/>
+		<override org="org.wildfly.core" module="wildfly-platform-mbean" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-impl-base" matcher="exact" rev="1.1.2"/>
+		<override org="io.undertow" module="undertow-websockets-jsr" matcher="exact" rev="1.3.15.Final"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.16"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.16"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.16"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.16"/>
+		<override org="org.codehaus.woodstox" module="woodstox-core-asl" matcher="exact" rev="4.4.1"/>
+		<override org="org.wildfly.common" module="wildfly-common" matcher="exact" rev="1.1.0.Final"/>
+		<override org="javax.inject" module="javax.inject" matcher="exact" rev="1"/>
+		<override org="org.eclipse.aether" module="aether-spi" matcher="exact" rev="1.0.0.v20140518"/>
+		<override org="org.jboss.byteman" module="byteman" matcher="exact" rev="2.2.1"/>
+		<override org="org.wildfly.core" module="wildfly-embedded" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss" module="jandex" matcher="exact" rev="2.0.1.Final"/>
+		<override org="org.wildfly.core" module="wildfly-jmx" matcher="exact" rev="2.0.10.Final"/>
+		<override org="xml-resolver" module="xml-resolver" matcher="exact" rev="1.2"/>
+		<override org="org.jboss.byteman" module="byteman-install" matcher="exact" rev="2.2.1"/>
+		<override org="xerces" module="xercesImpl" matcher="exact" rev="2.11.0.SP4"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.4"/>
+		<override org="org.wildfly.checkstyle" module="wildfly-checkstyle-config" matcher="exact" rev="1.0.4.Final"/>
+		<override org="io.undertow" module="undertow-servlet" matcher="exact" rev="1.3.15.Final"/>
+		<override org="org.wildfly.core" module="wildfly-protocol" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.eclipse.aether" module="aether-transport-file" matcher="exact" rev="1.0.0.v20140518"/>
+		<override org="org.jboss.spec.javax.interceptor" module="jboss-interceptors-api_1.2_spec" matcher="exact" rev="1.0.0.Final"/>
+		<override org="org.codehaus.woodstox" module="stax2-api" matcher="exact" rev="3.1.4"/>
+		<override org="org.jboss.logging" module="jul-to-slf4j-stub" matcher="exact" rev="1.0.1.Final"/>
+		<override org="org.jboss.byteman" module="byteman" matcher="exact" rev="2.2.1"/>
+		<override org="org.jboss.logging" module="jboss-logging-processor" matcher="exact" rev="2.0.1.Final"/>
+		<override org="org.jboss.marshalling" module="jboss-marshalling-river" matcher="exact" rev="1.4.10.Final"/>
+		<override org="org.jboss.logging" module="jboss-logging-processor" matcher="exact" rev="2.0.1.Final"/>
+		<override org="org.jboss.sasl" module="jboss-sasl" matcher="exact" rev="1.0.5.Final"/>
+		<override org="org.wildfly.core" module="wildfly-domain-management" matcher="exact" rev="2.0.10.Final"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.12"/>
+		<override org="org.wildfly.core" module="wildfly-launcher" matcher="exact" rev="2.0.10.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-spi" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-api" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-spi" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-impl-base" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.core" module="arquillian-core-api" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.core" module="arquillian-core-impl-base" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.core" module="arquillian-core-spi" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.junit" module="arquillian-junit-container" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.junit" module="arquillian-junit-core" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.protocol" module="arquillian-protocol-jmx" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.protocol" module="arquillian-protocol-servlet" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.test" module="arquillian-test-spi" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.test" module="arquillian-test-impl-base" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.testenricher" module="arquillian-testenricher-cdi" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.testenricher" module="arquillian-testenricher-ejb" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.testenricher" module="arquillian-testenricher-initialcontext" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.testenricher" module="arquillian-testenricher-resource" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.testng" module="arquillian-testng-core" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.arquillian.testng" module="arquillian-testng-container" matcher="exact" rev="1.1.10.Final"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-impl-base" matcher="exact" rev="2.0.0-alpha-8"/>
+		<override org="org.jboss" module="jboss-ejb-client" matcher="exact" rev="2.0.2.Final"/>
+		<override org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_3.1_spec" matcher="exact" rev="1.0.0.Final"/>
+		<override org="org.jboss.spec.javax.ejb" module="jboss-ejb-api_3.2_spec" matcher="exact" rev="1.0.0.Final"/>
+		<override org="javax.enterprise" module="cdi-api" matcher="exact" rev="1.2"/>
+		<override org="org.testng" module="testng" matcher="exact" rev="6.8.8"/>
+	</dependencies>
+</ivy-module>

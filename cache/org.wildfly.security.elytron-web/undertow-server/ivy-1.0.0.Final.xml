@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.wildfly.security.elytron-web"
+		module="undertow-server"
+		revision="1.0.0.Final"
+		status="release"
+		publication="20170818223259"
+	>
+		<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="">
+		Integration project for integrating Elytron based HTTP authentication with Undertow.
+		</description>
+		<m:dependency.management__com.nimbusds__nimbus-jose-jwt__scope>test</m:dependency.management__com.nimbusds__nimbus-jose-jwt__scope>
+		<m:properties__maven.test.redirectTestOutputToFile>true</m:properties__maven.test.redirectTestOutputToFile>
+		<m:properties__useReleaseProfile>false</m:properties__useReleaseProfile>
+		<m:properties__version.dependency.plugin>2.10</m:properties__version.dependency.plugin>
+		<m:properties__maven.compiler.argument.source>${maven.compiler.source}</m:properties__maven.compiler.argument.source>
+		<m:dependency.management__org.wildfly.common__wildfly-common__version>1.2.0.Final</m:dependency.management__org.wildfly.common__wildfly-common__version>
+		<m:dependency.management__org.jboss.logging__jboss-logging__version>3.3.1.Final</m:dependency.management__org.jboss.logging__jboss-logging__version>
+		<m:properties__version.cobertura.plugin>2.7</m:properties__version.cobertura.plugin>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__scope>test</m:dependency.management__org.apache.httpcomponents__httpclient__scope>
+		<m:properties__version.injection.plugin>1.0.2</m:properties__version.injection.plugin>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__version.org.glassfish.javax.json>1.0.4</m:properties__version.org.glassfish.javax.json>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__version.org.jboss.logging>3.3.1.Final</m:properties__version.org.jboss.logging>
+		<m:properties__version.javacc.plugin>2.6</m:properties__version.javacc.plugin>
+		<m:dependency.management__org.jboss.xnio__xnio-api__scope>test</m:dependency.management__org.jboss.xnio__xnio-api__scope>
+		<m:dependency.management__org.jboss.logmanager__log4j-jboss-logmanager__version>1.1.3.Final</m:dependency.management__org.jboss.logmanager__log4j-jboss-logmanager__version>
+		<m:properties__version.compiler.plugin>3.1</m:properties__version.compiler.plugin>
+		<m:properties__version.com.nimbusds.nimbus-jose-jwt>4.13.1</m:properties__version.com.nimbusds.nimbus-jose-jwt>
+		<m:properties__version.site.plugin>3.4</m:properties__version.site.plugin>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:properties__version.buildnumber.plugin>1.3</m:properties__version.buildnumber.plugin>
+		<m:properties__version.javadoc.plugin>2.10.3</m:properties__version.javadoc.plugin>
+		<m:properties__version.org.apache.httpcomponents.httpclient>4.5.2</m:properties__version.org.apache.httpcomponents.httpclient>
+		<m:properties__version.org.wildfly.security.elytron>1.1.0.Final</m:properties__version.org.wildfly.security.elytron>
+		<m:properties__version.buildhelper.plugin>1.9.1</m:properties__version.buildhelper.plugin>
+		<m:dependency.management__org.wildfly.security__wildfly-elytron__version>1.1.0.Final</m:dependency.management__org.wildfly.security__wildfly-elytron__version>
+		<m:properties__version.ejb.plugin>2.5</m:properties__version.ejb.plugin>
+		<m:dependency.management__org.jboss.logging__jboss-logging__scope>provided</m:dependency.management__org.jboss.logging__jboss-logging__scope>
+		<m:dependency.management__org.glassfish__javax.json__version>1.0.4</m:dependency.management__org.glassfish__javax.json__version>
+		<m:properties__maven.compiler.target>1.8</m:properties__maven.compiler.target>
+		<m:properties__version.resources.plugin>2.7</m:properties__version.resources.plugin>
+		<m:properties__version.com.puppycrawl.tools.checkstyle>6.3</m:properties__version.com.puppycrawl.tools.checkstyle>
+		<m:dependency.management__org.jboss.logmanager__jboss-logmanager__scope>test</m:dependency.management__org.jboss.logmanager__jboss-logmanager__scope>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null</m:maven.plugins>
+		<m:properties__version.org.apache.httpcomponents.httpcore>4.4.4</m:properties__version.org.apache.httpcomponents.httpcore>
+		<m:properties__version.shade.plugin>2.3</m:properties__version.shade.plugin>
+		<m:properties__version.jxr.plugin>2.5</m:properties__version.jxr.plugin>
+		<m:properties__test.level>INFO</m:properties__test.level>
+		<m:properties__version.source.plugin>2.4</m:properties__version.source.plugin>
+		<m:properties__version.rar.plugin>2.4</m:properties__version.rar.plugin>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__scope>test</m:dependency.management__org.apache.httpcomponents__httpcore__scope>
+		<m:properties__version.javancss.plugin>2.1</m:properties__version.javancss.plugin>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__version.org.jboss.xnio>3.5.1.Final</m:properties__version.org.jboss.xnio>
+		<m:dependency.management__org.jboss.spec.javax.json__jboss-json-api_1.0_spec__version>1.0.0.Final</m:dependency.management__org.jboss.spec.javax.json__jboss-json-api_1.0_spec__version>
+		<m:properties__version.junit.junit>4.11</m:properties__version.junit.junit>
+		<m:properties__version.pmd.plugin>3.4</m:properties__version.pmd.plugin>
+		<m:dependency.management__org.jboss.xnio__xnio-api__version>3.5.1.Final</m:dependency.management__org.jboss.xnio__xnio-api__version>
+		<m:properties__version.checkstyle>6.7</m:properties__version.checkstyle>
+		<m:properties__version.ear.plugin>2.10</m:properties__version.ear.plugin>
+		<m:properties__version.enforcer.plugin>1.4</m:properties__version.enforcer.plugin>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.5.2</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:properties__version.war.plugin>2.6</m:properties__version.war.plugin>
+		<m:properties__jdk.min.version>${maven.compiler.argument.source}</m:properties__jdk.min.version>
+		<m:dependency.management__org.jboss.modules__jboss-modules__version>1.6.0.Final</m:dependency.management__org.jboss.modules__jboss-modules__version>
+		<m:properties__version.clean.plugin>2.6.1</m:properties__version.clean.plugin>
+		<m:properties__version.org.jboss.logmanager.log4j-jboss>1.1.3.Final</m:properties__version.org.jboss.logmanager.log4j-jboss>
+		<m:dependency.management__com.nimbusds__nimbus-jose-jwt__version>4.13.1</m:dependency.management__com.nimbusds__nimbus-jose-jwt__version>
+		<m:properties__version.pir.plugin>2.8</m:properties__version.pir.plugin>
+		<m:properties__version.org.jboss.modules>1.6.0.Final</m:properties__version.org.jboss.modules>
+		<m:properties__version.org.jboss.logmanager>2.0.6.Final</m:properties__version.org.jboss.logmanager>
+		<m:properties__targetJdk>${maven.compiler.argument.target}</m:properties__targetJdk>
+		<m:properties__version.license.plugin>1.8</m:properties__version.license.plugin>
+		<m:dependency.management__org.jboss.xnio__xnio-nio__scope>test</m:dependency.management__org.jboss.xnio__xnio-nio__scope>
+		<m:properties__version.eclipse.plugin>2.10</m:properties__version.eclipse.plugin>
+		<m:properties__version.antrun.plugin>1.8</m:properties__version.antrun.plugin>
+		<m:properties__version.org.eclipse.m2e.lifecycle-mapping>1.0.0</m:properties__version.org.eclipse.m2e.lifecycle-mapping>
+		<m:properties__version.release.plugin>2.5.2</m:properties__version.release.plugin>
+		<m:properties__linkXRef>false</m:properties__linkXRef>
+		<m:properties__version.idlj.plugin>1.2.1</m:properties__version.idlj.plugin>
+		<m:dependency.management__org.jboss.logmanager__log4j-jboss-logmanager__scope>test</m:dependency.management__org.jboss.logmanager__log4j-jboss-logmanager__scope>
+		<m:properties__version.findbugs.plugin>3.0.1</m:properties__version.findbugs.plugin>
+		<m:properties__version.sonar.plugin>2.5</m:properties__version.sonar.plugin>
+		<m:properties__version.deploy.plugin>2.8.2</m:properties__version.deploy.plugin>
+		<m:properties__version.jar.plugin>2.6</m:properties__version.jar.plugin>
+		<m:properties__maven.compiler.argument.target>${maven.compiler.target}</m:properties__maven.compiler.argument.target>
+		<m:properties__version.exec.plugin>1.4.0</m:properties__version.exec.plugin>
+		<m:dependency.management__org.jboss.xnio__xnio-nio__version>3.5.1.Final</m:dependency.management__org.jboss.xnio__xnio-nio__version>
+		<m:properties__version.help.plugin>2.2</m:properties__version.help.plugin>
+		<m:dependency.management__org.wildfly.common__wildfly-common__scope>provided</m:dependency.management__org.wildfly.common__wildfly-common__scope>
+		<m:dependency.management__org.glassfish__javax.json__scope>test</m:dependency.management__org.glassfish__javax.json__scope>
+		<m:properties__version.io.undertow>1.4.18.Final</m:properties__version.io.undertow>
+		<m:properties__version.checkstyle.plugin>2.15</m:properties__version.checkstyle.plugin>
+		<m:properties__version.jdepend.plugin>2.0</m:properties__version.jdepend.plugin>
+		<m:properties__version.org.jboss.spec.jboss-json-api_1.0_spec>1.0.0.Final</m:properties__version.org.jboss.spec.jboss-json-api_1.0_spec>
+		<m:properties__version.plugin.plugin>3.4</m:properties__version.plugin.plugin>
+		<m:properties__version.gpg.plugin>1.6</m:properties__version.gpg.plugin>
+		<m:dependency.management__org.jboss.modules__jboss-modules__scope>test</m:dependency.management__org.jboss.modules__jboss-modules__scope>
+		<m:properties__downloadSources>true</m:properties__downloadSources>
+		<m:properties__jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</m:properties__jboss.snapshots.repo.url>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__version>4.4.4</m:dependency.management__org.apache.httpcomponents__httpcore__version>
+		<m:dependency.management__org.infinispan__infinispan-core__scope>test</m:dependency.management__org.infinispan__infinispan-core__scope>
+		<m:properties__arguments>-Pjboss-release</m:properties__arguments>
+		<m:dependency.management__org.wildfly.security__wildfly-elytron__scope>provided</m:dependency.management__org.wildfly.security__wildfly-elytron__scope>
+		<m:properties__version.bundle.plugin>2.5.4</m:properties__version.bundle.plugin>
+		<m:properties__maven.min.version>3.0.4</m:properties__maven.min.version>
+		<m:properties__version.clover2.plugin>4.0.4</m:properties__version.clover2.plugin>
+		<m:dependency.management__org.infinispan__infinispan-core__version>8.2.6.Final</m:dependency.management__org.infinispan__infinispan-core__version>
+		<m:dependency.management__org.jboss.spec.javax.json__jboss-json-api_1.0_spec__scope>test</m:dependency.management__org.jboss.spec.javax.json__jboss-json-api_1.0_spec__scope>
+		<m:properties__version.surefire.plugin>2.18.1</m:properties__version.surefire.plugin>
+		<m:properties__jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</m:properties__jboss.releases.repo.url>
+		<m:properties__version.org.wildfly.checkstyle-config>1.0.6.Final</m:properties__version.org.wildfly.checkstyle-config>
+		<m:properties__version.failsafe.plugin>${version.surefire.plugin}</m:properties__version.failsafe.plugin>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__version.install.plugin>2.5.2</m:properties__version.install.plugin>
+		<m:properties__version.org.infinispan>8.2.6.Final</m:properties__version.org.infinispan>
+		<m:dependency.management__org.jboss.logmanager__jboss-logmanager__version>2.0.6.Final</m:dependency.management__org.jboss.logmanager__jboss-logmanager__version>
+		<m:properties__version.org.wildfly.common>1.2.0.Final</m:properties__version.org.wildfly.common>
+		<m:properties__version.assembly.plugin>2.5.4</m:properties__version.assembly.plugin>
+		<m:properties__maven.compiler.source>1.8</m:properties__maven.compiler.source>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="undertow-server" type="jar" ext="jar" conf="master"/>
+		<artifact name="undertow-server" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+	</publications>
+	<dependencies>
+		<dependency org="io.undertow" name="undertow-core" rev="1.4.18.Final" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)">
+			<exclude org="org.jboss.xnio" module="xnio-nio" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.jboss.logging" name="jboss-logging" rev="3.3.1.Final" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.wildfly.common" name="wildfly-common" rev="1.2.0.Final" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.wildfly.security" name="wildfly-elytron" rev="1.1.0.Final" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.jboss.xnio" name="xnio-api" rev="3.5.1.Final" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.httpcomponents" name="httpcore" rev="4.4.4" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.jboss.logmanager" name="jboss-logmanager" rev="2.0.6.Final" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.jboss.logmanager" name="log4j-jboss-logmanager" rev="1.1.3.Final" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.jboss.modules" name="jboss-modules" rev="1.6.0.Final" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.infinispan" name="infinispan-core" rev="8.2.6.Final" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.jboss.spec.javax.json" name="jboss-json-api_1.0_spec" rev="1.0.0.Final" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.glassfish" name="javax.json" rev="1.0.4" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="com.nimbusds" name="nimbus-jose-jwt" rev="4.13.1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.jboss.xnio" name="xnio-nio" rev="3.5.1.Final" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="com.nimbusds" module="nimbus-jose-jwt" matcher="exact" rev="4.13.1"/>
+		<override org="org.wildfly.common" module="wildfly-common" matcher="exact" rev="1.2.0.Final"/>
+		<override org="org.jboss.logging" module="jboss-logging" matcher="exact" rev="3.3.1.Final"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.5.2"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.11"/>
+		<override org="org.jboss.xnio" module="xnio-api" matcher="exact" rev="3.5.1.Final"/>
+		<override org="org.jboss.logmanager" module="log4j-jboss-logmanager" matcher="exact" rev="1.1.3.Final"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.11"/>
+		<override org="org.wildfly.security" module="wildfly-elytron" matcher="exact" rev="1.1.0.Final"/>
+		<override org="org.jboss.logging" module="jboss-logging" matcher="exact" rev="3.3.1.Final"/>
+		<override org="org.glassfish" module="javax.json" matcher="exact" rev="1.0.4"/>
+		<override org="org.jboss.logmanager" module="jboss-logmanager" matcher="exact" rev="2.0.6.Final"/>
+		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.4.4"/>
+		<override org="org.jboss.spec.javax.json" module="jboss-json-api_1.0_spec" matcher="exact" rev="1.0.0.Final"/>
+		<override org="org.jboss.xnio" module="xnio-api" matcher="exact" rev="3.5.1.Final"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.5.2"/>
+		<override org="org.jboss.modules" module="jboss-modules" matcher="exact" rev="1.6.0.Final"/>
+		<override org="com.nimbusds" module="nimbus-jose-jwt" matcher="exact" rev="4.13.1"/>
+		<override org="org.jboss.xnio" module="xnio-nio" matcher="exact" rev="3.5.1.Final"/>
+		<override org="org.jboss.logmanager" module="log4j-jboss-logmanager" matcher="exact" rev="1.1.3.Final"/>
+		<override org="org.jboss.xnio" module="xnio-nio" matcher="exact" rev="3.5.1.Final"/>
+		<override org="org.wildfly.common" module="wildfly-common" matcher="exact" rev="1.2.0.Final"/>
+		<override org="org.glassfish" module="javax.json" matcher="exact" rev="1.0.4"/>
+		<override org="org.jboss.modules" module="jboss-modules" matcher="exact" rev="1.6.0.Final"/>
+		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.4.4"/>
+		<override org="org.infinispan" module="infinispan-core" matcher="exact" rev="8.2.6.Final"/>
+		<override org="org.wildfly.security" module="wildfly-elytron" matcher="exact" rev="1.1.0.Final"/>
+		<override org="org.infinispan" module="infinispan-core" matcher="exact" rev="8.2.6.Final"/>
+		<override org="org.jboss.spec.javax.json" module="jboss-json-api_1.0_spec" matcher="exact" rev="1.0.0.Final"/>
+		<override org="org.jboss.logmanager" module="jboss-logmanager" matcher="exact" rev="2.0.6.Final"/>
+	</dependencies>
+</ivy-module>

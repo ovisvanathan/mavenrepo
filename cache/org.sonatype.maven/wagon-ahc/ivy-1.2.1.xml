@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.sonatype.maven"
+		module="wagon-ahc"
+		revision="1.2.1"
+		status="release"
+		publication="20110910164652"
+	>
+		<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html" />
+		<description homepage="">
+		A wagon provider for HTTP transfers based on the async-http-client.
+		</description>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__forgeReleaseUrl>https://repository.sonatype.org/service/local/staging/deploy/maven2</m:properties__forgeReleaseUrl>
+		<m:properties__surefire.redirectTestOutputToFile>true</m:properties__surefire.redirectTestOutputToFile>
+		<m:properties__forgeReleaseId>forge-releases</m:properties__forgeReleaseId>
+		<m:properties__forgeSnapshotId>forge-snapshots</m:properties__forgeSnapshotId>
+		<m:properties__forgeSnapshotUrl>http://repository.sonatype.org/content/repositories/snapshots</m:properties__forgeSnapshotUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-surefire-plugin__2.7.2|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="wagon-ahc" type="jar" ext="jar" conf="master"/>
+		<artifact name="wagon-ahc" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="wagon-ahc" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="com.ning" name="async-http-client" rev="1.6.5" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.maven.wagon" name="wagon-provider-api" rev="1.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="3.8.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.codehaus.plexus" name="plexus-container-default" rev="1.5.5" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.codehaus.plexus" name="plexus-utils" rev="2.0.5" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.easymock" name="easymock" rev="2.5.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.maven.wagon" name="wagon-provider-test" rev="1.0" force="true" conf="test->runtime(*),master(*)">
+			<exclude org="easymock" module="easymock" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="0.9.28" force="true" conf="test->runtime(*),master(*)"/>
+	</dependencies>
+</ivy-module>

@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.infinispan"
+		module="infinispan-core"
+		revision="8.1.8.Final"
+		status="release"
+		publication="20170322145646"
+	>
+		<license name="Apache License" url="http://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="">
+		Infinispan core module
+		</description>
+		<m:properties__module.skipComponentMetaDataProcessing>false</m:properties__module.skipComponentMetaDataProcessing>
+		<m:properties__module.skipTestComponentMetaDataProcessing>false</m:properties__module.skipTestComponentMetaDataProcessing>
+		<m:properties__version.snappy>1.0.5</m:properties__version.snappy>
+		<m:properties__version.maven.invoker>1.8</m:properties__version.maven.invoker>
+		<m:properties__version.arquillian>1.1.5.Final</m:properties__version.arquillian>
+		<m:properties__version.mysql.driver>5.1.19</m:properties__version.mysql.driver>
+		<m:properties__bnd.provider.policy>$&lt;range;[==,=+)></m:properties__bnd.provider.policy>
+		<m:properties__version.shrinkwrapResolver>2.1.0</m:properties__version.shrinkwrapResolver>
+		<m:properties__dir.report>../jacoco-html</m:properties__dir.report>
+		<m:properties__version.jboss.logging.processor>1.1.0.Final</m:properties__version.jboss.logging.processor>
+		<m:properties__version.maven.buildhelper>1.8</m:properties__version.maven.buildhelper>
+		<m:properties__version.mc4j>1.2.6</m:properties__version.mc4j>
+		<m:properties__version.resteasy>3.0.11.Final</m:properties__version.resteasy>
+		<m:properties__version.jboss.sasl>1.0.4.Final</m:properties__version.jboss.sasl>
+		<m:properties__version.commons.math>2.2</m:properties__version.commons.math>
+		<m:properties__version.hibernate.hql.parser>1.3.0.Alpha2</m:properties__version.hibernate.hql.parser>
+		<m:properties__version.hibernate_dep.dom4j>1.6.1_5</m:properties__version.hibernate_dep.dom4j>
+		<m:properties__version.maven.scala>2.15.2</m:properties__version.maven.scala>
+		<m:properties__version.junit>4.11</m:properties__version.junit>
+		<m:properties__reportTitle>Infinispan JaCoCo Report</m:properties__reportTitle>
+		<m:properties__version.h2.driver-within-wildfly>1.3.173</m:properties__version.h2.driver-within-wildfly>
+		<m:properties__version.weld>1.1.13.Final</m:properties__version.weld>
+		<m:properties__version.jboss.negotiation>2.3.6.Final</m:properties__version.jboss.negotiation>
+		<m:properties__version.javax.servlet>2.5</m:properties__version.javax.servlet>
+		<m:properties__version.hibernate_dep.jandex>2.0.0.Final</m:properties__version.hibernate_dep.jandex>
+		<m:properties__version.jetty>6.1.25</m:properties__version.jetty>
+		<m:properties__version.byteman>2.1.4</m:properties__version.byteman>
+		<m:properties__version.hibernate_dep.antlr>2.7.7_5</m:properties__version.hibernate_dep.antlr>
+		<m:properties__version.maven.surefire>2.18.1</m:properties__version.maven.surefire>
+		<m:properties__version.hibernate_dep.javaassist>3.18.1-GA</m:properties__version.hibernate_dep.javaassist>
+		<m:properties__version.javax.cache.cache-tests>${version.javax.cache}</m:properties__version.javax.cache.cache-tests>
+		<m:properties__infinispan.test.parallel.threads>15</m:properties__infinispan.test.parallel.threads>
+		<m:properties__version.geronimo.tm>3.1.1</m:properties__version.geronimo.tm>
+		<m:properties__version.mockito_dep.objenesis>1.4</m:properties__version.mockito_dep.objenesis>
+		<m:properties__version.commons.compress>1.4</m:properties__version.commons.compress>
+		<m:properties__version.howl>1.0.1-1</m:properties__version.howl>
+		<m:properties__version.asm>3.3.1</m:properties__version.asm>
+		<m:properties__version.commons.io>1.3.2</m:properties__version.commons.io>
+		<m:properties__version.jcipannotations>1.0</m:properties__version.jcipannotations>
+		<m:properties__version.apache.ds>2.0.0-M20</m:properties__version.apache.ds>
+		<m:properties__version.jboss.remotingjmx>2.0.0.Final</m:properties__version.jboss.remotingjmx>
+		<m:properties__version.weld-se>2.2.0.SP1</m:properties__version.weld-se>
+		<m:properties__forkJvmArgs>-Xmx2G</m:properties__forkJvmArgs>
+		<m:properties__version.solder>3.1.0.Final</m:properties__version.solder>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__version.c3p0>0.9.5-pre8</m:properties__version.c3p0>
+		<m:properties__version.maven.genjavadoc>0.9</m:properties__version.maven.genjavadoc>
+		<m:properties__m2e.apt.activation>jdt_apt</m:properties__m2e.apt.activation>
+		<m:properties__version.jacoco>0.5.10.201208310627</m:properties__version.jacoco>
+		<m:properties__buildDirectory>target</m:properties__buildDirectory>
+		<m:properties__version.httpclient>4.2.4</m:properties__version.httpclient>
+		<m:properties__log4j.configurationFile>log4j2.xml</m:properties__log4j.configurationFile>
+		<m:properties__version.hibernate.core>5.0.4.Final</m:properties__version.hibernate.core>
+		<m:properties__defaultTestGroup>functional,unit,arquillian</m:properties__defaultTestGroup>
+		<m:properties__version.jboss.xnio>3.2.2.Final</m:properties__version.jboss.xnio>
+		<m:properties__testNGListener>org.infinispan.test.fwk.UnitTestTestNGListener</m:properties__testNGListener>
+		<m:properties__version.org.wildfly.build-tools>1.1.0.CR2</m:properties__version.org.wildfly.build-tools>
+		<m:properties__version.maven.source>2.3</m:properties__version.maven.source>
+		<m:properties__version.maven.bundle>2.4.0</m:properties__version.maven.bundle>
+		<m:properties__version.h2.driver>1.4.180</m:properties__version.h2.driver>
+		<m:properties__version.webdav.servlet>2.0.1</m:properties__version.webdav.servlet>
+		<m:properties__version.leveldb>0.7</m:properties__version.leveldb>
+		<m:properties__version.org.wildfly>10.0.0.CR4</m:properties__version.org.wildfly>
+		<m:properties__version.com.intellij.forms_rt>6.0.5</m:properties__version.com.intellij.forms_rt>
+		<m:properties__bnd.consumer.policy>$&lt;range;[==,+)></m:properties__bnd.consumer.policy>
+		<m:properties__version.avro>1.7.6</m:properties__version.avro>
+		<m:properties__version.hibernate.osgi>${version.hibernate.core}</m:properties__version.hibernate.osgi>
+		<m:properties__version.c3p0_dep.mchange-commons-java>0.2.7</m:properties__version.c3p0_dep.mchange-commons-java>
+		<m:properties__version.jsap>2.1</m:properties__version.jsap>
+		<m:properties__version.aspectj.aspectjweaver>1.8.1</m:properties__version.aspectj.aspectjweaver>
+		<m:properties__version.jgoodies.forms>1.0.7</m:properties__version.jgoodies.forms>
+		<m:properties__version.jboss.jboss-transaction-spi>7.1.0.Final</m:properties__version.jboss.jboss-transaction-spi>
+		<m:properties__version.mockito>1.9.5</m:properties__version.mockito>
+		<m:properties__version.commons.dbcp>1.4</m:properties__version.commons.dbcp>
+		<m:properties__version.org.wildfly.maven-plugin>1.1.0.Alpha4</m:properties__version.org.wildfly.maven-plugin>
+		<m:properties__version.leveldbjni>1.7</m:properties__version.leveldbjni>
+		<m:properties__version.hibernate_dep.classmate>0.5.4</m:properties__version.hibernate_dep.classmate>
+		<m:properties__version.org.jboss.naming>5.0.6.CR1</m:properties__version.org.jboss.naming>
+		<m:properties__module.metadata.isCoreModule>false</m:properties__module.metadata.isCoreModule>
+		<m:properties__version.pax.url>2.2.0</m:properties__version.pax.url>
+		<m:properties__version.hibernate_dep.hibernate-commons-annotations>5.0.1.Final</m:properties__version.hibernate_dep.hibernate-commons-annotations>
+		<m:properties__version.org.picketbox>4.0.20.Final</m:properties__version.org.picketbox>
+		<m:properties__version.spymemcached>2.5</m:properties__version.spymemcached>
+		<m:properties__version.testng.arquillian>6.5.2</m:properties__version.testng.arquillian>
+		<m:properties__version.commons.httpclient>3.1</m:properties__version.commons.httpclient>
+		<m:properties__version.org.wildfly.core>2.0.0.CR8</m:properties__version.org.wildfly.core>
+		<m:properties__version.testng>6.8.8</m:properties__version.testng>
+		<m:properties__defaultExcludedTestGroup>unstable,stress,unstable_xsite</m:properties__defaultExcludedTestGroup>
+		<m:properties__version.commons.logging>1.1</m:properties__version.commons.logging>
+		<m:properties__dir.ispn>../</m:properties__dir.ispn>
+		<m:properties__version.ant>1.9.4</m:properties__version.ant>
+		<m:properties__version.metainf-services>1.5</m:properties__version.metainf-services>
+		<m:properties__version.postgresql.driver>9.3-1101-jdbc41</m:properties__version.postgresql.driver>
+		<m:properties__version.jbossjta>5.0.4.Final</m:properties__version.jbossjta>
+		<m:properties__version.pax.exam>4.5.0</m:properties__version.pax.exam>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</m:properties__jboss.releases.repo.url>
+		<m:properties__version.guava>11.0.2</m:properties__version.guava>
+		<m:properties__version.commons.codec>1.4</m:properties__version.commons.codec>
+		<m:properties__jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</m:properties__jboss.snapshots.repo.url>
+		<m:properties__version.spring3>3.2.9.RELEASE</m:properties__version.spring3>
+		<m:properties__version.spring4>4.1.0.RELEASE</m:properties__version.spring4>
+		<m:properties__version.lucene>5.3.1</m:properties__version.lucene>
+		<m:properties__version.org.wildfly.arquillian>1.0.1.Final</m:properties__version.org.wildfly.arquillian>
+		<m:properties__infinispan.test.jgroups.protocol>tcp</m:properties__infinispan.test.jgroups.protocol>
+		<m:properties__version.karaf>3.0.4</m:properties__version.karaf>
+		<m:properties__packaging>jar</m:properties__packaging>
+		<m:properties__version.jboss.spec>1.0.2.Final</m:properties__version.jboss.spec>
+		<m:properties__version.jboss.logmanager>1.3.1.Final</m:properties__version.jboss.logmanager>
+		<m:properties__version.antlr>3.4</m:properties__version.antlr>
+		<m:properties__version.jackson>1.9.13</m:properties__version.jackson>
+		<m:properties__version.javassist>3.18.1-GA</m:properties__version.javassist>
+		<m:properties__version.log4j>2.3</m:properties__version.log4j>
+		<m:properties__version.slf4j>1.7.5</m:properties__version.slf4j>
+		<m:properties__version.arquillian.container.weld>1.0.0.CR3</m:properties__version.arquillian.container.weld>
+		<m:properties__version.hibernate.entitymanager>${version.hibernate.core}</m:properties__version.hibernate.entitymanager>
+		<m:properties__version.jstl>1.2</m:properties__version.jstl>
+		<m:properties__version.jta>1.0.1.Final</m:properties__version.jta>
+		<m:properties__version.scala>${version.scala.major}.7</m:properties__version.scala>
+		<m:properties__version.javax.cache>1.0.0</m:properties__version.javax.cache>
+		<m:properties__version.commons.pool>1.6</m:properties__version.commons.pool>
+		<m:properties__version.maven-compiler-plugin>3.1</m:properties__version.maven-compiler-plugin>
+		<m:properties__version.cdi>1.0-SP4</m:properties__version.cdi>
+		<m:properties__version.java>1.8</m:properties__version.java>
+		<m:properties__version.protostream>3.0.5.Final</m:properties__version.protostream>
+		<m:properties__version.hibernate.search>5.5.1.Final</m:properties__version.hibernate.search>
+		<m:properties__infinispan.codename>Mahou</m:properties__infinispan.codename>
+		<m:properties__uberjar.deps.optional>true</m:properties__uberjar.deps.optional>
+		<m:properties__version.netty>4.0.25.Final</m:properties__version.netty>
+		<m:properties__version.rhq>4.4.0</m:properties__version.rhq>
+		<m:properties__version.aesh>0.33.14</m:properties__version.aesh>
+		<m:properties__version.jboss.logging>3.3.0.Final</m:properties__version.jboss.logging>
+		<m:properties__version.scala.major>2.11</m:properties__version.scala.major>
+		<m:properties__version.scala.xml>1.0.2</m:properties__version.scala.xml>
+		<m:properties__infinispan.core.schema.version>8.1</m:properties__infinispan.core.schema.version>
+		<m:properties__version.xstream>1.4.9</m:properties__version.xstream>
+		<m:properties__version.gnu.getopt>1.0.13</m:properties__version.gnu.getopt>
+		<m:properties__version.osgi>4.3.1</m:properties__version.osgi>
+		<m:properties__version.hibernate.javax.persistence>1.0.0.Final</m:properties__version.hibernate.javax.persistence>
+		<m:properties__version.jgroups>3.6.4.Final</m:properties__version.jgroups>
+		<m:properties__version.jboss.marshalling>1.4.10.Final</m:properties__version.jboss.marshalling>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-jdbc__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-jdbc__version>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-jpa__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-jpa__version>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-rest__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-rest__version>
+		<m:dependency.management__org.infinispan__infinispan-persistence-cli__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-persistence-cli__version>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-leveldb__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-leveldb__version>
+		<m:dependency.management__org.infinispan__infinispan-cdi-embedded__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cdi-embedded__version>
+		<m:dependency.management__org.infinispan__infinispan-cdi-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cdi-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-client-hotrod__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-client-hotrod__version>
+		<m:dependency.management__org.infinispan__infinispan-commons__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-commons__version>
+		<m:dependency.management__org.infinispan__infinispan-core__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-core__version>
+		<m:dependency.management__org.infinispan__infinispan-lucene-directory__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-lucene-directory__version>
+		<m:dependency.management__org.infinispan__infinispan-directory-provider__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-directory-provider__version>
+		<m:dependency.management__org.infinispan__infinispan-query__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-query__version>
+		<m:dependency.management__org.infinispan__infinispan-query-dsl__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-query-dsl__version>
+		<m:dependency.management__org.infinispan__infinispan-objectfilter__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-objectfilter__version>
+		<m:dependency.management__org.infinispan__infinispan-remote-query-client__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-remote-query-client__version>
+		<m:dependency.management__org.infinispan__infinispan-remote-query-server__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-remote-query-server__version>
+		<m:dependency.management__org.infinispan__infinispan-scripting__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-scripting__version>
+		<m:dependency.management__org.infinispan__infinispan-server-core__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-core__version>
+		<m:dependency.management__org.infinispan__infinispan-server-hotrod__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-hotrod__version>
+		<m:dependency.management__org.infinispan__infinispan-server-memcached__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-memcached__version>
+		<m:dependency.management__org.infinispan__infinispan-server-rest__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-rest__version>
+		<m:dependency.management__org.infinispan__infinispan-server-websocket__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-websocket__version>
+		<m:dependency.management__org.infinispan__infinispan-spring__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-spring__version>
+		<m:dependency.management__org.infinispan__infinispan-spring4-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-spring4-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-spring4-embedded__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-spring4-embedded__version>
+		<m:dependency.management__org.infinispan__infinispan-tasks__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-tasks__version>
+		<m:dependency.management__org.infinispan__infinispan-tools__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-tools__version>
+		<m:dependency.management__org.infinispan__infinispan-tree__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-tree__version>
+		<m:dependency.management__org.infinispan__infinispan-jcache__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-jcache__version>
+		<m:dependency.management__org.infinispan__infinispan-jcache-commons__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-jcache-commons__version>
+		<m:dependency.management__org.infinispan__infinispan-jcache-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-jcache-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-embedded__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-embedded__version>
+		<m:dependency.management__org.infinispan__infinispan-embedded-query__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-embedded-query__version>
+		<m:dependency.management__org.infinispan__infinispan-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-cli__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cli__version>
+		<m:dependency.management__gnu-getopt__getopt__version>1.0.13</m:dependency.management__gnu-getopt__getopt__version>
+		<m:dependency.management__org.antlr__antlr-runtime__version>3.4</m:dependency.management__org.antlr__antlr-runtime__version>
+		<m:dependency.management__org.jboss.spec.javax.transaction__jboss-transaction-api_1.1_spec__version>1.0.1.Final</m:dependency.management__org.jboss.spec.javax.transaction__jboss-transaction-api_1.1_spec__version>
+		<m:dependency.management__org.hibernate.javax.persistence__hibernate-jpa-2.1-api__version>1.0.0.Final</m:dependency.management__org.hibernate.javax.persistence__hibernate-jpa-2.1-api__version>
+		<m:dependency.management__org.jboss.logging__jboss-logging__version>3.3.0.Final</m:dependency.management__org.jboss.logging__jboss-logging__version>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling-osgi__version>1.4.10.Final</m:dependency.management__org.jboss.marshalling__jboss-marshalling-osgi__version>
+		<m:dependency.management__org.jgroups__jgroups__version>3.6.4.Final</m:dependency.management__org.jgroups__jgroups__version>
+		<m:dependency.management__org.jboss.aesh__aesh__version>0.33.14</m:dependency.management__org.jboss.aesh__aesh__version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>4.3.1</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>4.3.1</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__org.hibernate__hibernate-core__version>5.0.4.Final</m:dependency.management__org.hibernate__hibernate-core__version>
+		<m:dependency.management__org.rhq__rhq-core-domain__version>4.4.0</m:dependency.management__org.rhq__rhq-core-domain__version>
+		<m:dependency.management__org.rhq__rhq-core-plugin-api__version>4.4.0</m:dependency.management__org.rhq__rhq-core-plugin-api__version>
+		<m:dependency.management__org.rhq__rhq-core-plugin-api__exclusion_0>com.sun.xml.bind__jaxb-impl</m:dependency.management__org.rhq__rhq-core-plugin-api__exclusion_0>
+		<m:dependency.management__org.rhq__rhq-jmx-plugin__version>4.4.0</m:dependency.management__org.rhq__rhq-jmx-plugin__version>
+		<m:dependency.management__org.rhq__rhq-jboss-as-7-plugin__version>4.4.0</m:dependency.management__org.rhq__rhq-jboss-as-7-plugin__version>
+		<m:dependency.management__org.rhq__rhq-core-native-system__version>4.4.0</m:dependency.management__org.rhq__rhq-core-native-system__version>
+		<m:dependency.management__org.hibernate__hibernate-search-engine__version>5.5.1.Final</m:dependency.management__org.hibernate__hibernate-search-engine__version>
+		<m:dependency.management__org.hibernate__hibernate-search-serialization-avro__version>5.5.1.Final</m:dependency.management__org.hibernate__hibernate-search-serialization-avro__version>
+		<m:dependency.management__org.hibernate__hibernate-entitymanager__version>5.0.4.Final</m:dependency.management__org.hibernate__hibernate-entitymanager__version>
+		<m:dependency.management__org.infinispan.protostream__protostream__version>3.0.5.Final</m:dependency.management__org.infinispan.protostream__protostream__version>
+		<m:dependency.management__org.infinispan.protostream__sample-domain-definition__version>3.0.5.Final</m:dependency.management__org.infinispan.protostream__sample-domain-definition__version>
+		<m:dependency.management__org.infinispan.protostream__sample-domain-implementation__version>3.0.5.Final</m:dependency.management__org.infinispan.protostream__sample-domain-implementation__version>
+		<m:dependency.management__javax.enterprise__cdi-api__version>1.0-SP4</m:dependency.management__javax.enterprise__cdi-api__version>
+		<m:dependency.management__javax.enterprise__cdi-api__exclusion_0>org.testng__testng</m:dependency.management__javax.enterprise__cdi-api__exclusion_0>
+		<m:dependency.management__javax.cache__cache-api__version>1.0.0</m:dependency.management__javax.cache__cache-api__version>
+		<m:dependency.management__io.netty__netty-all__version>4.0.25.Final</m:dependency.management__io.netty__netty-all__version>
+		<m:dependency.management__org.scala-lang__scala-library__version>2.11.7</m:dependency.management__org.scala-lang__scala-library__version>
+		<m:dependency.management__org.scala-lang.modules__scala-xml_2.11__version>1.0.2</m:dependency.management__org.scala-lang.modules__scala-xml_2.11__version>
+		<m:dependency.management__com.thoughtworks.xstream__xstream__version>1.4.9</m:dependency.management__com.thoughtworks.xstream__xstream__version>
+		<m:dependency.management__commons-pool__commons-pool__version>1.6</m:dependency.management__commons-pool__commons-pool__version>
+		<m:dependency.management__com.mchange__c3p0__version>0.9.5-pre8</m:dependency.management__com.mchange__c3p0__version>
+		<m:dependency.management__org.infinispan__infinispan-cdi-common__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cdi-common__version>
+		<m:dependency.management__org.infinispan__infinispan-scripting__scope>test</m:dependency.management__org.infinispan__infinispan-scripting__scope>
+		<m:dependency.management__org.infinispan__infinispan-cli-client__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cli-client__version>
+		<m:dependency.management__org.infinispan__infinispan-cli-interpreter__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cli-interpreter__version>
+		<m:dependency.management__org.infinispan__infinispan-osgi__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-osgi__version>
+		<m:dependency.management__org.infinispan__infinispan-spring4-common__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-spring4-common__version>
+		<m:dependency.management__com.h2database__h2__version>1.4.180</m:dependency.management__com.h2database__h2__version>
+		<m:dependency.management__com.intellij__forms_rt__version>6.0.5</m:dependency.management__com.intellij__forms_rt__version>
+		<m:dependency.management__com.martiansoftware__jsap__version>2.1</m:dependency.management__com.martiansoftware__jsap__version>
+		<m:dependency.management__commons-dbcp__commons-dbcp__version>1.4</m:dependency.management__commons-dbcp__commons-dbcp__version>
+		<m:dependency.management__commons-httpclient__commons-httpclient__version>3.1</m:dependency.management__commons-httpclient__commons-httpclient__version>
+		<m:dependency.management__commons-io__commons-io__version>1.3.2</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.1</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__commons-logging__commons-logging__scope>runtime</m:dependency.management__commons-logging__commons-logging__scope>
+		<m:dependency.management__org.javassist__javassist__version>3.18.1-GA</m:dependency.management__org.javassist__javassist__version>
+		<m:dependency.management__javax.cache__cache-tests__version>1.0.0</m:dependency.management__javax.cache__cache-tests__version>
+		<m:dependency.management__javax.cache__cdi-weld-annotations-test-harness__version>1.0.0</m:dependency.management__javax.cache__cdi-weld-annotations-test-harness__version>
+		<m:dependency.management__javax.servlet__jstl__version>1.2</m:dependency.management__javax.servlet__jstl__version>
+		<m:dependency.management__javax.servlet__servlet-api__version>2.5</m:dependency.management__javax.servlet__servlet-api__version>
+		<m:dependency.management__com.jgoodies__forms__version>1.0.7</m:dependency.management__com.jgoodies__forms__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-core__version>2.3</m:dependency.management__org.apache.logging.log4j__log4j-core__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-jcl__version>2.3</m:dependency.management__org.apache.logging.log4j__log4j-jcl__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>2.3</m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>
+		<m:dependency.management__mc4j__org-mc4j-ems__version>1.2.6</m:dependency.management__mc4j__org-mc4j-ems__version>
+		<m:dependency.management__mysql__mysql-connector-java__version>5.1.19</m:dependency.management__mysql__mysql-connector-java__version>
+		<m:dependency.management__org.postgresql__postgresql__version>9.3-1101-jdbc41</m:dependency.management__org.postgresql__postgresql__version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__net.sf.webdav-servlet__webdav-servlet__version>2.0.1</m:dependency.management__net.sf.webdav-servlet__webdav-servlet__version>
+		<m:dependency.management__org.apache.commons__commons-compress__version>1.4</m:dependency.management__org.apache.commons__commons-compress__version>
+		<m:dependency.management__org.aspectj__aspectjweaver__version>1.8.1</m:dependency.management__org.aspectj__aspectjweaver__version>
+		<m:dependency.management__commons-codec__commons-codec__version>1.4</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__org.apache.commons__commons-math__version>2.2</m:dependency.management__org.apache.commons__commons-math__version>
+		<m:dependency.management__org.apache.avro__avro__version>1.7.6</m:dependency.management__org.apache.avro__avro__version>
+		<m:dependency.management__org.codehaus.jackson__jackson-core-asl__version>1.9.13</m:dependency.management__org.codehaus.jackson__jackson-core-asl__version>
+		<m:dependency.management__org.codehaus.jackson__jackson-mapper-asl__version>1.9.13</m:dependency.management__org.codehaus.jackson__jackson-mapper-asl__version>
+		<m:dependency.management__org.hibernate.hql__hibernate-hql-parser__version>1.3.0.Alpha2</m:dependency.management__org.hibernate.hql__hibernate-hql-parser__version>
+		<m:dependency.management__org.hibernate.hql__hibernate-hql-lucene__version>1.3.0.Alpha2</m:dependency.management__org.hibernate.hql__hibernate-hql-lucene__version>
+		<m:dependency.management__org.jboss.arquillian.core__arquillian-core-api__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.core__arquillian-core-api__version>
+		<m:dependency.management__org.jboss.arquillian.core__arquillian-core-spi__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.core__arquillian-core-spi__version>
+		<m:dependency.management__org.jboss.arquillian.core__arquillian-core-impl-base__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.core__arquillian-core-impl-base__version>
+		<m:dependency.management__org.jboss.arquillian.config__arquillian-config-api__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.config__arquillian-config-api__version>
+		<m:dependency.management__org.jboss.arquillian.config__arquillian-config-spi__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.config__arquillian-config-spi__version>
+		<m:dependency.management__org.jboss.arquillian.config__arquillian-config-impl-base__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.config__arquillian-config-impl-base__version>
+		<m:dependency.management__org.jboss.arquillian.test__arquillian-test-api__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.test__arquillian-test-api__version>
+		<m:dependency.management__org.jboss.arquillian.test__arquillian-test-spi__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.test__arquillian-test-spi__version>
+		<m:dependency.management__org.jboss.arquillian.test__arquillian-test-impl-base__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.test__arquillian-test-impl-base__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-container-spi__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.container__arquillian-container-spi__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-container-impl-base__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.container__arquillian-container-impl-base__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-api__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-api__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-spi__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-spi__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-impl-base__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.container__arquillian-container-test-impl-base__version>
+		<m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-core__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-core__version>
+		<m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-container__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-container__version>
+		<m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-standalone__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.junit__arquillian-junit-standalone__version>
+		<m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-core__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-core__version>
+		<m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-container__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-container__version>
+		<m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-standalone__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.testng__arquillian-testng-standalone__version>
+		<m:dependency.management__org.jboss.arquillian.protocol__arquillian-protocol-servlet__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.protocol__arquillian-protocol-servlet__version>
+		<m:dependency.management__org.jboss.arquillian.protocol__arquillian-protocol-jmx__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.protocol__arquillian-protocol-jmx__version>
+		<m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-cdi__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-cdi__version>
+		<m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-ejb__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-ejb__version>
+		<m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-resource__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-resource__version>
+		<m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-initialcontext__version>1.1.5.Final</m:dependency.management__org.jboss.arquillian.testenricher__arquillian-testenricher-initialcontext__version>
+		<m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-api__version>1.2.2</m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-api__version>
+		<m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-spi__version>1.2.2</m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-spi__version>
+		<m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-impl-base__version>1.2.2</m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-impl-base__version>
+		<m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-api-nio2__version>1.2.2</m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-api-nio2__version>
+		<m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-impl-nio2__version>1.2.2</m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-impl-nio2__version>
+		<m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-depchain__version>1.2.2</m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-depchain__version>
+		<m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-depchain-java7__version>1.2.2</m:dependency.management__org.jboss.shrinkwrap__shrinkwrap-depchain-java7__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-api__version>2.1.0</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-api__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-spi__version>2.1.0</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-spi__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-api-maven__version>2.1.0</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-api-maven__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-spi-maven__version>2.1.0</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-spi-maven__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-impl-maven__version>2.1.0</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-impl-maven__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-api-maven-archive__version>2.1.0</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-api-maven-archive__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-impl-maven-archive__version>2.1.0</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-impl-maven-archive__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-depchain__version>2.1.0</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-depchain__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-maven-plugin__version>2.1.0</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-maven-plugin__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-maven-plugin__scope>runtime</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-maven-plugin__scope>
+		<m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-api-base__version>2.0.0-alpha-5</m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-api-base__version>
+		<m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-api-javaee__version>2.0.0-alpha-5</m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-api-javaee__version>
+		<m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-api-jboss__version>2.0.0-alpha-5</m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-api-jboss__version>
+		<m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-gen__version>2.0.0-alpha-5</m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-gen__version>
+		<m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-impl-base__version>2.0.0-alpha-5</m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-impl-base__version>
+		<m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-impl-javaee__version>2.0.0-alpha-5</m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-impl-javaee__version>
+		<m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-impl-jboss__version>2.0.0-alpha-5</m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-impl-jboss__version>
+		<m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-spi__version>2.0.0-alpha-5</m:dependency.management__org.jboss.shrinkwrap.descriptors__shrinkwrap-descriptors-spi__version>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-managed__version>1.0.1.Final</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-managed__version>
+		<m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-managed__scope>test</m:dependency.management__org.wildfly.arquillian__wildfly-arquillian-container-managed__scope>
+		<m:dependency.management__org.wildfly.core__wildfly-controller__version>2.0.0.CR8</m:dependency.management__org.wildfly.core__wildfly-controller__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-weld-ee-embedded-1.1__version>1.0.0.CR3</m:dependency.management__org.jboss.arquillian.container__arquillian-weld-ee-embedded-1.1__version>
+		<m:dependency.management__org.jboss.arquillian.container__arquillian-weld-ee-embedded-1.1__scope>test</m:dependency.management__org.jboss.arquillian.container__arquillian-weld-ee-embedded-1.1__scope>
+		<m:dependency.management__org.jboss.remotingjmx__remoting-jmx__version>2.0.0.Final</m:dependency.management__org.jboss.remotingjmx__remoting-jmx__version>
+		<m:dependency.management__org.jboss.sasl__jboss-sasl__version>1.0.4.Final</m:dependency.management__org.jboss.sasl__jboss-sasl__version>
+		<m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-impl-maven__exclusion_0>com.google.collections__google-collections</m:dependency.management__org.jboss.shrinkwrap.resolver__shrinkwrap-resolver-impl-maven__exclusion_0>
+		<m:dependency.management__org.jboss.spec__jboss-javaee-7.0__version>1.0.2.Final</m:dependency.management__org.jboss.spec__jboss-javaee-7.0__version>
+		<m:dependency.management__org.jboss.spec__jboss-javaee-7.0__scope>test</m:dependency.management__org.jboss.spec__jboss-javaee-7.0__scope>
+		<m:dependency.management__org.jboss.naming__jnp-client__version>5.0.6.CR1</m:dependency.management__org.jboss.naming__jnp-client__version>
+		<m:dependency.management__org.jboss.naming__jnp-client__exclusion_0>org.jboss.logging__jboss-logging-spi</m:dependency.management__org.jboss.naming__jnp-client__exclusion_0>
+		<m:dependency.management__org.jboss.naming__jnpserver__version>5.0.6.CR1</m:dependency.management__org.jboss.naming__jnpserver__version>
+		<m:dependency.management__org.jboss.naming__jnpserver__exclusion_0>org.jboss.logging__jboss-logging-spi</m:dependency.management__org.jboss.naming__jnpserver__exclusion_0>
+		<m:dependency.management__org.jboss.logmanager__jboss-logmanager__version>1.3.1.Final</m:dependency.management__org.jboss.logmanager__jboss-logmanager__version>
+		<m:dependency.management__org.jboss.logmanager__jboss-logmanager__scope>test</m:dependency.management__org.jboss.logmanager__jboss-logmanager__scope>
+		<m:dependency.management__org.jboss.resteasy__resteasy-jaxrs__version>3.0.11.Final</m:dependency.management__org.jboss.resteasy__resteasy-jaxrs__version>
+		<m:dependency.management__org.jboss.resteasy__resteasy-netty4__version>3.0.11.Final</m:dependency.management__org.jboss.resteasy__resteasy-netty4__version>
+		<m:dependency.management__org.jboss.solder__solder-impl__version>3.1.0.Final</m:dependency.management__org.jboss.solder__solder-impl__version>
+		<m:dependency.management__org.jboss__jboss-transaction-spi__version>7.1.0.Final</m:dependency.management__org.jboss__jboss-transaction-spi__version>
+		<m:dependency.management__org.jboss__jboss-transaction-spi__exclusion_0>org.jboss.logging__jboss-logging-spi</m:dependency.management__org.jboss__jboss-transaction-spi__exclusion_0>
+		<m:dependency.management__org.jboss__jboss-transaction-spi__exclusion_1>org.jboss.ironjacamar__ironjacamar-spec-api</m:dependency.management__org.jboss__jboss-transaction-spi__exclusion_1>
+		<m:dependency.management__org.jboss__jboss-transaction-spi__exclusion_2>org.jboss.spec.javax.resource__jboss-connector-api_1.5_spec</m:dependency.management__org.jboss__jboss-transaction-spi__exclusion_2>
+		<m:dependency.management__org.jboss__jboss-transaction-spi__exclusion_3>org.jboss.spec.javax.transaction__jboss-transaction-api_1.2_spec</m:dependency.management__org.jboss__jboss-transaction-spi__exclusion_3>
+		<m:dependency.management__org.jboss.weld__weld-core__version>1.1.13.Final</m:dependency.management__org.jboss.weld__weld-core__version>
+		<m:dependency.management__org.jboss.weld__weld-core__scope>test</m:dependency.management__org.jboss.weld__weld-core__scope>
+		<m:dependency.management__org.jboss.weld.se__weld-se__version>2.2.0.SP1</m:dependency.management__org.jboss.weld.se__weld-se__version>
+		<m:dependency.management__org.jboss.weld.se__weld-se__scope>test</m:dependency.management__org.jboss.weld.se__weld-se__scope>
+		<m:dependency.management__org.jboss.xnio__xnio-nio__version>3.2.2.Final</m:dependency.management__org.jboss.xnio__xnio-nio__version>
+		<m:dependency.management__org.mortbay.jetty__jetty-embedded__version>6.1.25</m:dependency.management__org.mortbay.jetty__jetty-embedded__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.5</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-api__scope>test</m:dependency.management__org.slf4j__slf4j-api__scope>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.5</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__org.slf4j__slf4j-jdk14__version>1.7.5</m:dependency.management__org.slf4j__slf4j-jdk14__version>
+		<m:dependency.management__org.slf4j__slf4j-jdk14__scope>test</m:dependency.management__org.slf4j__slf4j-jdk14__scope>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.5</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__scope>test</m:dependency.management__org.slf4j__slf4j-log4j12__scope>
+		<m:dependency.management__org.testng__testng__version>6.8.8</m:dependency.management__org.testng__testng__version>
+		<m:dependency.management__org.testng__testng__scope>test</m:dependency.management__org.testng__testng__scope>
+		<m:dependency.management__org.testng__testng__exclusion_0>org.yaml__snakeyaml</m:dependency.management__org.testng__testng__exclusion_0>
+		<m:dependency.management__spy__memcached__version>2.5</m:dependency.management__spy__memcached__version>
+		<m:dependency.management__org.fusesource.leveldbjni__leveldbjni-all__version>1.7</m:dependency.management__org.fusesource.leveldbjni__leveldbjni-all__version>
+		<m:dependency.management__org.iq80.leveldb__leveldb__version>0.7</m:dependency.management__org.iq80.leveldb__leveldb__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.2.4</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__version>5.0.4.Final</m:dependency.management__org.jboss.narayana.jta__narayana-jta__version>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_0>commons-httpclient__commons-httpclient</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_0>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_1>org.jboss.ironjacamar__ironjacamar-spec-api</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_1>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_2>org.jboss.logging__jbogging-spi</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_2>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_3>org.jboss.logging__jboss-logging</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_3>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_4>org.jboss.logging__jboss-logging-processor</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_4>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_5>org.jboss.logging__jboss-logging-generator</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_5>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_6>org.jboss.ws.native__jbossws-native-core</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_6>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_7>emma__emma</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_7>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_8>emma__emma_ant</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_8>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_9>org.hornetq__hornetq-core</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_9>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_10>io.netty__netty</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_10>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_11>tanukisoft__wrapper</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_11>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_12>jacorb__jacorb</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_12>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_13>jfree__jfreechart</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_13>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_14>org.jboss.integration__jboss-corba-ots-spi</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_14>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_15>org.jboss.jbossas__jboss-server-manager</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_15>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_16>org.jboss.spec.javax.ejb__jboss-ejb-api_3.1_spec</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_16>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_17>org.jboss.naming__jnp-client</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_17>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_18>org.jboss.spec.javax.servlet__jboss-servlet-api_3.0_spec</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_18>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_19>org.jboss.ws__jbossws-common</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_19>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_20>org.slf4j__jcl-over-slf4j</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_20>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_21>stax__stax-api</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_21>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_22>jacorb__idl</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_22>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_23>org.jboss.logging__jboss-logging-tools</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_23>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_24>org.jboss.spec.javax.resource__jboss-connector-api_1.5_spec</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_24>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_25>org.jboss.remoting__jboss-remoting</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_25>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_26>org.slf4j__slf4j-api</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_26>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_27>dom4j__dom4j</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_27>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_28>commons-codec__commons-codec</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_28>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_29>org.jboss.logmanager__jboss-logmanager</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_29>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_30>org.hibernate.javax.persistence__hibernate-jpa-2.0-api</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_30>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_31>commons-logging__commons-logging</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_31>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_32>jfree__jcommon</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_32>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_33>org.jboss.spec.javax.transaction__jboss-transaction-api_1.1_spec</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_33>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_34>org.jboss.byteman__byteman</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_34>
+		<m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_35>org.jboss.byteman__byteman-submit</m:dependency.management__org.jboss.narayana.jta__narayana-jta__exclusion_35>
+		<m:dependency.management__org.apache.directory.server__apacheds-all__version>2.0.0-M20</m:dependency.management__org.apache.directory.server__apacheds-all__version>
+		<m:dependency.management__org.apache.directory.server__apacheds-all__scope>test</m:dependency.management__org.apache.directory.server__apacheds-all__scope>
+		<m:dependency.management__org.wildfly.core__wildfly-core-testsuite-shared__version>2.0.0.CR8</m:dependency.management__org.wildfly.core__wildfly-core-testsuite-shared__version>
+		<m:dependency.management__org.wildfly.core__wildfly-core-testsuite-shared__scope>test</m:dependency.management__org.wildfly.core__wildfly-core-testsuite-shared__scope>
+		<m:dependency.management__org.jboss.security__jboss-negotiation-extras__version>2.3.6.Final</m:dependency.management__org.jboss.security__jboss-negotiation-extras__version>
+		<m:dependency.management__org.jboss.security__jboss-negotiation-extras__scope>test</m:dependency.management__org.jboss.security__jboss-negotiation-extras__scope>
+		<m:dependency.management__org.picketbox__jbosssx-bare__version>4.0.20.Final</m:dependency.management__org.picketbox__jbosssx-bare__version>
+		<m:dependency.management__org.picketbox__jbosssx-bare__scope>test</m:dependency.management__org.picketbox__jbosssx-bare__scope>
+		<m:dependency.management__org.apache.karaf__apache-karaf__version>3.0.4</m:dependency.management__org.apache.karaf__apache-karaf__version>
+		<m:dependency.management__org.apache.karaf__apache-karaf__scope>test</m:dependency.management__org.apache.karaf__apache-karaf__scope>
+		<m:dependency.management__org.apache.karaf__apache-karaf__exclusion_0>org.ops4j.pax.logging__pax-logging-api</m:dependency.management__org.apache.karaf__apache-karaf__exclusion_0>
+		<m:dependency.management__org.apache.karaf__apache-karaf__exclusion_1>org.ops4j.pax.logging__pax-logging-service</m:dependency.management__org.apache.karaf__apache-karaf__exclusion_1>
+		<m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.core__version>3.0.4</m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.core__version>
+		<m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.core__scope>test</m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.core__scope>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-container-karaf__version>4.5.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-container-karaf__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-container-karaf__scope>test</m:dependency.management__org.ops4j.pax.exam__pax-exam-container-karaf__scope>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam__version>4.5.0</m:dependency.management__org.ops4j.pax.exam__pax-exam__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam__scope>test</m:dependency.management__org.ops4j.pax.exam__pax-exam__scope>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>4.5.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__scope>test</m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__scope>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-inject__version>4.5.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-inject__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-inject__scope>test</m:dependency.management__org.ops4j.pax.exam__pax-exam-inject__scope>
+		<m:dependency.management__org.xerial.snappy__snappy-java__version>1.0.5</m:dependency.management__org.xerial.snappy__snappy-java__version>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-transaction__version>3.1.1</m:dependency.management__org.apache.geronimo.components__geronimo-transaction__version>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-transaction__scope>test</m:dependency.management__org.apache.geronimo.components__geronimo-transaction__scope>
+		<m:dependency.management__org.objectweb.howl__howl__version>1.0.1-1</m:dependency.management__org.objectweb.howl__howl__version>
+		<m:dependency.management__org.objectweb.howl__howl__scope>test</m:dependency.management__org.objectweb.howl__howl__scope>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>2.2.0</m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__scope>test</m:dependency.management__org.ops4j.pax.url__pax-url-aether__scope>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-assembly__version>2.2.0</m:dependency.management__org.ops4j.pax.url__pax-url-assembly__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-assembly__scope>test</m:dependency.management__org.ops4j.pax.url__pax-url-assembly__scope>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-wrap__version>2.2.0</m:dependency.management__org.ops4j.pax.url__pax-url-wrap__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-wrap__scope>test</m:dependency.management__org.ops4j.pax.url__pax-url-wrap__scope>
+		<m:dependency.management__org.apache.lucene__lucene-queryparser__version>5.3.1</m:dependency.management__org.apache.lucene__lucene-queryparser__version>
+		<m:dependency.management__org.apache.lucene__lucene-core__version>5.3.1</m:dependency.management__org.apache.lucene__lucene-core__version>
+		<m:dependency.management__org.apache.lucene__lucene-analyzers-common__version>5.3.1</m:dependency.management__org.apache.lucene__lucene-analyzers-common__version>
+		<m:dependency.management__org.apache.lucene__lucene-memory__version>5.3.1</m:dependency.management__org.apache.lucene__lucene-memory__version>
+		<m:dependency.management__com.google.guava__guava__version>11.0.2</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__org.kohsuke.metainf-services__metainf-services__version>1.5</m:dependency.management__org.kohsuke.metainf-services__metainf-services__version>
+		<m:dependency.management__org.jboss.byteman__byteman__version>2.1.4</m:dependency.management__org.jboss.byteman__byteman__version>
+		<m:dependency.management__org.jboss.byteman__byteman__scope>test</m:dependency.management__org.jboss.byteman__byteman__scope>
+		<m:dependency.management__org.jboss.byteman__byteman-bmunit__version>2.1.4</m:dependency.management__org.jboss.byteman__byteman-bmunit__version>
+		<m:dependency.management__org.jboss.byteman__byteman-bmunit__scope>test</m:dependency.management__org.jboss.byteman__byteman-bmunit__scope>
+		<m:dependency.management__org.hibernate__hibernate-testing__version>5.0.4.Final</m:dependency.management__org.hibernate__hibernate-testing__version>
+		<m:dependency.management__org.hibernate__hibernate-testing__exclusion_0>org.jboss.logging__jboss-logging-spi</m:dependency.management__org.hibernate__hibernate-testing__exclusion_0>
+		<m:dependency.management__org.hibernate__hibernate-testing__exclusion_1>org.jboss.jbossts__jbossjta</m:dependency.management__org.hibernate__hibernate-testing__exclusion_1>
+		<m:dependency.management__org.hibernate__hibernate-testing__exclusion_2>com.experlog__xapool</m:dependency.management__org.hibernate__hibernate-testing__exclusion_2>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.3.1|null__maven-remote-resources-plugin__1.1|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-eclipse-plugin__2.7|org.apache.maven.plugins__maven-idea-plugin__2.2|org.apache.maven.plugins__maven-jar-plugin__2.4|org.apache.maven.plugins__maven-release-plugin__2.2.2|org.apache.maven.plugins__maven-resources-plugin__2.6|org.apache.maven.plugins__maven-surefire-plugin__null|org.codehaus.mojo__exec-maven-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-source-plugin__2.3|org.apache.maven.plugins__maven-enforcer-plugin__1.3.1|null__maven-remote-resources-plugin__1.1|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-eclipse-plugin__2.7|org.apache.maven.plugins__maven-idea-plugin__2.2|org.apache.maven.plugins__maven-jar-plugin__2.4|org.apache.maven.plugins__maven-release-plugin__2.2.2|org.apache.maven.plugins__maven-resources-plugin__2.6|org.apache.maven.plugins__maven-surefire-plugin__null|org.codehaus.mojo__exec-maven-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-source-plugin__2.3|org.scala-tools__maven-scala-plugin__null|org.jboss.maven.plugins__maven-injection-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="infinispan-core" type="bundle" ext="jar" conf="master"/>
+		<artifact name="infinispan-core" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.infinispan" name="infinispan-commons" rev="8.1.8.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jgroups" name="jgroups" rev="3.6.4.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.spec.javax.transaction" name="jboss-transaction-api_1.1_spec" rev="1.0.1.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.marshalling" name="jboss-marshalling-osgi" rev="1.4.10.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.logging" name="jboss-logging" rev="3.3.0.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jboss.naming" name="jnp-client" rev="5.0.6.CR1" force="true" conf="test->runtime(*),master(*)">
+			<exclude org="org.jboss.logging" module="jboss-logging-spi" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.jboss.naming" name="jnpserver" rev="5.0.6.CR1" force="true" conf="test->runtime(*),master(*)">
+			<exclude org="org.jboss.logging" module="jboss-logging-spi" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.apache.commons" name="commons-math" rev="2.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.javassist" name="javassist" rev="3.18.1-GA" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.geronimo.components" name="geronimo-transaction" rev="3.1.1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.objectweb.howl" name="howl" rev="1.0.1-1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="javax.cache" name="cache-api" rev="1.0.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.kohsuke.metainf-services" name="metainf-services" rev="1.5" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="com.thoughtworks.xstream" name="xstream" rev="1.4.9" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.3" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="net.jcip" name="jcip-annotations" rev="1.0" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.mockito" name="mockito-all" rev="1.9.5" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.jboss" name="jboss-transaction-spi" rev="7.1.0.Final" force="true" conf="test->runtime(*),master(*)">
+			<exclude org="org.jboss.logging" module="jboss-logging-spi" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.ironjacamar" module="ironjacamar-spec-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.spec.javax.resource" module="jboss-connector-api_1.5_spec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.spec.javax.transaction" module="jboss-transaction-api_1.2_spec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.jboss.narayana.jta" name="narayana-jta" rev="5.0.4.Final" force="true" conf="test->runtime(*),master(*)">
+			<exclude org="commons-httpclient" module="commons-httpclient" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.ironjacamar" module="ironjacamar-spec-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.logging" module="jbogging-spi" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.logging" module="jboss-logging" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.logging" module="jboss-logging-processor" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.logging" module="jboss-logging-generator" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.ws.native" module="jbossws-native-core" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="emma" module="emma" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="emma" module="emma_ant" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.hornetq" module="hornetq-core" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="tanukisoft" module="wrapper" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="jacorb" module="jacorb" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="jfree" module="jfreechart" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.integration" module="jboss-corba-ots-spi" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.jbossas" module="jboss-server-manager" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.spec.javax.ejb" module="jboss-ejb-api_3.1_spec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.naming" module="jnp-client" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.spec.javax.servlet" module="jboss-servlet-api_3.0_spec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.ws" module="jbossws-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.slf4j" module="jcl-over-slf4j" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="stax" module="stax-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="jacorb" module="idl" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.logging" module="jboss-logging-tools" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.spec.javax.resource" module="jboss-connector-api_1.5_spec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.remoting" module="jboss-remoting" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.slf4j" module="slf4j-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="dom4j" module="dom4j" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="commons-codec" module="commons-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.logmanager" module="jboss-logmanager" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.hibernate.javax.persistence" module="hibernate-jpa-2.0-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="commons-logging" module="commons-logging" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="jfree" module="jcommon" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.spec.javax.transaction" module="jboss-transaction-api_1.1_spec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.byteman" module="byteman" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.byteman" module="byteman-submit" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.jboss.logging" name="jboss-logging-processor" rev="1.1.0.Final" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.testng" name="testng" rev="6.8.8" force="true" conf="test->runtime(*),master(*)">
+			<exclude org="org.yaml" module="snakeyaml" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.infinispan" module="infinispan-cachestore-jdbc" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-cachestore-jpa" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-cachestore-remote" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-cachestore-rest" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-persistence-cli" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-cachestore-leveldb" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-cdi-embedded" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-cdi-remote" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-client-hotrod" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-commons" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-core" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-lucene-directory" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-directory-provider" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-query" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-query-dsl" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-objectfilter" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-remote-query-client" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-remote-query-server" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-scripting" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-server-core" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-server-hotrod" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-server-memcached" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-server-rest" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-server-websocket" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-spring" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-spring4-remote" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-spring4-embedded" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-tasks" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-tools" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-tree" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-jcache" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-jcache-commons" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-jcache-remote" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-embedded" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-embedded-query" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-remote" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-cli" matcher="exact" rev="8.1.8.Final"/>
+		<override org="gnu-getopt" module="getopt" matcher="exact" rev="1.0.13"/>
+		<override org="org.antlr" module="antlr-runtime" matcher="exact" rev="3.4"/>
+		<override org="org.jboss.spec.javax.transaction" module="jboss-transaction-api_1.1_spec" matcher="exact" rev="1.0.1.Final"/>
+		<override org="org.hibernate.javax.persistence" module="hibernate-jpa-2.1-api" matcher="exact" rev="1.0.0.Final"/>
+		<override org="org.jboss.logging" module="jboss-logging" matcher="exact" rev="3.3.0.Final"/>
+		<override org="org.jboss.marshalling" module="jboss-marshalling-osgi" matcher="exact" rev="1.4.10.Final"/>
+		<override org="org.jgroups" module="jgroups" matcher="exact" rev="3.6.4.Final"/>
+		<override org="org.jboss.aesh" module="aesh" matcher="exact" rev="0.33.14"/>
+		<override org="org.osgi" module="org.osgi.core" matcher="exact" rev="4.3.1"/>
+		<override org="org.osgi" module="org.osgi.compendium" matcher="exact" rev="4.3.1"/>
+		<override org="org.hibernate" module="hibernate-core" matcher="exact" rev="5.0.4.Final"/>
+		<override org="org.rhq" module="rhq-core-domain" matcher="exact" rev="4.4.0"/>
+		<override org="org.rhq" module="rhq-core-plugin-api" matcher="exact" rev="4.4.0"/>
+		<override org="org.rhq" module="rhq-jmx-plugin" matcher="exact" rev="4.4.0"/>
+		<override org="org.rhq" module="rhq-jboss-as-7-plugin" matcher="exact" rev="4.4.0"/>
+		<override org="org.rhq" module="rhq-core-native-system" matcher="exact" rev="4.4.0"/>
+		<override org="org.hibernate" module="hibernate-search-engine" matcher="exact" rev="5.5.1.Final"/>
+		<override org="org.hibernate" module="hibernate-search-serialization-avro" matcher="exact" rev="5.5.1.Final"/>
+		<override org="org.hibernate" module="hibernate-entitymanager" matcher="exact" rev="5.0.4.Final"/>
+		<override org="org.infinispan.protostream" module="protostream" matcher="exact" rev="3.0.5.Final"/>
+		<override org="org.infinispan.protostream" module="sample-domain-definition" matcher="exact" rev="3.0.5.Final"/>
+		<override org="org.infinispan.protostream" module="sample-domain-implementation" matcher="exact" rev="3.0.5.Final"/>
+		<override org="javax.enterprise" module="cdi-api" matcher="exact" rev="1.0-SP4"/>
+		<override org="javax.cache" module="cache-api" matcher="exact" rev="1.0.0"/>
+		<override org="io.netty" module="netty-all" matcher="exact" rev="4.0.25.Final"/>
+		<override org="org.scala-lang" module="scala-library" matcher="exact" rev="2.11.7"/>
+		<override org="org.scala-lang.modules" module="scala-xml_2.11" matcher="exact" rev="1.0.2"/>
+		<override org="com.thoughtworks.xstream" module="xstream" matcher="exact" rev="1.4.9"/>
+		<override org="commons-pool" module="commons-pool" matcher="exact" rev="1.6"/>
+		<override org="com.mchange" module="c3p0" matcher="exact" rev="0.9.5-pre8"/>
+		<override org="org.infinispan" module="infinispan-cdi-common" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-cli-client" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-cli-interpreter" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-osgi" matcher="exact" rev="8.1.8.Final"/>
+		<override org="org.infinispan" module="infinispan-spring4-common" matcher="exact" rev="8.1.8.Final"/>
+		<override org="com.h2database" module="h2" matcher="exact" rev="1.4.180"/>
+		<override org="com.intellij" module="forms_rt" matcher="exact" rev="6.0.5"/>
+		<override org="com.martiansoftware" module="jsap" matcher="exact" rev="2.1"/>
+		<override org="commons-dbcp" module="commons-dbcp" matcher="exact" rev="1.4"/>
+		<override org="commons-httpclient" module="commons-httpclient" matcher="exact" rev="3.1"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="1.3.2"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.1"/>
+		<override org="org.javassist" module="javassist" matcher="exact" rev="3.18.1-GA"/>
+		<override org="javax.cache" module="cache-tests" matcher="exact" rev="1.0.0"/>
+		<override org="javax.cache" module="cdi-weld-annotations-test-harness" matcher="exact" rev="1.0.0"/>
+		<override org="javax.servlet" module="jstl" matcher="exact" rev="1.2"/>
+		<override org="javax.servlet" module="servlet-api" matcher="exact" rev="2.5"/>
+		<override org="com.jgoodies" module="forms" matcher="exact" rev="1.0.7"/>
+		<override org="org.apache.logging.log4j" module="log4j-core" matcher="exact" rev="2.3"/>
+		<override org="org.apache.logging.log4j" module="log4j-jcl" matcher="exact" rev="2.3"/>
+		<override org="org.apache.logging.log4j" module="log4j-slf4j-impl" matcher="exact" rev="2.3"/>
+		<override org="mc4j" module="org-mc4j-ems" matcher="exact" rev="1.2.6"/>
+		<override org="mysql" module="mysql-connector-java" matcher="exact" rev="5.1.19"/>
+		<override org="org.postgresql" module="postgresql" matcher="exact" rev="9.3-1101-jdbc41"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.11"/>
+		<override org="net.sf.webdav-servlet" module="webdav-servlet" matcher="exact" rev="2.0.1"/>
+		<override org="org.apache.commons" module="commons-compress" matcher="exact" rev="1.4"/>
+		<override org="org.aspectj" module="aspectjweaver" matcher="exact" rev="1.8.1"/>
+		<override org="commons-codec" module="commons-codec" matcher="exact" rev="1.4"/>
+		<override org="org.apache.commons" module="commons-math" matcher="exact" rev="2.2"/>
+		<override org="org.apache.avro" module="avro" matcher="exact" rev="1.7.6"/>
+		<override org="org.codehaus.jackson" module="jackson-core-asl" matcher="exact" rev="1.9.13"/>
+		<override org="org.codehaus.jackson" module="jackson-mapper-asl" matcher="exact" rev="1.9.13"/>
+		<override org="org.hibernate.hql" module="hibernate-hql-parser" matcher="exact" rev="1.3.0.Alpha2"/>
+		<override org="org.hibernate.hql" module="hibernate-hql-lucene" matcher="exact" rev="1.3.0.Alpha2"/>
+		<override org="org.jboss.arquillian.core" module="arquillian-core-api" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.core" module="arquillian-core-spi" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.core" module="arquillian-core-impl-base" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.config" module="arquillian-config-api" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.config" module="arquillian-config-spi" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.config" module="arquillian-config-impl-base" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.test" module="arquillian-test-api" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.test" module="arquillian-test-spi" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.test" module="arquillian-test-impl-base" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-spi" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-impl-base" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-api" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-spi" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-container-test-impl-base" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.junit" module="arquillian-junit-core" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.junit" module="arquillian-junit-container" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.junit" module="arquillian-junit-standalone" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.testng" module="arquillian-testng-core" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.testng" module="arquillian-testng-container" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.testng" module="arquillian-testng-standalone" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.protocol" module="arquillian-protocol-servlet" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.protocol" module="arquillian-protocol-jmx" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.testenricher" module="arquillian-testenricher-cdi" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.testenricher" module="arquillian-testenricher-ejb" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.testenricher" module="arquillian-testenricher-resource" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.arquillian.testenricher" module="arquillian-testenricher-initialcontext" matcher="exact" rev="1.1.5.Final"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-api" matcher="exact" rev="1.2.2"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-spi" matcher="exact" rev="1.2.2"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-impl-base" matcher="exact" rev="1.2.2"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-api-nio2" matcher="exact" rev="1.2.2"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-impl-nio2" matcher="exact" rev="1.2.2"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-depchain" matcher="exact" rev="1.2.2"/>
+		<override org="org.jboss.shrinkwrap" module="shrinkwrap-depchain-java7" matcher="exact" rev="1.2.2"/>
+		<override org="org.jboss.shrinkwrap.resolver" module="shrinkwrap-resolver-api" matcher="exact" rev="2.1.0"/>
+		<override org="org.jboss.shrinkwrap.resolver" module="shrinkwrap-resolver-spi" matcher="exact" rev="2.1.0"/>
+		<override org="org.jboss.shrinkwrap.resolver" module="shrinkwrap-resolver-api-maven" matcher="exact" rev="2.1.0"/>
+		<override org="org.jboss.shrinkwrap.resolver" module="shrinkwrap-resolver-spi-maven" matcher="exact" rev="2.1.0"/>
+		<override org="org.jboss.shrinkwrap.resolver" module="shrinkwrap-resolver-impl-maven" matcher="exact" rev="2.1.0"/>
+		<override org="org.jboss.shrinkwrap.resolver" module="shrinkwrap-resolver-api-maven-archive" matcher="exact" rev="2.1.0"/>
+		<override org="org.jboss.shrinkwrap.resolver" module="shrinkwrap-resolver-impl-maven-archive" matcher="exact" rev="2.1.0"/>
+		<override org="org.jboss.shrinkwrap.resolver" module="shrinkwrap-resolver-depchain" matcher="exact" rev="2.1.0"/>
+		<override org="org.jboss.shrinkwrap.resolver" module="shrinkwrap-resolver-maven-plugin" matcher="exact" rev="2.1.0"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-api-base" matcher="exact" rev="2.0.0-alpha-5"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-api-javaee" matcher="exact" rev="2.0.0-alpha-5"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-api-jboss" matcher="exact" rev="2.0.0-alpha-5"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-gen" matcher="exact" rev="2.0.0-alpha-5"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-impl-base" matcher="exact" rev="2.0.0-alpha-5"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-impl-javaee" matcher="exact" rev="2.0.0-alpha-5"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-impl-jboss" matcher="exact" rev="2.0.0-alpha-5"/>
+		<override org="org.jboss.shrinkwrap.descriptors" module="shrinkwrap-descriptors-spi" matcher="exact" rev="2.0.0-alpha-5"/>
+		<override org="org.wildfly.arquillian" module="wildfly-arquillian-container-managed" matcher="exact" rev="1.0.1.Final"/>
+		<override org="org.wildfly.core" module="wildfly-controller" matcher="exact" rev="2.0.0.CR8"/>
+		<override org="org.jboss.arquillian.container" module="arquillian-weld-ee-embedded-1.1" matcher="exact" rev="1.0.0.CR3"/>
+		<override org="org.jboss.remotingjmx" module="remoting-jmx" matcher="exact" rev="2.0.0.Final"/>
+		<override org="org.jboss.sasl" module="jboss-sasl" matcher="exact" rev="1.0.4.Final"/>
+		<override org="org.jboss.spec" module="jboss-javaee-7.0" matcher="exact" rev="1.0.2.Final"/>
+		<override org="org.jboss.naming" module="jnp-client" matcher="exact" rev="5.0.6.CR1"/>
+		<override org="org.jboss.naming" module="jnpserver" matcher="exact" rev="5.0.6.CR1"/>
+		<override org="org.jboss.logmanager" module="jboss-logmanager" matcher="exact" rev="1.3.1.Final"/>
+		<override org="org.jboss.resteasy" module="resteasy-jaxrs" matcher="exact" rev="3.0.11.Final"/>
+		<override org="org.jboss.resteasy" module="resteasy-netty4" matcher="exact" rev="3.0.11.Final"/>
+		<override org="org.jboss.solder" module="solder-impl" matcher="exact" rev="3.1.0.Final"/>
+		<override org="org.jboss" module="jboss-transaction-spi" matcher="exact" rev="7.1.0.Final"/>
+		<override org="org.jboss.weld" module="weld-core" matcher="exact" rev="1.1.13.Final"/>
+		<override org="org.jboss.weld.se" module="weld-se" matcher="exact" rev="2.2.0.SP1"/>
+		<override org="org.jboss.xnio" module="xnio-nio" matcher="exact" rev="3.2.2.Final"/>
+		<override org="org.mortbay.jetty" module="jetty-embedded" matcher="exact" rev="6.1.25"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.5"/>
+		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.7.5"/>
+		<override org="org.slf4j" module="slf4j-jdk14" matcher="exact" rev="1.7.5"/>
+		<override org="org.slf4j" module="slf4j-log4j12" matcher="exact" rev="1.7.5"/>
+		<override org="org.testng" module="testng" matcher="exact" rev="6.8.8"/>
+		<override org="spy" module="memcached" matcher="exact" rev="2.5"/>
+		<override org="org.fusesource.leveldbjni" module="leveldbjni-all" matcher="exact" rev="1.7"/>
+		<override org="org.iq80.leveldb" module="leveldb" matcher="exact" rev="0.7"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.2.4"/>
+		<override org="org.jboss.narayana.jta" module="narayana-jta" matcher="exact" rev="5.0.4.Final"/>
+		<override org="org.apache.directory.server" module="apacheds-all" matcher="exact" rev="2.0.0-M20"/>
+		<override org="org.wildfly.core" module="wildfly-core-testsuite-shared" matcher="exact" rev="2.0.0.CR8"/>
+		<override org="org.jboss.security" module="jboss-negotiation-extras" matcher="exact" rev="2.3.6.Final"/>
+		<override org="org.picketbox" module="jbosssx-bare" matcher="exact" rev="4.0.20.Final"/>
+		<override org="org.apache.karaf" module="apache-karaf" matcher="exact" rev="3.0.4"/>
+		<override org="org.apache.karaf.features" module="org.apache.karaf.features.core" matcher="exact" rev="3.0.4"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam-container-karaf" matcher="exact" rev="4.5.0"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam" matcher="exact" rev="4.5.0"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam-junit4" matcher="exact" rev="4.5.0"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam-inject" matcher="exact" rev="4.5.0"/>
+		<override org="org.xerial.snappy" module="snappy-java" matcher="exact" rev="1.0.5"/>
+		<override org="org.apache.geronimo.components" module="geronimo-transaction" matcher="exact" rev="3.1.1"/>
+		<override org="org.objectweb.howl" module="howl" matcher="exact" rev="1.0.1-1"/>
+		<override org="org.ops4j.pax.url" module="pax-url-aether" matcher="exact" rev="2.2.0"/>
+		<override org="org.ops4j.pax.url" module="pax-url-assembly" matcher="exact" rev="2.2.0"/>
+		<override org="org.ops4j.pax.url" module="pax-url-wrap" matcher="exact" rev="2.2.0"/>
+		<override org="org.apache.lucene" module="lucene-queryparser" matcher="exact" rev="5.3.1"/>
+		<override org="org.apache.lucene" module="lucene-core" matcher="exact" rev="5.3.1"/>
+		<override org="org.apache.lucene" module="lucene-analyzers-common" matcher="exact" rev="5.3.1"/>
+		<override org="org.apache.lucene" module="lucene-memory" matcher="exact" rev="5.3.1"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="11.0.2"/>
+		<override org="org.kohsuke.metainf-services" module="metainf-services" matcher="exact" rev="1.5"/>
+		<override org="org.jboss.byteman" module="byteman" matcher="exact" rev="2.1.4"/>
+		<override org="org.jboss.byteman" module="byteman-bmunit" matcher="exact" rev="2.1.4"/>
+		<override org="org.hibernate" module="hibernate-testing" matcher="exact" rev="5.0.4.Final"/>
+	</dependencies>
+</ivy-module>

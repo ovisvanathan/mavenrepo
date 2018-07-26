@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.openejb"
+		module="javaee-api"
+		revision="5.0-2"
+		status="release"
+		publication="20090531064534"
+	>
+		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="" />
+		<m:properties__openejb.osgi.import.pkg>*</m:properties__openejb.osgi.import.pkg>
+		<m:properties__openejb.osgi.export.version>${project.version}</m:properties__openejb.osgi.export.version>
+		<m:properties__openejb.osgi.export>${openejb.osgi.export.pkg}*;version=${openejb.osgi.export.version}</m:properties__openejb.osgi.export>
+		<m:properties__openejb.osgi.export.pkg>org.apache.openejb</m:properties__openejb.osgi.export.pkg>
+		<m:properties__tomcatVersion>6.0.16</m:properties__tomcatVersion>
+		<m:properties__xbeanVersion>3.6-r779512</m:properties__xbeanVersion>
+		<m:properties__openejb.osgi.symbolic.name>${groupId}.${artifactId}</m:properties__openejb.osgi.symbolic.name>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__openejb.osgi.import>${openejb.osgi.import.pkg}</m:properties__openejb.osgi.import>
+		<m:properties__openejb.osgi.private.pkg>!*</m:properties__openejb.osgi.private.pkg>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:dependency.management__commons-cli__commons-cli__version>1.1</m:dependency.management__commons-cli__commons-cli__version>
+		<m:dependency.management__commons-logging__commons-logging-api__version>1.1</m:dependency.management__commons-logging__commons-logging-api__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.1</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__commons-logging__commons-logging__exclusion_0>javax.servlet__servlet-api</m:dependency.management__commons-logging__commons-logging__exclusion_0>
+		<m:dependency.management__commons-logging__commons-logging__exclusion_1>avalon-framework__avalon-framework</m:dependency.management__commons-logging__commons-logging__exclusion_1>
+		<m:dependency.management__commons-logging__commons-logging__exclusion_2>logkit__logkit</m:dependency.management__commons-logging__commons-logging__exclusion_2>
+		<m:dependency.management__hsqldb__hsqldb__version>1.8.0.7</m:dependency.management__hsqldb__hsqldb__version>
+		<m:dependency.management__idb__idb__version>3.26</m:dependency.management__idb__idb__version>
+		<m:dependency.management__junit__junit__version>4.4</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__com.agical.rmock__rmock__version>2.0.0</m:dependency.management__com.agical.rmock__rmock__version>
+		<m:dependency.management__com.agical.rmock__rmock__scope>test</m:dependency.management__com.agical.rmock__rmock__scope>
+		<m:dependency.management__log4j__log4j__version>1.2.12</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__org.apache.activemq__activemq-ra__version>4.1.1</m:dependency.management__org.apache.activemq__activemq-ra__version>
+		<m:dependency.management__org.apache.activemq__activemq-ra__exclusion_0>org.springframework__spring</m:dependency.management__org.apache.activemq__activemq-ra__exclusion_0>
+		<m:dependency.management__org.apache.activemq__activemq-ra__exclusion_1>org.apache.geronimo.specs__geronimo-j2ee-connector_1.5_spec</m:dependency.management__org.apache.activemq__activemq-ra__exclusion_1>
+		<m:dependency.management__org.apache.activemq__activemq-ra__exclusion_2>activemq__jmdns</m:dependency.management__org.apache.activemq__activemq-ra__exclusion_2>
+		<m:dependency.management__org.apache.activemq__activemq-core__version>4.1.1</m:dependency.management__org.apache.activemq__activemq-core__version>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_0>activesoap__jaxp-api</m:dependency.management__org.apache.activemq__activemq-core__exclusion_0>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_1>mx4j__mx4j</m:dependency.management__org.apache.activemq__activemq-core__exclusion_1>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_2>mx4j__mx4j-jmx</m:dependency.management__org.apache.activemq__activemq-core__exclusion_2>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_3>mx4j__mx4j-remote</m:dependency.management__org.apache.activemq__activemq-core__exclusion_3>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_4>mx4j__mx4j-tools</m:dependency.management__org.apache.activemq__activemq-core__exclusion_4>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_5>mx4j__mx4j-impl</m:dependency.management__org.apache.activemq__activemq-core__exclusion_5>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_6>org.apache.activemq__activemq-jaas</m:dependency.management__org.apache.activemq__activemq-core__exclusion_6>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_7>org.apache.geronimo.specs__geronimo-jta_1.0.1B_spec</m:dependency.management__org.apache.activemq__activemq-core__exclusion_7>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_8>org.apache.geronimo.specs__geronimo-jms_1.1_spec</m:dependency.management__org.apache.activemq__activemq-core__exclusion_8>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_9>org.apache.geronimo.specs__geronimo-j2ee-jacc_1.0_spec</m:dependency.management__org.apache.activemq__activemq-core__exclusion_9>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_10>org.apache.geronimo.specs__geronimo-j2ee-management_1.0_spec</m:dependency.management__org.apache.activemq__activemq-core__exclusion_10>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_11>commons-primitives__commons-primitives</m:dependency.management__org.apache.activemq__activemq-core__exclusion_11>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_12>org.apache.derby__derby</m:dependency.management__org.apache.activemq__activemq-core__exclusion_12>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_13>axion__axion</m:dependency.management__org.apache.activemq__activemq-core__exclusion_13>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_14>regexp__regexp</m:dependency.management__org.apache.activemq__activemq-core__exclusion_14>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_15>activemq__jmdns</m:dependency.management__org.apache.activemq__activemq-core__exclusion_15>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_16>xalan__xalan</m:dependency.management__org.apache.activemq__activemq-core__exclusion_16>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_17>org.apache.directory.server__apacheds-core</m:dependency.management__org.apache.activemq__activemq-core__exclusion_17>
+		<m:dependency.management__org.apache.activemq__activemq-core__exclusion_18>org.slf4j__nlog4j</m:dependency.management__org.apache.activemq__activemq-core__exclusion_18>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-connector__version>2.1</m:dependency.management__org.apache.geronimo.components__geronimo-connector__version>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-connector__exclusion_0>org.apache.geronimo.specs__geronimo-jta_1.1_spec</m:dependency.management__org.apache.geronimo.components__geronimo-connector__exclusion_0>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-connector__exclusion_1>org.apache.geronimo.specs__geronimo-j2ee-connector_1.5_spec</m:dependency.management__org.apache.geronimo.components__geronimo-connector__exclusion_1>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-connector__exclusion_2>org.objectweb.howl__howl</m:dependency.management__org.apache.geronimo.components__geronimo-connector__exclusion_2>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-transaction__version>2.1</m:dependency.management__org.apache.geronimo.components__geronimo-transaction__version>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-transaction__exclusion_0>org.apache.geronimo.specs__geronimo-jta_1.1_spec</m:dependency.management__org.apache.geronimo.components__geronimo-transaction__exclusion_0>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-transaction__exclusion_1>org.apache.geronimo.specs__geronimo-j2ee-connector_1.5_spec</m:dependency.management__org.apache.geronimo.components__geronimo-transaction__exclusion_1>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-transaction__exclusion_2>org.objectweb.howl__howl</m:dependency.management__org.apache.geronimo.components__geronimo-transaction__exclusion_2>
+		<m:dependency.management__org.objectweb.howl__howl__version>1.0.1-1</m:dependency.management__org.objectweb.howl__howl__version>
+		<m:dependency.management__org.apache.geronimo.javamail__geronimo-javamail_1.4_mail__version>1.2</m:dependency.management__org.apache.geronimo.javamail__geronimo-javamail_1.4_mail__version>
+		<m:dependency.management__org.apache.geronimo.javamail__geronimo-javamail_1.4_mail__exclusion_0>org.apache.geronimo.javamail__geronimo-javamail_1.4_provider</m:dependency.management__org.apache.geronimo.javamail__geronimo-javamail_1.4_mail__exclusion_0>
+		<m:dependency.management__org.apache.geronimo.javamail__geronimo-javamail_1.4_mail__exclusion_1>org.apache.geronimo.specs__geronimo-javamail_1.4_spec</m:dependency.management__org.apache.geronimo.javamail__geronimo-javamail_1.4_mail__exclusion_1>
+		<m:dependency.management__org.apache.openjpa__openjpa__version>1.2.0</m:dependency.management__org.apache.openjpa__openjpa__version>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_0>org.apache.openjpa__openjpa-jdbc</m:dependency.management__org.apache.openjpa__openjpa__exclusion_0>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_1>org.apache.openjpa__openjpa-jdbc-5</m:dependency.management__org.apache.openjpa__openjpa__exclusion_1>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_2>org.apache.openjpa__openjpa-kernel</m:dependency.management__org.apache.openjpa__openjpa__exclusion_2>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_3>org.apache.openjpa__openjpa-kernel-5</m:dependency.management__org.apache.openjpa__openjpa__exclusion_3>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_4>org.apache.openjpa__openjpa-lib-5</m:dependency.management__org.apache.openjpa__openjpa__exclusion_4>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_5>org.apache.openjpa__openjpa-lib</m:dependency.management__org.apache.openjpa__openjpa__exclusion_5>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_6>org.apache.openjpa__openjpa-persistence</m:dependency.management__org.apache.openjpa__openjpa__exclusion_6>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_7>org.apache.openjpa__openjpa-persistence-jdbc</m:dependency.management__org.apache.openjpa__openjpa__exclusion_7>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_8>org.apache.openjpa__openjpa-xmlstore</m:dependency.management__org.apache.openjpa__openjpa__exclusion_8>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_9>org.apache.geronimo.specs__geronimo-jta_1.0.1B_spec</m:dependency.management__org.apache.openjpa__openjpa__exclusion_9>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_10>org.apache.geronimo.specs__geronimo-jta_1.1_spec</m:dependency.management__org.apache.openjpa__openjpa__exclusion_10>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_11>org.apache.geronimo.specs__geronimo-jms_1.1_spec</m:dependency.management__org.apache.openjpa__openjpa__exclusion_11>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_12>org.apache.geronimo.specs__geronimo-jpa_3.0_spec</m:dependency.management__org.apache.openjpa__openjpa__exclusion_12>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_13>javax.xml.bind__jaxb-api</m:dependency.management__org.apache.openjpa__openjpa__exclusion_13>
+		<m:dependency.management__org.apache.openjpa__openjpa__exclusion_14>ant__ant</m:dependency.management__org.apache.openjpa__openjpa__exclusion_14>
+		<m:dependency.management__net.sourceforge.serp__serp__version>1.13.1</m:dependency.management__net.sourceforge.serp__serp__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.1</m:dependency.management__commons-lang__commons-lang__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.2</m:dependency.management__commons-collections__commons-collections__version>
+		<m:dependency.management__com.sun.xml.bind__jaxb-impl__version>2.0.5</m:dependency.management__com.sun.xml.bind__jaxb-impl__version>
+		<m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_0>javax.xml.bind__jaxb-api</m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_0>
+		<m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_1>javax.xml__jsr173</m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_1>
+		<m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_2>javax.activation__activation</m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_2>
+		<m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_3>javax.xml.bind__jsr173_api</m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_3>
+		<m:dependency.management__com.sun.xml.bind__jaxb-xjc__version>2.0.5</m:dependency.management__com.sun.xml.bind__jaxb-xjc__version>
+		<m:dependency.management__org.apache.xbean__xbean-naming__version>3.5</m:dependency.management__org.apache.xbean__xbean-naming__version>
+		<m:dependency.management__org.codehaus.swizzle__swizzle-stream__version>1.0.1</m:dependency.management__org.codehaus.swizzle__swizzle-stream__version>
+		<m:dependency.management__org.apache.openejb__commons-dbcp-all__version>1.3-r699049</m:dependency.management__org.apache.openejb__commons-dbcp-all__version>
+		<m:dependency.management__axis__axis__version>1.4</m:dependency.management__axis__axis__version>
+		<m:dependency.management__wsdl4j__wsdl4j__version>1.6.1</m:dependency.management__wsdl4j__wsdl4j__version>
+		<m:dependency.management__xmlunit__xmlunit__version>1.1</m:dependency.management__xmlunit__xmlunit__version>
+		<m:dependency.management__xmlunit__xmlunit__scope>test</m:dependency.management__xmlunit__xmlunit__scope>
+		<m:dependency.management__org.apache.tomcat__catalina__version>6.0.16</m:dependency.management__org.apache.tomcat__catalina__version>
+		<m:dependency.management__quartz__quartz__version>1.5.2</m:dependency.management__quartz__quartz__version>
+		<m:maven.plugins>null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.codehaus.swizzle__dependency-report-plugin__1.0.2|org.apache.maven.plugins__maven-clover-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__1.0|org.apache.maven.plugins__maven-release-plugin__2.0-beta-7|org.apache.maven.plugins__maven-jar-plugin__2.1|org.apache.felix__maven-bundle-plugin__1.2.0|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.codehaus.swizzle__dependency-report-plugin__1.0.2|org.apache.maven.plugins__maven-clover-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__1.0|org.apache.maven.plugins__maven-release-plugin__2.0-beta-7|org.apache.maven.plugins__maven-jar-plugin__2.1|org.apache.felix__maven-bundle-plugin__1.2.0|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.codehaus.swizzle__dependency-report-plugin__1.0.2|org.apache.maven.plugins__maven-clover-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__1.0|org.apache.maven.plugins__maven-release-plugin__2.0-beta-7|org.apache.maven.plugins__maven-jar-plugin__2.1|org.apache.felix__maven-bundle-plugin__1.2.0|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.codehaus.swizzle__dependency-report-plugin__1.0.2|org.apache.maven.plugins__maven-clover-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__1.0|org.apache.maven.plugins__maven-release-plugin__2.0-beta-7|org.apache.maven.plugins__maven-jar-plugin__2.1|org.apache.felix__maven-bundle-plugin__1.2.0|null__maven-shade-plugin__1.2|null__maven-antrun-plugin__null</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="javaee-api" type="jar" ext="jar" conf="master"/>
+		<artifact name="javaee-api" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+	</publications>
+</ivy-module>

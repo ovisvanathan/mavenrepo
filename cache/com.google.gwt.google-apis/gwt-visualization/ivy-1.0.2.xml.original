@@ -1,0 +1,33 @@
+<project> 
+ 
+  <modelVersion>4.0.0</modelVersion> 
+  <groupId>com.google.gwt.google-apis</groupId> 
+  <artifactId>gwt-visualization</artifactId> 
+  <version>1.0.2</version> 
+  <packaging>jar</packaging> 
+ 
+  <name>Google API Libraries for Google Web Toolkit</name> 
+  <url>http://code.google.com/p/gwt-google-apis/</url> 
+  <description>
+  The Google API Libraries for Google Web Toolkit is a collection of libraries that provide Java language bindings 
+  for popular Google JavaScript APIs. These libraries make it quick and easy for developers to use these Google 
+  JavaScript APIs with Google Web Toolkit. The libraries are supported by the Google Web Toolkit team.
+  </description> 
+  <licenses> 
+    <license> 
+      <name>The Apache Software License, Version 2.0</name> 
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url> 
+      <distribution>repo</distribution> 
+    </license> 
+  </licenses> 
+  <scm> 
+    <url>http://code.google.com/p/gwt-google-apis/source/browse/</url> 
+  </scm> 
+  <dependencies>  
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-user</artifactId>
+      <version>1.5.3</version>
+    </dependency>
+  </dependencies>   
+</project> 

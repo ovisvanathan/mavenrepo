@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <parent>
+    <groupId>org.jboss.spec</groupId>
+    <artifactId>jboss-specs-parent</artifactId>
+    <version>1.0.0.Beta2</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jboss.spec.javax.servlet</groupId>
+  <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+  <version>1.0.0.Final</version>
+  <packaging>jar</packaging>
+  <name>Java Servlet 3.0 API</name>
+  <description>The Java Servlet 3.0 API classes</description>
+  
+  <scm>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossas/projects/specs/tags/jboss-servlet-api_3.0_spec-1.0.0.Final</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossas/projects/specs/tags/jboss-servlet-api_3.0_spec-1.0.0.Final</developerConnection>
+    <url>http://fisheye.jboss.org/browse/JBossAS/projects/specs/tags/jboss-servlet-api_3.0_spec-1.0.0.Final</url>
+  </scm>
+  
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <doctitle>Java Servlet 3.0 API Documentation</doctitle>
+          <links>
+            <link>http://java.sun.com/j2se/1.5/docs/api</link>
+          </links>
+          <windowtitle>Java Servlet 3.0 API Documentation</windowtitle>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+  
+</project>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.ctakes"
+		module="ctakes"
+		revision="3.2.2"
+		status="release"
+		publication="20150513035330"
+	>
+		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="http://ctakes.apache.org" />
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
+		<m:properties__maven.compiler.source>1.7</m:properties__maven.compiler.source>
+		<m:properties__ctakes.version>3.2.2</m:properties__ctakes.version>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__arguments/>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.apache.ctakes__ctakes-type-system__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-type-system__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-utils__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-utils__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-core__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-core__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-core-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-core-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-dictionary-lookup__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-dictionary-lookup__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-dictionary-lookup-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-dictionary-lookup-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-dictionary-lookup-fast__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-dictionary-lookup-fast__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-dictionary-lookup-fast-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-dictionary-lookup-fast-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-preprocessor__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-preprocessor__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-pos-tagger__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-pos-tagger__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-pos-tagger-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-pos-tagger-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-chunker__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-chunker__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-chunker-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-chunker-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-lvg__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-lvg__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-lvg-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-lvg-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-context-tokenizer__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-context-tokenizer__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-clinical-pipeline__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-clinical-pipeline__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-ne-contexts__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-ne-contexts__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-ne-contexts-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-ne-contexts-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-assertion__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-assertion__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-assertion-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-assertion-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-assertion-zoner__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-assertion-zoner__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-assertion-zoner-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-assertion-zoner-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-constituency-parser__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-constituency-parser__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-constituency-parser-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-constituency-parser-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-coreference__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-coreference__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-coreference-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-coreference-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-drug-ner__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-drug-ner__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-drug-ner-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-drug-ner-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-side-effect__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-side-effect__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-side-effect-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-side-effect-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-smoking-status__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-smoking-status__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-smoking-status-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-smoking-status-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-dependency-parser__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-dependency-parser__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-dependency-parser-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-dependency-parser-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-relation-extractor__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-relation-extractor__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-relation-extractor-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-relation-extractor-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-temporal__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-temporal__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-temporal-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-temporal-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-ytex-res__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-ytex-res__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-ytex__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-ytex__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-ytex-uima__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-ytex-uima__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-ytex-web__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-ytex-web__version>
+		<m:dependency.management__org.apache.ctakes__ctakes-distribution__version>3.2.2</m:dependency.management__org.apache.ctakes__ctakes-distribution__version>
+		<m:dependency.management__jdom__jdom__version>1.0</m:dependency.management__jdom__jdom__version>
+		<m:dependency.management__org.jdom__jdom2__version>2.0.3</m:dependency.management__org.jdom__jdom2__version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__log4j__log4j__version>1.2.16</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__org.apache.lucene__lucene-core__version>4.0.0</m:dependency.management__org.apache.lucene__lucene-core__version>
+		<m:dependency.management__org.apache.lucene__lucene-queries__version>4.0.0</m:dependency.management__org.apache.lucene__lucene-queries__version>
+		<m:dependency.management__org.apache.lucene__lucene-queryparser__version>4.0.0</m:dependency.management__org.apache.lucene__lucene-queryparser__version>
+		<m:dependency.management__org.apache.lucene__lucene-analyzers-common__version>4.0.0</m:dependency.management__org.apache.lucene__lucene-analyzers-common__version>
+		<m:dependency.management__org.apache.opennlp__opennlp-maxent__version>3.0.3</m:dependency.management__org.apache.opennlp__opennlp-maxent__version>
+		<m:dependency.management__org.apache.opennlp__opennlp-tools__version>1.5.3</m:dependency.management__org.apache.opennlp__opennlp-tools__version>
+		<m:dependency.management__org.apache.opennlp__opennlp-uima__version>1.5.3</m:dependency.management__org.apache.opennlp__opennlp-uima__version>
+		<m:dependency.management__org.apache.uima__uimaj-examples__version>2.4.0</m:dependency.management__org.apache.uima__uimaj-examples__version>
+		<m:dependency.management__org.apache.uima__uimaj-core__version>2.5.0</m:dependency.management__org.apache.uima__uimaj-core__version>
+		<m:dependency.management__tw.edu.ntu.csie__libsvm__version>3.1</m:dependency.management__tw.edu.ntu.csie__libsvm__version>
+		<m:dependency.management__xerces__xercesImpl__version>2.10.0</m:dependency.management__xerces__xercesImpl__version>
+		<m:dependency.management__org.jdom__jdom__version>2.0.2</m:dependency.management__org.jdom__jdom__version>
+		<m:dependency.management__com.lexicalscope.jewelcli__jewelcli__version>0.8.3</m:dependency.management__com.lexicalscope.jewelcli__jewelcli__version>
+		<m:dependency.management__org.apache.uima__uimaj-document-annotation__version>2.5.0</m:dependency.management__org.apache.uima__uimaj-document-annotation__version>
+		<m:dependency.management__org.apache.uima__uimafit-core__version>2.1.0</m:dependency.management__org.apache.uima__uimafit-core__version>
+		<m:dependency.management__com.google.guava__guava__version>10.0</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__com.google.guava__guava__exclusion_0>com.google.code.findbugs__jsr305</m:dependency.management__com.google.guava__guava__exclusion_0>
+		<m:dependency.management__commons-io__commons-io__version>2.0.1</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__org.cleartk__cleartk-test-util__version>2.0.0</m:dependency.management__org.cleartk__cleartk-test-util__version>
+		<m:dependency.management__org.cleartk__cleartk-util__version>2.0.0</m:dependency.management__org.cleartk__cleartk-util__version>
+		<m:dependency.management__org.cleartk__cleartk-ml__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-opennlp-maxent__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-opennlp-maxent__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-svmlight__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-svmlight__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-tksvmlight__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-tksvmlight__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-liblinear__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-liblinear__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-libsvm__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-libsvm__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-libsvm-tk__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-libsvm-tk__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-mallet__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-mallet__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-crfsuite__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-crfsuite__version>
+		<m:dependency.management__org.cleartk__cleartk-ml-weka__version>2.0.0</m:dependency.management__org.cleartk__cleartk-ml-weka__version>
+		<m:dependency.management__org.cleartk__cleartk-eval__version>2.0.0</m:dependency.management__org.cleartk__cleartk-eval__version>
+		<m:dependency.management__org.cleartk__cleartk-type-system__version>2.0.0</m:dependency.management__org.cleartk__cleartk-type-system__version>
+		<m:dependency.management__org.cleartk__cleartk-corpus__version>2.0.0</m:dependency.management__org.cleartk__cleartk-corpus__version>
+		<m:dependency.management__org.cleartk__cleartk-feature__version>2.0.0</m:dependency.management__org.cleartk__cleartk-feature__version>
+		<m:dependency.management__org.cleartk__cleartk-snowball__version>2.0.0</m:dependency.management__org.cleartk__cleartk-snowball__version>
+		<m:dependency.management__org.cleartk__cleartk-opennlp-tools__version>2.0.0</m:dependency.management__org.cleartk__cleartk-opennlp-tools__version>
+		<m:dependency.management__org.cleartk__cleartk-berkeleyparser__version>2.0.0</m:dependency.management__org.cleartk__cleartk-berkeleyparser__version>
+		<m:dependency.management__org.cleartk__cleartk-clearnlp__version>2.0.0</m:dependency.management__org.cleartk__cleartk-clearnlp__version>
+		<m:dependency.management__org.cleartk__cleartk-maltparser__version>2.0.0</m:dependency.management__org.cleartk__cleartk-maltparser__version>
+		<m:dependency.management__org.cleartk__cleartk-stanford-corenlp__version>2.0.0</m:dependency.management__org.cleartk__cleartk-stanford-corenlp__version>
+		<m:dependency.management__org.cleartk__cleartk-token__version>2.0.0</m:dependency.management__org.cleartk__cleartk-token__version>
+		<m:dependency.management__org.cleartk__cleartk-summarization__version>2.0.0</m:dependency.management__org.cleartk__cleartk-summarization__version>
+		<m:dependency.management__org.cleartk__cleartk-timeml__version>2.0.0</m:dependency.management__org.cleartk__cleartk-timeml__version>
+		<m:dependency.management__args4j__args4j__version>2.0.16</m:dependency.management__args4j__args4j__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.4</m:dependency.management__commons-lang__commons-lang__version>
+		<m:dependency.management__commons-cli__commons-cli__version>1.2</m:dependency.management__commons-cli__commons-cli__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.1.1</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__com.carrotsearch__hppc__version>0.4.1</m:dependency.management__com.carrotsearch__hppc__version>
+		<m:dependency.management__org.springframework__spring-core__version>3.1.2.RELEASE</m:dependency.management__org.springframework__spring-core__version>
+		<m:dependency.management__org.springframework__spring-context__version>3.1.2.RELEASE</m:dependency.management__org.springframework__spring-context__version>
+		<m:dependency.management__org.springframework__spring-web__version>3.1.2.RELEASE</m:dependency.management__org.springframework__spring-web__version>
+		<m:dependency.management__edu.mit.findstruct__structmulti__version>0.0.1</m:dependency.management__edu.mit.findstruct__structmulti__version>
+		<m:dependency.management__edu.mit.findstruct__findstructapi__version>0.0.1</m:dependency.management__edu.mit.findstruct__findstructapi__version>
+		<m:dependency.management__com.googlecode.armbrust-file-utils__sqlwrapper__version>0.0.1</m:dependency.management__com.googlecode.armbrust-file-utils__sqlwrapper__version>
+		<m:dependency.management__net.sourceforge.openai__openaifsm__version>0.0.1</m:dependency.management__net.sourceforge.openai__openaifsm__version>
+		<m:dependency.management__gov.nih.nlm.nls.lvg__lvg2010dist__version>0.0.1</m:dependency.management__gov.nih.nlm.nls.lvg__lvg2010dist__version>
+		<m:dependency.management__com.googlecode.clearnlp__clearnlp__version>1.3.1</m:dependency.management__com.googlecode.clearnlp__clearnlp__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

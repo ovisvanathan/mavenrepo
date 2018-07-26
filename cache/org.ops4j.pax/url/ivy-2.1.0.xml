@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.ops4j.pax"
+		module="url"
+		revision="2.1.0"
+		status="release"
+		publication="20140610234524"
+	>
+		<license name="ALv2" url="http://www.apache.org/licenses/LICENSE-2.0.html" />
+		<description homepage="${wiki.url}">
+		Pax Url - OSGi URL handlers
+		</description>
+		<m:properties__dependency.maven.version>3.2.1</m:properties__dependency.maven.version>
+		<m:properties__dependency.slf4j.version>1.6.6</m:properties__dependency.slf4j.version>
+		<m:properties__release-paxurl-altGitURL>scm:git:ssh://git@github.com/ops4j/org.ops4j.pax.url.git</m:properties__release-paxurl-altGitURL>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__dependency.aether.version>1.0.0.v20140518</m:properties__dependency.aether.version>
+		<m:properties__dependency.logback.version>1.0.7</m:properties__dependency.logback.version>
+		<m:properties__dependency.base.version>1.4.0</m:properties__dependency.base.version>
+		<m:properties__dependency.wagon.version>2.5</m:properties__dependency.wagon.version>
+		<m:properties__dependency.paxexam.version>3.5.0</m:properties__dependency.paxexam.version>
+		<m:properties__dependency.swissbox.version>1.7.1</m:properties__dependency.swissbox.version>
+		<m:properties__wiki.url>http://team.ops4j.org/wiki/display/paxurl</m:properties__wiki.url>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/ops4j-snapshots</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:properties__arguments/>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.codehaus.mojo__retrotranslator-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.apache.felix__org.osgi.service.obr__version>1.0.2</m:dependency.management__org.apache.felix__org.osgi.service.obr__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-lang__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-lang__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-io__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-io__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-net__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-net__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-util-property__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-util-property__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-util-xml__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-util-xml__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-bnd__version>1.7.1</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-bnd__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-optional-jcl__version>1.7.1</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-optional-jcl__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-property__version>1.7.1</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-property__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-tracker__version>1.7.1</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-tracker__version>
+		<m:dependency.management__org.apache.maven.wagon__wagon-file__version>2.5</m:dependency.management__org.apache.maven.wagon__wagon-file__version>
+		<m:dependency.management__org.apache.maven.wagon__wagon-http-lightweight__version>2.5</m:dependency.management__org.apache.maven.wagon__wagon-http-lightweight__version>
+		<m:dependency.management__org.apache.maven.wagon__wagon-provider-api__version>2.5</m:dependency.management__org.apache.maven.wagon__wagon-provider-api__version>
+		<m:dependency.management__org.codehaus.plexus__plexus-utils__version>3.0.17</m:dependency.management__org.codehaus.plexus__plexus-utils__version>
+		<m:dependency.management__org.sonatype.plexus__plexus-sec-dispatcher__version>1.4</m:dependency.management__org.sonatype.plexus__plexus-sec-dispatcher__version>
+		<m:dependency.management__org.sonatype.plexus__plexus-cipher__version>1.7</m:dependency.management__org.sonatype.plexus__plexus-cipher__version>
+		<m:dependency.management__org.eclipse.aether__aether-api__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-api__version>
+		<m:dependency.management__org.eclipse.aether__aether-impl__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-impl__version>
+		<m:dependency.management__org.eclipse.aether__aether-spi__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-spi__version>
+		<m:dependency.management__org.eclipse.aether__aether-util__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-util__version>
+		<m:dependency.management__org.eclipse.aether__aether-connector-basic__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-connector-basic__version>
+		<m:dependency.management__org.eclipse.aether__aether-transport-wagon__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-transport-wagon__version>
+		<m:dependency.management__org.eclipse.aether__aether-transport-wagon__exclusion_0>org.sonatype.sisu__sisu-inject-plexus</m:dependency.management__org.eclipse.aether__aether-transport-wagon__exclusion_0>
+		<m:dependency.management__org.eclipse.aether__aether-transport-wagon__exclusion_1>org.codehaus.plexus__plexus-classworlds</m:dependency.management__org.eclipse.aether__aether-transport-wagon__exclusion_1>
+		<m:dependency.management__org.apache.maven__maven-aether-provider__version>3.2.1</m:dependency.management__org.apache.maven__maven-aether-provider__version>
+		<m:dependency.management__org.apache.maven__maven-settings-builder__version>3.2.1</m:dependency.management__org.apache.maven__maven-settings-builder__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.6.6</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.6.6</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.0.7</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__scope>test</m:dependency.management__ch.qos.logback__logback-classic__scope>
+		<m:dependency.management__org.osgi__org.osgi.core__version>4.0.0</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>4.0.0</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__org.easymock__easymock__version>3.1</m:dependency.management__org.easymock__easymock__version>
+		<m:dependency.management__org.easymock__easymock__scope>test</m:dependency.management__org.easymock__easymock__scope>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

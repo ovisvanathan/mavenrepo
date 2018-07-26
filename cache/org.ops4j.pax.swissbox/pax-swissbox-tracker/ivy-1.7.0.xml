@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.ops4j.pax.swissbox"
+		module="pax-swissbox-tracker"
+		revision="1.7.0"
+		status="release"
+		publication="20130605222506"
+	>
+		<license name="ALv2" url="http://www.apache.org/licenses/LICENSE-2.0.html" />
+		<description homepage="">
+		OPS4J Pax Swissbox - Utilities related to service tracking.
+    Detailed information to be found at http://wiki.ops4j.org/confluence/x/OQRN.
+		</description>
+		<m:properties__bundle.namespace>org.ops4j.pax.swissbox.tracker</m:properties__bundle.namespace>
+		<m:properties__bundle.symbolicName>org.ops4j.pax.swissbox.tracker</m:properties__bundle.symbolicName>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__dependency.base.version>1.4.0</m:properties__dependency.base.version>
+		<m:properties__dependency.slf4j.version>1.5.11</m:properties__dependency.slf4j.version>
+		<m:properties__release-paxurl-altGitSWISSBOX>scm:git:ssh://git@github.com/ops4j/org.ops4j.pax.swissbox.git</m:properties__release-paxurl-altGitSWISSBOX>
+		<m:properties__pax.swissbox.wiki.url>http://team.ops4j.org/wiki/display/PAXSB</m:properties__pax.swissbox.wiki.url>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/ops4j-snapshots</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.codehaus.mojo__retrotranslator-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.codehaus.mojo__retrotranslator-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.ops4j.base__ops4j-base-exec__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-exec__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-io__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-io__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-lang__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-lang__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-monitors__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-monitors__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-spi__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-spi__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-store__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-store__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-util-property__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-util-property__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-net__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-net__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.5.11</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.5.11</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>4.2.0</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.osgi__org.osgi.core__scope>provided</m:dependency.management__org.osgi__org.osgi.core__scope>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>4.2.0</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__scope>provided</m:dependency.management__org.osgi__org.osgi.compendium__scope>
+		<m:dependency.management__junit__junit__version>4.9</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__org.easymock__easymock__version>3.1</m:dependency.management__org.easymock__easymock__version>
+		<m:dependency.management__org.easymock__easymock__scope>test</m:dependency.management__org.easymock__easymock__scope>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="pax-swissbox-tracker" type="bundle" ext="jar" conf="master"/>
+		<artifact name="pax-swissbox-tracker" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="pax-swissbox-tracker" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.ops4j.pax.swissbox" name="pax-swissbox-lifecycle" rev="1.7.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.ops4j.base" name="ops4j-base-lang" rev="1.4.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.5.11" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.slf4j" name="slf4j-simple" rev="1.5.11" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.osgi" name="org.osgi.core" rev="4.2.0" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.osgi" name="org.osgi.compendium" rev="4.2.0" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<override org="org.ops4j.base" module="ops4j-base-exec" matcher="exact" rev="1.4.0"/>
+		<override org="org.ops4j.base" module="ops4j-base-io" matcher="exact" rev="1.4.0"/>
+		<override org="org.ops4j.base" module="ops4j-base-lang" matcher="exact" rev="1.4.0"/>
+		<override org="org.ops4j.base" module="ops4j-base-monitors" matcher="exact" rev="1.4.0"/>
+		<override org="org.ops4j.base" module="ops4j-base-spi" matcher="exact" rev="1.4.0"/>
+		<override org="org.ops4j.base" module="ops4j-base-store" matcher="exact" rev="1.4.0"/>
+		<override org="org.ops4j.base" module="ops4j-base-util-property" matcher="exact" rev="1.4.0"/>
+		<override org="org.ops4j.base" module="ops4j-base-net" matcher="exact" rev="1.4.0"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.5.11"/>
+		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.5.11"/>
+		<override org="org.osgi" module="org.osgi.core" matcher="exact" rev="4.2.0"/>
+		<override org="org.osgi" module="org.osgi.compendium" matcher="exact" rev="4.2.0"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.9"/>
+		<override org="org.easymock" module="easymock" matcher="exact" rev="3.1"/>
+	</dependencies>
+</ivy-module>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><project>
+  <parent>
+    <artifactId>modules</artifactId>
+    <groupId>org.apache.geronimo.modules</groupId>
+    <version>1.2-beta</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>geronimo-system</artifactId>
+  <name>Geronimo :: System</name>
+  <version>1.2-beta</version>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>generate-dynamic-properties</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <tstamp>
+                  <format property="build.year" pattern="yyyy"></format>
+                </tstamp>
+                <mkdir dir="${pom.basedir}/target/classes/org/apache/geronimo/system/serverinfo"></mkdir>
+                <propertyfile file="${pom.basedir}/target/classes/org/apache/geronimo/system/serverinfo/geronimo-version.properties" comment="Geronimo version information (generated, do not modify)">
+                  <entry key="version" value="1.2-beta"></entry>
+                  <entry key="build.date" value="now" type="date" pattern="yyyy.MM.dd"></entry>
+                  <entry key="build.time" value="now" type="date" pattern="HH:mm:ss.SSSZ"></entry>
+                  <entry key="copyright" value="Copyright (C) 2003-${build.year}, The Apache Software Foundation"></entry>
+                </propertyfile>
+              </tasks>
+            </configuration>
+          </execution>
+          <execution>
+            <id>test-resources</id>
+            <phase>generate-test-resources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <delete dir="${project.build.directory}/tmp"></delete>
+                <mkdir dir="${project.build.directory}/tmp"></mkdir>
+                <mkdir dir="${project.build.directory}/m1"></mkdir>
+                <copy todir="${project.build.directory}/m1">
+                  <fileset dir="${basedir}/src/test/repo/m1"></fileset>
+                </copy>
+                <mkdir dir="${project.build.directory}/m2"></mkdir>
+                <copy todir="${project.build.directory}/m2">
+                  <fileset dir="${basedir}/src/test/repo/m2"></fileset>
+                </copy>
+              </tasks>
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant-nodeps</artifactId>
+            <version>1.6.5</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.geronimo.modules</groupId>
+      <artifactId>geronimo-common</artifactId>
+      <version>1.2-beta</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.modules</groupId>
+      <artifactId>geronimo-util</artifactId>
+      <version>1.2-beta</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.modules</groupId>
+      <artifactId>geronimo-kernel</artifactId>
+      <version>1.2-beta</version>
+    </dependency>
+    <dependency>
+      <groupId>backport-util-concurrent</groupId>
+      <artifactId>backport-util-concurrent</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-jexl</groupId>
+      <artifactId>commons-jexl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>ognl</groupId>
+      <artifactId>ognl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xercesImpl</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xmlParserAPIs</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>

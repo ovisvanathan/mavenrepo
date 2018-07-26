@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.karaf.deployer"
+		module="deployer"
+		revision="2.4.0"
+		status="release"
+		publication="20140917192757"
+	>
+		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="" />
+		<m:properties__openwebbeans.version>1.2.6</m:properties__openwebbeans.version>
+		<m:properties__bndlib.version>2.3.0</m:properties__bndlib.version>
+		<m:properties__aries.blueprint.cm.version>1.0.4</m:properties__aries.blueprint.cm.version>
+		<m:properties__easymock.version>3.2</m:properties__easymock.version>
+		<m:properties__aries.jmx.blueprint.core.version>1.1.0</m:properties__aries.jmx.blueprint.core.version>
+		<m:properties__slf4j.version>1.7.7</m:properties__slf4j.version>
+		<m:properties__felix.framework.version>4.4.1</m:properties__felix.framework.version>
+		<m:properties__felix.scr.webconsole.plugin.version>1.0.0</m:properties__felix.scr.webconsole.plugin.version>
+		<m:properties__aries.jpa.version>1.0.2</m:properties__aries.jpa.version>
+		<m:properties__log4j.version>1.2.17</m:properties__log4j.version>
+		<m:properties__pax.swissbox.version>1.7.1</m:properties__pax.swissbox.version>
+		<m:properties__commons-codec.version>1.9</m:properties__commons-codec.version>
+		<m:properties__aopalliance.bundle.version>1.0_6</m:properties__aopalliance.bundle.version>
+		<m:properties__aries.application.management.version>1.0.0</m:properties__aries.application.management.version>
+		<m:properties__cglib.bundle.version>3.0_1</m:properties__cglib.bundle.version>
+		<m:properties__jledit.version>0.2.1</m:properties__jledit.version>
+		<m:properties__maven.version>3.0-alpha-2</m:properties__maven.version>
+		<m:properties__pax.base.version>1.4.0</m:properties__pax.base.version>
+		<m:properties__commons-compress.version>1.6</m:properties__commons-compress.version>
+		<m:properties__org.json.version>20140107</m:properties__org.json.version>
+		<m:properties__felix.obr.version>1.0.2</m:properties__felix.obr.version>
+		<m:properties__pax.web.version>3.1.2</m:properties__pax.web.version>
+		<m:properties__felix.webconsole.version>4.2.2</m:properties__felix.webconsole.version>
+		<m:properties__directory-version>2.0.0-M16</m:properties__directory-version>
+		<m:properties__aries.transaction.blueprint.version>1.0.1</m:properties__aries.transaction.blueprint.version>
+		<m:properties__aries.jpa.container.context.version>1.0.2</m:properties__aries.jpa.container.context.version>
+		<m:properties__aries.jpa.api.version>1.0.1</m:properties__aries.jpa.api.version>
+		<m:properties__servlet.api.version>2.5</m:properties__servlet.api.version>
+		<m:properties__weld.version>2.1.1.Final</m:properties__weld.version>
+		<m:properties__spring.osgi.version>1.2.1</m:properties__spring.osgi.version>
+		<m:properties__aries.application.api.version>1.0.0</m:properties__aries.application.api.version>
+		<m:properties__antlr.bundle.version>2.7.7_5</m:properties__antlr.bundle.version>
+		<m:properties__aries.blueprint.web.version>1.0.1</m:properties__aries.blueprint.web.version>
+		<m:properties__bnd.version.policy>[$(version;==;$(@)),$(version;+;$(@)))</m:properties__bnd.version.policy>
+		<m:properties__spring.security31.version>3.1.4.RELEASE</m:properties__spring.security31.version>
+		<m:properties__felix.eventadmin.webconsole.plugin.version>1.1.0</m:properties__felix.eventadmin.webconsole.plugin.version>
+		<m:properties__equinox.version>3.9.1-v20140110-1610</m:properties__equinox.version>
+		<m:properties__aries.transaction.jdbc.version>2.0.0</m:properties__aries.transaction.jdbc.version>
+		<m:properties__hibernate3.version>3.3.2.GA</m:properties__hibernate3.version>
+		<m:properties__spring30.version>3.0.7.RELEASE</m:properties__spring30.version>
+		<m:properties__asm.version>5.0.3</m:properties__asm.version>
+		<m:properties__felix.utils.version>1.6.0</m:properties__felix.utils.version>
+		<m:properties__commons-io.version>2.4</m:properties__commons-io.version>
+		<m:properties__geronimo.servlet.version>1.0</m:properties__geronimo.servlet.version>
+		<m:properties__xbean.version>3.18</m:properties__xbean.version>
+		<m:properties__mina.version>2.0.7</m:properties__mina.version>
+		<m:properties__obrRepository>NONE</m:properties__obrRepository>
+		<m:properties__aries.util.version>1.1.0</m:properties__aries.util.version>
+		<m:properties__geronimo.jaspic-spec.version>1.1</m:properties__geronimo.jaspic-spec.version>
+		<m:properties__pax.url.version>2.1.0</m:properties__pax.url.version>
+		<m:properties__hibernate.annotations.version>3.4.0.GA</m:properties__hibernate.annotations.version>
+		<m:properties__aries.blueprint.core.version>1.4.1</m:properties__aries.blueprint.core.version>
+		<m:properties__hibernate.annotations.common.version>3.3.0.ga</m:properties__hibernate.annotations.common.version>
+		<m:properties__geronimo.annotation-spec.version>1.0.1</m:properties__geronimo.annotation-spec.version>
+		<m:properties__geronimo.jpa-spec.version>1.1</m:properties__geronimo.jpa-spec.version>
+		<m:properties__osgi.version>5.0.0</m:properties__osgi.version>
+		<m:properties__felix.metatype.version>1.0.10</m:properties__felix.metatype.version>
+		<m:properties__aries.proxy.version>1.0.3</m:properties__aries.proxy.version>
+		<m:properties__injection.bundle.version>1.0</m:properties__injection.bundle.version>
+		<m:properties__felix.configadmin.version>1.8.0</m:properties__felix.configadmin.version>
+		<m:properties__servicemix.specs.version>2.4.0</m:properties__servicemix.specs.version>
+		<m:properties__geronimo.jms-spec.version>1.1.1</m:properties__geronimo.jms-spec.version>
+		<m:properties__aries.jmx.blueprint.api.version>1.1.0</m:properties__aries.jmx.blueprint.api.version>
+		<m:properties__asm.springsource.version>1.5.3</m:properties__asm.springsource.version>
+		<m:properties__struts.bundle.version>1.3.10_1</m:properties__struts.bundle.version>
+		<m:properties__commons-beanutils.version>1.9.2</m:properties__commons-beanutils.version>
+		<m:properties__jasypt.bundle.version>1.9.2_1</m:properties__jasypt.bundle.version>
+		<m:properties__hibernate42.version>4.2.15.Final</m:properties__hibernate42.version>
+		<m:properties__spring31.version>3.1.4.RELEASE</m:properties__spring31.version>
+		<m:properties__appendedResourcesDirectory>${basedir}/etc/appended-resources</m:properties__appendedResourcesDirectory>
+		<m:properties__felix.gogo.version>0.12.1</m:properties__felix.gogo.version>
+		<m:properties__javassist.version>3.9.0.GA</m:properties__javassist.version>
+		<m:properties__pax.tinybundles.version>1.3.2</m:properties__pax.tinybundles.version>
+		<m:properties__commons-collections.version>3.2.1</m:properties__commons-collections.version>
+		<m:properties__commons-fileupload.version>1.3.1</m:properties__commons-fileupload.version>
+		<m:properties__xerces.version>2.11.0</m:properties__xerces.version>
+		<m:properties__aries.jmx.api.version>1.1.1</m:properties__aries.jmx.api.version>
+		<m:properties__javax.mail.version>1.4.5</m:properties__javax.mail.version>
+		<m:properties__aries.blueprint.version>1.0.1</m:properties__aries.blueprint.version>
+		<m:properties__commons-lang.version>2.6</m:properties__commons-lang.version>
+		<m:properties__aries.jpa.container.version>1.0.1</m:properties__aries.jpa.container.version>
+		<m:properties__aspectj.bundle.version>1.7.4_1</m:properties__aspectj.bundle.version>
+		<m:properties__jline.version>2.12</m:properties__jline.version>
+		<m:properties__aries.proxy.api.version>1.0.1</m:properties__aries.proxy.api.version>
+		<m:properties__hibernate.ejb.version>3.4.0.GA</m:properties__hibernate.ejb.version>
+		<m:properties__pax.cdi.version>0.8.0</m:properties__pax.cdi.version>
+		<m:properties__spring40.version>4.0.5.RELEASE_1</m:properties__spring40.version>
+		<m:properties__cglib2.version>2.2.0</m:properties__cglib2.version>
+		<m:properties__felix.scr.version>1.8.2</m:properties__felix.scr.version>
+		<m:properties__plexus.utils.version>3.0</m:properties__plexus.utils.version>
+		<m:properties__sshd.version>0.12.0</m:properties__sshd.version>
+		<m:properties__hibernate43.version>4.3.6.Final</m:properties__hibernate43.version>
+		<m:properties__dom4j.bundle.version>1.6.1_5</m:properties__dom4j.bundle.version>
+		<m:properties__spring2.version>2.5.6.SEC03</m:properties__spring2.version>
+		<m:properties__hibernate.validator.version>5.0.3.Final</m:properties__hibernate.validator.version>
+		<m:properties__portlet-api.version>2.0</m:properties__portlet-api.version>
+		<m:properties__jetty.version>8.1.10.v20130312</m:properties__jetty.version>
+		<m:properties__felix.eventadmin.version>1.4.0</m:properties__felix.eventadmin.version>
+		<m:properties__commons-pool.version>1.6</m:properties__commons-pool.version>
+		<m:properties__commons-dbcp.version>1.4</m:properties__commons-dbcp.version>
+		<m:properties__aries.application.version>1.0.0</m:properties__aries.application.version>
+		<m:properties__jsw.version>3.2.3</m:properties__jsw.version>
+		<m:properties__pax.exam.version>4.1.0</m:properties__pax.exam.version>
+		<m:properties__felix.webconsole.api.version>3.1.2</m:properties__felix.webconsole.api.version>
+		<m:properties__jansi.version>1.11</m:properties__jansi.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__aries.blueprint.api.version>1.0.1</m:properties__aries.blueprint.api.version>
+		<m:properties__felix.bundlerepository.version>2.0.2</m:properties__felix.bundlerepository.version>
+		<m:properties__serp.bundle.version>1.14.1_1</m:properties__serp.bundle.version>
+		<m:properties__spring32.version>3.2.9.RELEASE_1</m:properties__spring32.version>
+		<m:properties__felix.plugin.version>2.5.0</m:properties__felix.plugin.version>
+		<m:properties__pax.logging.version>1.7.4</m:properties__pax.logging.version>
+		<m:properties__aries.jndi.version>1.0.0</m:properties__aries.jndi.version>
+		<m:properties__aries.jmx.core.version>1.1.2</m:properties__aries.jmx.core.version>
+		<m:properties__felix.framework.security.version>2.4.0</m:properties__felix.framework.security.version>
+		<m:properties__aries.jpa.blueprint.version>1.0.2</m:properties__aries.jpa.blueprint.version>
+		<m:properties__ant.bundle.version>1.8.2_2</m:properties__ant.bundle.version>
+		<m:properties__geronimo.jta-spec.version>1.1.1</m:properties__geronimo.jta-spec.version>
+		<m:properties__aries.jndi.api.version>1.0.0</m:properties__aries.jndi.api.version>
+		<m:properties__felix.fileinstall.version>3.4.2</m:properties__felix.fileinstall.version>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__arguments/>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-resources-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.rat__apache-rat-plugin__0.10|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-resources-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.rat__apache-rat-plugin__0.10</m:maven.plugins>
+		<m:dependency.management__org.apache.karaf__manual__version>2.4.0</m:dependency.management__org.apache.karaf__manual__version>
+		<m:dependency.management__org.apache.karaf__org.apache.karaf.main__version>2.4.0</m:dependency.management__org.apache.karaf__org.apache.karaf.main__version>
+		<m:dependency.management__org.apache.karaf__org.apache.karaf.util__version>2.4.0</m:dependency.management__org.apache.karaf__org.apache.karaf.util__version>
+		<m:dependency.management__org.apache.karaf__org.apache.karaf.exception__version>2.4.0</m:dependency.management__org.apache.karaf__org.apache.karaf.exception__version>
+		<m:dependency.management__org.apache.karaf__org.apache.karaf.client__version>2.4.0</m:dependency.management__org.apache.karaf__org.apache.karaf.client__version>
+		<m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.spring__version>2.4.0</m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.spring__version>
+		<m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.blueprint__version>2.4.0</m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.blueprint__version>
+		<m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.features__version>2.4.0</m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.features__version>
+		<m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.kar__version>2.4.0</m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.kar__version>
+		<m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.wrap__version>2.4.0</m:dependency.management__org.apache.karaf.deployer__org.apache.karaf.deployer.wrap__version>
+		<m:dependency.management__org.apache.karaf.management__org.apache.karaf.management.boot__version>2.4.0</m:dependency.management__org.apache.karaf.management__org.apache.karaf.management.boot__version>
+		<m:dependency.management__org.apache.karaf.management__org.apache.karaf.management.server__version>2.4.0</m:dependency.management__org.apache.karaf.management__org.apache.karaf.management.server__version>
+		<m:dependency.management__org.apache.karaf.management.mbeans__org.apache.karaf.management.mbeans.config__version>2.4.0</m:dependency.management__org.apache.karaf.management.mbeans__org.apache.karaf.management.mbeans.config__version>
+		<m:dependency.management__org.apache.karaf.demos__demos__version>2.4.0</m:dependency.management__org.apache.karaf.demos__demos__version>
+		<m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.core__version>2.4.0</m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.core__version>
+		<m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.command__version>2.4.0</m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.command__version>
+		<m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.management__version>2.4.0</m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.management__version>
+		<m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.obr__version>2.4.0</m:dependency.management__org.apache.karaf.features__org.apache.karaf.features.obr__version>
+		<m:dependency.management__org.apache.karaf.diagnostic__org.apache.karaf.diagnostic.core__version>2.4.0</m:dependency.management__org.apache.karaf.diagnostic__org.apache.karaf.diagnostic.core__version>
+		<m:dependency.management__org.apache.karaf.diagnostic__org.apache.karaf.diagnostic.common__version>2.4.0</m:dependency.management__org.apache.karaf.diagnostic__org.apache.karaf.diagnostic.common__version>
+		<m:dependency.management__org.apache.karaf.diagnostic__org.apache.karaf.diagnostic.command__version>2.4.0</m:dependency.management__org.apache.karaf.diagnostic__org.apache.karaf.diagnostic.command__version>
+		<m:dependency.management__org.apache.karaf.diagnostic__org.apache.karaf.diagnostic.management__version>2.4.0</m:dependency.management__org.apache.karaf.diagnostic__org.apache.karaf.diagnostic.management__version>
+		<m:dependency.management__org.apache.karaf.admin__org.apache.karaf.admin.core__version>2.4.0</m:dependency.management__org.apache.karaf.admin__org.apache.karaf.admin.core__version>
+		<m:dependency.management__org.apache.karaf.admin__org.apache.karaf.admin.command__version>2.4.0</m:dependency.management__org.apache.karaf.admin__org.apache.karaf.admin.command__version>
+		<m:dependency.management__org.apache.karaf.admin__org.apache.karaf.admin.management__version>2.4.0</m:dependency.management__org.apache.karaf.admin__org.apache.karaf.admin.management__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.console__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.console__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.obr__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.obr__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.osgi__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.osgi__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.log__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.log__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.config__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.config__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.packages__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.packages__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.ssh__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.ssh__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.commands__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.commands__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.dev__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.dev__version>
+		<m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.wrapper__version>2.4.0</m:dependency.management__org.apache.karaf.shell__org.apache.karaf.shell.wrapper__version>
+		<m:dependency.management__org.apache.karaf.jaas__org.apache.karaf.jaas.boot__version>2.4.0</m:dependency.management__org.apache.karaf.jaas__org.apache.karaf.jaas.boot__version>
+		<m:dependency.management__org.apache.karaf.jaas__org.apache.karaf.jaas.config__version>2.4.0</m:dependency.management__org.apache.karaf.jaas__org.apache.karaf.jaas.config__version>
+		<m:dependency.management__org.apache.karaf.jaas__org.apache.karaf.jaas.modules__version>2.4.0</m:dependency.management__org.apache.karaf.jaas__org.apache.karaf.jaas.modules__version>
+		<m:dependency.management__org.apache.karaf.jaas__org.apache.karaf.jaas.command__version>2.4.0</m:dependency.management__org.apache.karaf.jaas__org.apache.karaf.jaas.command__version>
+		<m:dependency.management__org.apache.karaf.jndi__org.apache.karaf.jndi.core__version>2.4.0</m:dependency.management__org.apache.karaf.jndi__org.apache.karaf.jndi.core__version>
+		<m:dependency.management__org.apache.karaf.jndi__org.apache.karaf.jndi.command__version>2.4.0</m:dependency.management__org.apache.karaf.jndi__org.apache.karaf.jndi.command__version>
+		<m:dependency.management__org.apache.karaf.jdbc__org.apache.karaf.jdbc.core__version>2.4.0</m:dependency.management__org.apache.karaf.jdbc__org.apache.karaf.jdbc.core__version>
+		<m:dependency.management__org.apache.karaf.jdbc__org.apache.karaf.jdbc.command__version>2.4.0</m:dependency.management__org.apache.karaf.jdbc__org.apache.karaf.jdbc.command__version>
+		<m:dependency.management__org.apache.karaf.jms__org.apache.karaf.jms.core__version>2.4.0</m:dependency.management__org.apache.karaf.jms__org.apache.karaf.jms.core__version>
+		<m:dependency.management__org.apache.karaf.jms__org.apache.karaf.jms.command__version>2.4.0</m:dependency.management__org.apache.karaf.jms__org.apache.karaf.jms.command__version>
+		<m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.admin__version>2.4.0</m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.admin__version>
+		<m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.branding__version>2.4.0</m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.branding__version>
+		<m:dependency.management__org.apache.karaf.service__org.apache.karaf.service.guard__version>2.4.0</m:dependency.management__org.apache.karaf.service__org.apache.karaf.service.guard__version>
+		<m:dependency.management__org.apache.karaf.services__org.apache.karaf.services.eventadmin__version>2.4.0</m:dependency.management__org.apache.karaf.services__org.apache.karaf.services.eventadmin__version>
+		<m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.console__version>2.4.0</m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.console__version>
+		<m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.features__version>2.4.0</m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.features__version>
+		<m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.gogo__version>2.4.0</m:dependency.management__org.apache.karaf.webconsole__org.apache.karaf.webconsole.gogo__version>
+		<m:dependency.management__org.apache.karaf.demos__web__version>2.4.0</m:dependency.management__org.apache.karaf.demos__web__version>
+		<m:dependency.management__org.apache.karaf__apache-karaf__version>2.4.0</m:dependency.management__org.apache.karaf__apache-karaf__version>
+		<m:dependency.management__org.apache.karaf.assemblies.features__standard__version>2.4.0</m:dependency.management__org.apache.karaf.assemblies.features__standard__version>
+		<m:dependency.management__org.apache.karaf.assemblies.features__enterprise__version>2.4.0</m:dependency.management__org.apache.karaf.assemblies.features__enterprise__version>
+		<m:dependency.management__org.apache.karaf.tooling__org.apache.karaf.tooling.testing__version>2.4.0</m:dependency.management__org.apache.karaf.tooling__org.apache.karaf.tooling.testing__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.framework__version>4.4.1</m:dependency.management__org.apache.felix__org.apache.felix.framework__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.framework__exclusion_0>org.apache.felix__org.osgi.compendium</m:dependency.management__org.apache.felix__org.apache.felix.framework__exclusion_0>
+		<m:dependency.management__org.apache.felix__org.apache.felix.framework.security__version>2.4.0</m:dependency.management__org.apache.felix__org.apache.felix.framework.security__version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>5.0.0</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>5.0.0</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.configadmin__version>1.8.0</m:dependency.management__org.apache.felix__org.apache.felix.configadmin__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.bundlerepository__version>2.0.2</m:dependency.management__org.apache.felix__org.apache.felix.bundlerepository__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.bundlerepository__exclusion_0>org.apache.felix__org.osgi.service.obr</m:dependency.management__org.apache.felix__org.apache.felix.bundlerepository__exclusion_0>
+		<m:dependency.management__org.apache.felix__org.apache.felix.bundlerepository__exclusion_1>org.apache.felix__org.apache.felix.shell</m:dependency.management__org.apache.felix__org.apache.felix.bundlerepository__exclusion_1>
+		<m:dependency.management__org.apache.felix__org.apache.felix.bundlerepository__exclusion_2>net.sf.kxml__kxml2</m:dependency.management__org.apache.felix__org.apache.felix.bundlerepository__exclusion_2>
+		<m:dependency.management__org.apache.felix__org.apache.felix.metatype__version>1.0.10</m:dependency.management__org.apache.felix__org.apache.felix.metatype__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.metatype__exclusion_0>org.apache.felix__org.osgi.core</m:dependency.management__org.apache.felix__org.apache.felix.metatype__exclusion_0>
+		<m:dependency.management__org.apache.felix__org.apache.felix.metatype__exclusion_1>org.apache.felix__org.osgi.compendium</m:dependency.management__org.apache.felix__org.apache.felix.metatype__exclusion_1>
+		<m:dependency.management__org.apache.felix__org.apache.felix.utils__version>1.6.0</m:dependency.management__org.apache.felix__org.apache.felix.utils__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.utils__exclusion_0>org.osgi__org.osgi.core</m:dependency.management__org.apache.felix__org.apache.felix.utils__exclusion_0>
+		<m:dependency.management__org.apache.felix__org.apache.felix.webconsole__version>4.2.2</m:dependency.management__org.apache.felix__org.apache.felix.webconsole__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.fileinstall__version>3.4.2</m:dependency.management__org.apache.felix__org.apache.felix.fileinstall__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.fileinstall__exclusion_0>org.osgi__org.osgi.core</m:dependency.management__org.apache.felix__org.apache.felix.fileinstall__exclusion_0>
+		<m:dependency.management__org.apache.felix__org.apache.felix.eventadmin__version>1.4.0</m:dependency.management__org.apache.felix__org.apache.felix.eventadmin__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.scr__version>1.8.2</m:dependency.management__org.apache.felix__org.apache.felix.scr__version>
+		<m:dependency.management__biz.aQute.bnd__bndlib__version>2.3.0</m:dependency.management__biz.aQute.bnd__bndlib__version>
+		<m:dependency.management__org.apache.felix__maven-bundle-plugin__version>2.5.0</m:dependency.management__org.apache.felix__maven-bundle-plugin__version>
+		<m:dependency.management__org.apache.maven__maven-plugin-api__version>3.0-alpha-2</m:dependency.management__org.apache.maven__maven-plugin-api__version>
+		<m:dependency.management__org.apache.maven__maven-project__version>3.0-alpha-2</m:dependency.management__org.apache.maven__maven-project__version>
+		<m:dependency.management__xerces__xercesImpl__version>2.11.0</m:dependency.management__xerces__xercesImpl__version>
+		<m:dependency.management__org.json__json__version>20140107</m:dependency.management__org.json__json__version>
+		<m:dependency.management__org.springframework__spring-aop__version>3.0.7.RELEASE</m:dependency.management__org.springframework__spring-aop__version>
+		<m:dependency.management__org.springframework__spring-aop__exclusion_0>org.aopalliance__com.springsource.org.aopalliance</m:dependency.management__org.springframework__spring-aop__exclusion_0>
+		<m:dependency.management__org.springframework__spring-beans__version>3.0.7.RELEASE</m:dependency.management__org.springframework__spring-beans__version>
+		<m:dependency.management__org.springframework__spring-core__version>3.0.7.RELEASE</m:dependency.management__org.springframework__spring-core__version>
+		<m:dependency.management__org.springframework__spring-context__version>3.0.7.RELEASE</m:dependency.management__org.springframework__spring-context__version>
+		<m:dependency.management__org.springframework__spring-test__version>3.0.7.RELEASE</m:dependency.management__org.springframework__spring-test__version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-core__version>1.2.1</m:dependency.management__org.springframework.osgi__spring-osgi-core__version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-core__exclusion_0>org.springframework__org.springframework.aop</m:dependency.management__org.springframework.osgi__spring-osgi-core__exclusion_0>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-core__exclusion_1>org.springframework__org.springframework.beans</m:dependency.management__org.springframework.osgi__spring-osgi-core__exclusion_1>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-core__exclusion_2>org.springframework__org.springframework.context</m:dependency.management__org.springframework.osgi__spring-osgi-core__exclusion_2>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-core__exclusion_3>org.springframework__org.springframework.core</m:dependency.management__org.springframework.osgi__spring-osgi-core__exclusion_3>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-io__version>1.2.1</m:dependency.management__org.springframework.osgi__spring-osgi-io__version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-extender__version>1.2.1</m:dependency.management__org.springframework.osgi__spring-osgi-extender__version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-annotation__version>1.2.1</m:dependency.management__org.springframework.osgi__spring-osgi-annotation__version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-test__version>1.2.1</m:dependency.management__org.springframework.osgi__spring-osgi-test__version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-test__exclusion_0>org.springframework.osgi__asm.osgi</m:dependency.management__org.springframework.osgi__spring-osgi-test__exclusion_0>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-test__exclusion_1>org.junit__com.springsource.junit</m:dependency.management__org.springframework.osgi__spring-osgi-test__exclusion_1>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-test__exclusion_2>org.objectweb.asm__com.springsource.org.objectweb.asm</m:dependency.management__org.springframework.osgi__spring-osgi-test__exclusion_2>
+		<m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.ant__version>1.8.4_1</m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.ant__version>
+		<m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.ant__exclusion_0>commons-logging__commons-logging-api</m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.ant__exclusion_0>
+		<m:dependency.management__org.eclipse.jetty__jetty-util__version>8.1.10.v20130312</m:dependency.management__org.eclipse.jetty__jetty-util__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-io__version>8.1.10.v20130312</m:dependency.management__org.eclipse.jetty__jetty-io__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-http__version>8.1.10.v20130312</m:dependency.management__org.eclipse.jetty__jetty-http__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-continuation__version>8.1.10.v20130312</m:dependency.management__org.eclipse.jetty__jetty-continuation__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-server__version>8.1.10.v20130312</m:dependency.management__org.eclipse.jetty__jetty-server__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-security__version>8.1.10.v20130312</m:dependency.management__org.eclipse.jetty__jetty-security__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlet__version>8.1.10.v20130312</m:dependency.management__org.eclipse.jetty__jetty-servlet__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-xml__version>8.1.10.v20130312</m:dependency.management__org.eclipse.jetty__jetty-xml__version>
+		<m:dependency.management__org.ow2.asm__asm-all__version>5.0.3</m:dependency.management__org.ow2.asm__asm-all__version>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__jline__jline__version>2.12</m:dependency.management__jline__jline__version>
+		<m:dependency.management__org.fusesource.jansi__jansi__version>1.11</m:dependency.management__org.fusesource.jansi__jansi__version>
+		<m:dependency.management__org.jledit__core__version>0.2.1</m:dependency.management__org.jledit__core__version>
+		<m:dependency.management__org.apache.maven.artifact__maven-artifact__version>3.0-alpha-1</m:dependency.management__org.apache.maven.artifact__maven-artifact__version>
+		<m:dependency.management__org.apache.mina__mina-core__version>2.0.7</m:dependency.management__org.apache.mina__mina-core__version>
+		<m:dependency.management__org.apache.mina__mina-core__exclusion_0>org.easymock__easymock</m:dependency.management__org.apache.mina__mina-core__exclusion_0>
+		<m:dependency.management__org.apache.mina__mina-core__exclusion_1>org.easymock__easymockclassextension</m:dependency.management__org.apache.mina__mina-core__exclusion_1>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.7</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-jdk14__version>1.7.7</m:dependency.management__org.slf4j__slf4j-jdk14__version>
+		<m:dependency.management__org.slf4j__slf4j-nop__version>1.7.7</m:dependency.management__org.slf4j__slf4j-nop__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.7</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__com.google.guava__guava__version>14.0.1</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-lang__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-lang__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-net__version>1.4.0</m:dependency.management__org.ops4j.base__ops4j-base-net__version>
+		<m:dependency.management__org.ops4j.pax.logging__pax-logging-api__version>1.7.4</m:dependency.management__org.ops4j.pax.logging__pax-logging-api__version>
+		<m:dependency.management__org.ops4j.pax.logging__pax-logging-service__version>1.7.4</m:dependency.management__org.ops4j.pax.logging__pax-logging-service__version>
+		<m:dependency.management__org.ops4j.pax.logging__pax-logging-service__exclusion_0>log4j__log4j</m:dependency.management__org.ops4j.pax.logging__pax-logging-service__exclusion_0>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-commons__version>2.1.0</m:dependency.management__org.ops4j.pax.url__pax-url-commons__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-obr__version>2.1.0</m:dependency.management__org.ops4j.pax.url__pax-url-obr__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-war__version>2.1.0</m:dependency.management__org.ops4j.pax.url__pax-url-war__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>2.1.0</m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_0>org.sonatype.aether__aether-api</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_0>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_1>org.sonatype.aether__aether-spi</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_1>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_2>org.sonatype.aether__aether-util</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_2>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_3>org.sonatype.aether__aether-impl</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_3>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_4>org.sonatype.aether__aether-connector-wagon</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_4>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_5>org.apache.maven__maven-aether-provider</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_5>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_6>org.apache.maven.wagon__wagon-provider-api</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_6>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_7>org.apache.maven.wagon__wagon-file</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_7>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_8>org.apache.maven.wagon__wagon-http-lightweight</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_8>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_9>org.codehaus.plexus__plexus-container-default</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_9>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_10>org.codehaus.plexus__plexus-utils</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_10>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_11>commons-httpclient__commons-httpclient</m:dependency.management__org.ops4j.pax.url__pax-url-aether__exclusion_11>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-wrap__version>2.1.0</m:dependency.management__org.ops4j.pax.url__pax-url-wrap__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-mvn__version>1.3.7</m:dependency.management__org.ops4j.pax.url__pax-url-mvn__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jms_1.1_spec__version>1.1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jms_1.1_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-servlet_3.0_spec__version>1.0</m:dependency.management__org.apache.geronimo.specs__geronimo-servlet_3.0_spec__version>
+		<m:dependency.management__org.easymock__easymock__version>3.2</m:dependency.management__org.easymock__easymock__version>
+		<m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.activator__version>2.4.0</m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.activator__version>
+		<m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.locator__version>2.4.0</m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.locator__version>
+		<m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.activation-api-1.1__version>2.4.0</m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.activation-api-1.1__version>
+		<m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.jaxp-api-1.4__version>2.4.0</m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.jaxp-api-1.4__version>
+		<m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.jaxb-api-2.2__version>2.4.0</m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.jaxb-api-2.2__version>
+		<m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.jaxws-api-2.2__version>2.4.0</m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.jaxws-api-2.2__version>
+		<m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.saaj-api-1.3__version>2.4.0</m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.saaj-api-1.3__version>
+		<m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.stax-api-1.2__version>2.4.0</m:dependency.management__org.apache.servicemix.specs__org.apache.servicemix.specs.stax-api-1.2__version>
+		<m:dependency.management__org.apache.sshd__sshd-core__version>0.12.0</m:dependency.management__org.apache.sshd__sshd-core__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam__version>4.1.0</m:dependency.management__org.ops4j.pax.exam__pax-exam__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-container-karaf__version>4.1.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-container-karaf__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>4.1.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__scope>test</m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__scope>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-atinject_1.0_spec__version>1.0</m:dependency.management__org.apache.geronimo.specs__geronimo-atinject_1.0_spec__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-tinybundles__version>1.3.2</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-tinybundles__version>
+		<m:dependency.management__org.eclipse__osgi__version>3.9.1-v20140110-1610</m:dependency.management__org.eclipse__osgi__version>
+		<m:dependency.management__javax.servlet__servlet-api__version>2.5</m:dependency.management__javax.servlet__servlet-api__version>
+		<m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint.api__version>1.0.1</m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint.api__version>
+		<m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint.core__version>1.4.1</m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint.core__version>
+		<m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint.cm__version>1.0.4</m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint.cm__version>
+		<m:dependency.management__org.apache.aries.proxy__org.apache.aries.proxy.api__version>1.0.1</m:dependency.management__org.apache.aries.proxy__org.apache.aries.proxy.api__version>
+		<m:dependency.management__org.apache.aries.proxy__org.apache.aries.proxy.impl__version>1.0.3</m:dependency.management__org.apache.aries.proxy__org.apache.aries.proxy.impl__version>
+		<m:dependency.management__org.apache.aries__org.apache.aries.util__version>1.1.0</m:dependency.management__org.apache.aries__org.apache.aries.util__version>
+		<m:dependency.management__org.apache.aries.jmx__org.apache.aries.jmx.api__version>1.1.1</m:dependency.management__org.apache.aries.jmx__org.apache.aries.jmx.api__version>
+		<m:dependency.management__org.apache.aries.jmx__org.apache.aries.jmx.core__version>1.1.2</m:dependency.management__org.apache.aries.jmx__org.apache.aries.jmx.core__version>
+		<m:dependency.management__org.apache.aries.jmx__org.apache.aries.jmx.blueprint.api__version>1.1.0</m:dependency.management__org.apache.aries.jmx__org.apache.aries.jmx.blueprint.api__version>
+		<m:dependency.management__org.apache.aries.jmx__org.apache.aries.jmx.blueprint.core__version>1.1.0</m:dependency.management__org.apache.aries.jmx__org.apache.aries.jmx.blueprint.core__version>
+		<m:dependency.management__org.apache.aries.jndi__org.apache.aries.jndi.api__version>1.0.0</m:dependency.management__org.apache.aries.jndi__org.apache.aries.jndi.api__version>
+		<m:dependency.management__org.apache.aries.jndi__org.apache.aries.jndi.core__version>1.0.0</m:dependency.management__org.apache.aries.jndi__org.apache.aries.jndi.core__version>
+		<m:dependency.management__org.apache.aries.jndi__org.apache.aries.jndi.url__version>1.0.0</m:dependency.management__org.apache.aries.jndi__org.apache.aries.jndi.url__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.gogo.runtime__version>0.12.1</m:dependency.management__org.apache.felix__org.apache.felix.gogo.runtime__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.gogo.commands__version>0.12.1</m:dependency.management__org.apache.felix__org.apache.felix.gogo.commands__version>
+		<m:dependency.management__org.ops4j.pax.runner__pax-runner-no-jcl__version>${pax.runner.version}</m:dependency.management__org.ops4j.pax.runner__pax-runner-no-jcl__version>
+		<m:dependency.management__org.ops4j.pax.web__pax-web-api__version>3.1.2</m:dependency.management__org.ops4j.pax.web__pax-web-api__version>
+		<m:dependency.management__org.ops4j.pax.web__pax-web-spi__version>3.1.2</m:dependency.management__org.ops4j.pax.web__pax-web-spi__version>
+		<m:dependency.management__org.ops4j.pax.web__pax-web-runtime__version>3.1.2</m:dependency.management__org.ops4j.pax.web__pax-web-runtime__version>
+		<m:dependency.management__org.ops4j.pax.web__pax-web-jetty__version>3.1.2</m:dependency.management__org.ops4j.pax.web__pax-web-jetty__version>
+		<m:dependency.management__org.ops4j.pax.web__pax-web-jsp__version>3.1.2</m:dependency.management__org.ops4j.pax.web__pax-web-jsp__version>
+		<m:dependency.management__org.ops4j.pax.web__pax-web-deployer__version>3.1.2</m:dependency.management__org.ops4j.pax.web__pax-web-deployer__version>
+		<m:dependency.management__org.ops4j.pax.web__pax-web-extender-war__version>3.1.2</m:dependency.management__org.ops4j.pax.web__pax-web-extender-war__version>
+		<m:dependency.management__org.ops4j.pax.web__pax-web-extender-whiteboard__version>3.1.2</m:dependency.management__org.ops4j.pax.web__pax-web-extender-whiteboard__version>
+		<m:dependency.management__org.apache.xbean__xbean-finder-shaded__version>3.18</m:dependency.management__org.apache.xbean__xbean-finder-shaded__version>
+		<m:dependency.management__org.apache.xbean__xbean-blueprint__version>3.18</m:dependency.management__org.apache.xbean__xbean-blueprint__version>
+		<m:dependency.management__org.apache.xbean__xbean-naming__version>3.18</m:dependency.management__org.apache.xbean__xbean-naming__version>
+		<m:dependency.management__tanukisoft__wrapper__version>3.2.3</m:dependency.management__tanukisoft__wrapper__version>
+		<m:dependency.management__commons-codec__commons-codec__version>1.9</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.2.1</m:dependency.management__commons-collections__commons-collections__version>
+		<m:dependency.management__org.apache.commons__commons-compress__version>1.6</m:dependency.management__org.apache.commons__commons-compress__version>
+		<m:dependency.management__commons-io__commons-io__version>2.4</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.6</m:dependency.management__commons-lang__commons-lang__version>
+		<m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.jasypt__version>1.9.2_1</m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.jasypt__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.easymock" name="easymock" rev="3.2" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.apache.karaf" module="manual" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf" module="org.apache.karaf.main" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf" module="org.apache.karaf.util" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf" module="org.apache.karaf.exception" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf" module="org.apache.karaf.client" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.deployer" module="org.apache.karaf.deployer.spring" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.deployer" module="org.apache.karaf.deployer.blueprint" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.deployer" module="org.apache.karaf.deployer.features" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.deployer" module="org.apache.karaf.deployer.kar" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.deployer" module="org.apache.karaf.deployer.wrap" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.management" module="org.apache.karaf.management.boot" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.management" module="org.apache.karaf.management.server" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.management.mbeans" module="org.apache.karaf.management.mbeans.config" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.demos" module="demos" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.features" module="org.apache.karaf.features.core" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.features" module="org.apache.karaf.features.command" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.features" module="org.apache.karaf.features.management" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.features" module="org.apache.karaf.features.obr" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.diagnostic" module="org.apache.karaf.diagnostic.core" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.diagnostic" module="org.apache.karaf.diagnostic.common" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.diagnostic" module="org.apache.karaf.diagnostic.command" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.diagnostic" module="org.apache.karaf.diagnostic.management" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.admin" module="org.apache.karaf.admin.core" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.admin" module="org.apache.karaf.admin.command" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.admin" module="org.apache.karaf.admin.management" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.console" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.obr" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.osgi" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.log" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.config" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.packages" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.ssh" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.commands" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.dev" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.shell" module="org.apache.karaf.shell.wrapper" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jaas" module="org.apache.karaf.jaas.boot" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jaas" module="org.apache.karaf.jaas.config" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jaas" module="org.apache.karaf.jaas.modules" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jaas" module="org.apache.karaf.jaas.command" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jndi" module="org.apache.karaf.jndi.core" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jndi" module="org.apache.karaf.jndi.command" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jdbc" module="org.apache.karaf.jdbc.core" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jdbc" module="org.apache.karaf.jdbc.command" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jms" module="org.apache.karaf.jms.core" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.jms" module="org.apache.karaf.jms.command" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.webconsole" module="org.apache.karaf.webconsole.admin" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.webconsole" module="org.apache.karaf.webconsole.branding" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.service" module="org.apache.karaf.service.guard" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.services" module="org.apache.karaf.services.eventadmin" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.webconsole" module="org.apache.karaf.webconsole.console" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.webconsole" module="org.apache.karaf.webconsole.features" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.webconsole" module="org.apache.karaf.webconsole.gogo" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.demos" module="web" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf" module="apache-karaf" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.assemblies.features" module="standard" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.assemblies.features" module="enterprise" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.karaf.tooling" module="org.apache.karaf.tooling.testing" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.felix" module="org.apache.felix.framework" matcher="exact" rev="4.4.1"/>
+		<override org="org.apache.felix" module="org.apache.felix.framework.security" matcher="exact" rev="2.4.0"/>
+		<override org="org.osgi" module="org.osgi.core" matcher="exact" rev="5.0.0"/>
+		<override org="org.osgi" module="org.osgi.compendium" matcher="exact" rev="5.0.0"/>
+		<override org="org.apache.felix" module="org.apache.felix.configadmin" matcher="exact" rev="1.8.0"/>
+		<override org="org.apache.felix" module="org.apache.felix.bundlerepository" matcher="exact" rev="2.0.2"/>
+		<override org="org.apache.felix" module="org.apache.felix.metatype" matcher="exact" rev="1.0.10"/>
+		<override org="org.apache.felix" module="org.apache.felix.utils" matcher="exact" rev="1.6.0"/>
+		<override org="org.apache.felix" module="org.apache.felix.webconsole" matcher="exact" rev="4.2.2"/>
+		<override org="org.apache.felix" module="org.apache.felix.fileinstall" matcher="exact" rev="3.4.2"/>
+		<override org="org.apache.felix" module="org.apache.felix.eventadmin" matcher="exact" rev="1.4.0"/>
+		<override org="org.apache.felix" module="org.apache.felix.scr" matcher="exact" rev="1.8.2"/>
+		<override org="biz.aQute.bnd" module="bndlib" matcher="exact" rev="2.3.0"/>
+		<override org="org.apache.felix" module="maven-bundle-plugin" matcher="exact" rev="2.5.0"/>
+		<override org="org.apache.maven" module="maven-plugin-api" matcher="exact" rev="3.0-alpha-2"/>
+		<override org="org.apache.maven" module="maven-project" matcher="exact" rev="3.0-alpha-2"/>
+		<override org="xerces" module="xercesImpl" matcher="exact" rev="2.11.0"/>
+		<override org="org.json" module="json" matcher="exact" rev="20140107"/>
+		<override org="org.springframework" module="spring-aop" matcher="exact" rev="3.0.7.RELEASE"/>
+		<override org="org.springframework" module="spring-beans" matcher="exact" rev="3.0.7.RELEASE"/>
+		<override org="org.springframework" module="spring-core" matcher="exact" rev="3.0.7.RELEASE"/>
+		<override org="org.springframework" module="spring-context" matcher="exact" rev="3.0.7.RELEASE"/>
+		<override org="org.springframework" module="spring-test" matcher="exact" rev="3.0.7.RELEASE"/>
+		<override org="org.springframework.osgi" module="spring-osgi-core" matcher="exact" rev="1.2.1"/>
+		<override org="org.springframework.osgi" module="spring-osgi-io" matcher="exact" rev="1.2.1"/>
+		<override org="org.springframework.osgi" module="spring-osgi-extender" matcher="exact" rev="1.2.1"/>
+		<override org="org.springframework.osgi" module="spring-osgi-annotation" matcher="exact" rev="1.2.1"/>
+		<override org="org.springframework.osgi" module="spring-osgi-test" matcher="exact" rev="1.2.1"/>
+		<override org="org.apache.servicemix.bundles" module="org.apache.servicemix.bundles.ant" matcher="exact" rev="1.8.4_1"/>
+		<override org="org.eclipse.jetty" module="jetty-util" matcher="exact" rev="8.1.10.v20130312"/>
+		<override org="org.eclipse.jetty" module="jetty-io" matcher="exact" rev="8.1.10.v20130312"/>
+		<override org="org.eclipse.jetty" module="jetty-http" matcher="exact" rev="8.1.10.v20130312"/>
+		<override org="org.eclipse.jetty" module="jetty-continuation" matcher="exact" rev="8.1.10.v20130312"/>
+		<override org="org.eclipse.jetty" module="jetty-server" matcher="exact" rev="8.1.10.v20130312"/>
+		<override org="org.eclipse.jetty" module="jetty-security" matcher="exact" rev="8.1.10.v20130312"/>
+		<override org="org.eclipse.jetty" module="jetty-servlet" matcher="exact" rev="8.1.10.v20130312"/>
+		<override org="org.eclipse.jetty" module="jetty-xml" matcher="exact" rev="8.1.10.v20130312"/>
+		<override org="org.ow2.asm" module="asm-all" matcher="exact" rev="5.0.3"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.17"/>
+		<override org="jline" module="jline" matcher="exact" rev="2.12"/>
+		<override org="org.fusesource.jansi" module="jansi" matcher="exact" rev="1.11"/>
+		<override org="org.jledit" module="core" matcher="exact" rev="0.2.1"/>
+		<override org="org.apache.maven.artifact" module="maven-artifact" matcher="exact" rev="3.0-alpha-1"/>
+		<override org="org.apache.mina" module="mina-core" matcher="exact" rev="2.0.7"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.7"/>
+		<override org="org.slf4j" module="slf4j-jdk14" matcher="exact" rev="1.7.7"/>
+		<override org="org.slf4j" module="slf4j-nop" matcher="exact" rev="1.7.7"/>
+		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.7.7"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="14.0.1"/>
+		<override org="org.ops4j.base" module="ops4j-base-lang" matcher="exact" rev="1.4.0"/>
+		<override org="org.ops4j.base" module="ops4j-base-net" matcher="exact" rev="1.4.0"/>
+		<override org="org.ops4j.pax.logging" module="pax-logging-api" matcher="exact" rev="1.7.4"/>
+		<override org="org.ops4j.pax.logging" module="pax-logging-service" matcher="exact" rev="1.7.4"/>
+		<override org="org.ops4j.pax.url" module="pax-url-commons" matcher="exact" rev="2.1.0"/>
+		<override org="org.ops4j.pax.url" module="pax-url-obr" matcher="exact" rev="2.1.0"/>
+		<override org="org.ops4j.pax.url" module="pax-url-war" matcher="exact" rev="2.1.0"/>
+		<override org="org.ops4j.pax.url" module="pax-url-aether" matcher="exact" rev="2.1.0"/>
+		<override org="org.ops4j.pax.url" module="pax-url-wrap" matcher="exact" rev="2.1.0"/>
+		<override org="org.ops4j.pax.url" module="pax-url-mvn" matcher="exact" rev="1.3.7"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jms_1.1_spec" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-servlet_3.0_spec" matcher="exact" rev="1.0"/>
+		<override org="org.easymock" module="easymock" matcher="exact" rev="3.2"/>
+		<override org="org.apache.servicemix.specs" module="org.apache.servicemix.specs.activator" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.servicemix.specs" module="org.apache.servicemix.specs.locator" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.servicemix.specs" module="org.apache.servicemix.specs.activation-api-1.1" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.servicemix.specs" module="org.apache.servicemix.specs.jaxp-api-1.4" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.servicemix.specs" module="org.apache.servicemix.specs.jaxb-api-2.2" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.servicemix.specs" module="org.apache.servicemix.specs.jaxws-api-2.2" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.servicemix.specs" module="org.apache.servicemix.specs.saaj-api-1.3" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.servicemix.specs" module="org.apache.servicemix.specs.stax-api-1.2" matcher="exact" rev="2.4.0"/>
+		<override org="org.apache.sshd" module="sshd-core" matcher="exact" rev="0.12.0"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam" matcher="exact" rev="4.1.0"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam-container-karaf" matcher="exact" rev="4.1.0"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam-junit4" matcher="exact" rev="4.1.0"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-atinject_1.0_spec" matcher="exact" rev="1.0"/>
+		<override org="org.ops4j.pax.swissbox" module="pax-swissbox-tinybundles" matcher="exact" rev="1.3.2"/>
+		<override org="org.eclipse" module="osgi" matcher="exact" rev="3.9.1-v20140110-1610"/>
+		<override org="javax.servlet" module="servlet-api" matcher="exact" rev="2.5"/>
+		<override org="org.apache.aries.blueprint" module="org.apache.aries.blueprint.api" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.aries.blueprint" module="org.apache.aries.blueprint.core" matcher="exact" rev="1.4.1"/>
+		<override org="org.apache.aries.blueprint" module="org.apache.aries.blueprint.cm" matcher="exact" rev="1.0.4"/>
+		<override org="org.apache.aries.proxy" module="org.apache.aries.proxy.api" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.aries.proxy" module="org.apache.aries.proxy.impl" matcher="exact" rev="1.0.3"/>
+		<override org="org.apache.aries" module="org.apache.aries.util" matcher="exact" rev="1.1.0"/>
+		<override org="org.apache.aries.jmx" module="org.apache.aries.jmx.api" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.aries.jmx" module="org.apache.aries.jmx.core" matcher="exact" rev="1.1.2"/>
+		<override org="org.apache.aries.jmx" module="org.apache.aries.jmx.blueprint.api" matcher="exact" rev="1.1.0"/>
+		<override org="org.apache.aries.jmx" module="org.apache.aries.jmx.blueprint.core" matcher="exact" rev="1.1.0"/>
+		<override org="org.apache.aries.jndi" module="org.apache.aries.jndi.api" matcher="exact" rev="1.0.0"/>
+		<override org="org.apache.aries.jndi" module="org.apache.aries.jndi.core" matcher="exact" rev="1.0.0"/>
+		<override org="org.apache.aries.jndi" module="org.apache.aries.jndi.url" matcher="exact" rev="1.0.0"/>
+		<override org="org.apache.felix" module="org.apache.felix.gogo.runtime" matcher="exact" rev="0.12.1"/>
+		<override org="org.apache.felix" module="org.apache.felix.gogo.commands" matcher="exact" rev="0.12.1"/>
+		<override org="org.ops4j.pax.runner" module="pax-runner-no-jcl" matcher="exact" rev="${pax.runner.version}"/>
+		<override org="org.ops4j.pax.web" module="pax-web-api" matcher="exact" rev="3.1.2"/>
+		<override org="org.ops4j.pax.web" module="pax-web-spi" matcher="exact" rev="3.1.2"/>
+		<override org="org.ops4j.pax.web" module="pax-web-runtime" matcher="exact" rev="3.1.2"/>
+		<override org="org.ops4j.pax.web" module="pax-web-jetty" matcher="exact" rev="3.1.2"/>
+		<override org="org.ops4j.pax.web" module="pax-web-jsp" matcher="exact" rev="3.1.2"/>
+		<override org="org.ops4j.pax.web" module="pax-web-deployer" matcher="exact" rev="3.1.2"/>
+		<override org="org.ops4j.pax.web" module="pax-web-extender-war" matcher="exact" rev="3.1.2"/>
+		<override org="org.ops4j.pax.web" module="pax-web-extender-whiteboard" matcher="exact" rev="3.1.2"/>
+		<override org="org.apache.xbean" module="xbean-finder-shaded" matcher="exact" rev="3.18"/>
+		<override org="org.apache.xbean" module="xbean-blueprint" matcher="exact" rev="3.18"/>
+		<override org="org.apache.xbean" module="xbean-naming" matcher="exact" rev="3.18"/>
+		<override org="tanukisoft" module="wrapper" matcher="exact" rev="3.2.3"/>
+		<override org="commons-codec" module="commons-codec" matcher="exact" rev="1.9"/>
+		<override org="commons-collections" module="commons-collections" matcher="exact" rev="3.2.1"/>
+		<override org="org.apache.commons" module="commons-compress" matcher="exact" rev="1.6"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.4"/>
+		<override org="commons-lang" module="commons-lang" matcher="exact" rev="2.6"/>
+		<override org="org.apache.servicemix.bundles" module="org.apache.servicemix.bundles.jasypt" matcher="exact" rev="1.9.2_1"/>
+	</dependencies>
+</ivy-module>

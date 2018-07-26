@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="net.shibboleth"
+		module="parent-v3"
+		revision="8"
+		status="release"
+		publication="20150312070106"
+	>
+		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="http://shibboleth.net/">
+		A POM containing properties, profiles, plugin configurations, etc. that are common across all Shibboleth V3 projects.
+		</description>
+		<m:properties__jetty.groupId>org.eclipse.jetty</m:properties__jetty.groupId>
+		<m:properties__httpclient.groupId>org.apache.httpcomponents</m:properties__httpclient.groupId>
+		<m:properties__maven.compiler.source>1.7</m:properties__maven.compiler.source>
+		<m:properties__spring.version>4.1.5.RELEASE</m:properties__spring.version>
+		<m:properties__jetty.version>9.2.9.v20150224</m:properties__jetty.version>
+		<m:properties__spring-webflow.groupId>org.springframework.webflow</m:properties__spring-webflow.groupId>
+		<m:properties__slf4j.groupId>org.slf4j</m:properties__slf4j.groupId>
+		<m:properties__httpclient.version>4.3.6</m:properties__httpclient.version>
+		<m:properties__spring.groupId>org.springframework</m:properties__spring.groupId>
+		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
+		<m:properties__checkstyle.version>2.10</m:properties__checkstyle.version>
+		<m:properties__slf4j.version>1.7.10</m:properties__slf4j.version>
+		<m:properties__spring-webflow.version>2.4.1.RELEASE</m:properties__spring-webflow.version>
+		<m:properties__maven.central.url>http://repo1.maven.org/maven2</m:properties__maven.central.url>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__checkstyle.configLocation>
+            https://svn.shibboleth.net/java-parent-projects/java-parent-project-v3/tags/8/resources/checkstyle/checkstyle.xml
+        </m:properties__checkstyle.configLocation>
+		<m:properties__logback.version>1.1.2</m:properties__logback.version>
+		<m:dependency.management__commons-codec__commons-codec__version>1.10</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__com.google.code.findbugs__jsr305__version>3.0.0</m:dependency.management__com.google.code.findbugs__jsr305__version>
+		<m:dependency.management__com.google.guava__guava__version>18.0</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__com.mchange__c3p0__version>0.9.2.1</m:dependency.management__com.mchange__c3p0__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.3.6</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>
+		<m:dependency.management__org.apache.httpcomponents__httpclient-cache__version>4.3.6</m:dependency.management__org.apache.httpcomponents__httpclient-cache__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient-cache__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpclient-cache__exclusion_0>
+		<m:dependency.management__org.codehaus.janino__janino__version>2.7.8</m:dependency.management__org.codehaus.janino__janino__version>
+		<m:dependency.management__joda-time__joda-time__version>2.7</m:dependency.management__joda-time__joda-time__version>
+		<m:dependency.management__javax.mail__mail__version>1.4.7</m:dependency.management__javax.mail__mail__version>
+		<m:dependency.management__javax.json__javax.json-api__version>1.0</m:dependency.management__javax.json__javax.json-api__version>
+		<m:dependency.management__org.springframework__spring-core__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-core__version>
+		<m:dependency.management__org.springframework__spring-core__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework__spring-core__exclusion_0>
+		<m:dependency.management__org.springframework__spring-beans__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-beans__version>
+		<m:dependency.management__org.springframework__spring-context__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-context__version>
+		<m:dependency.management__org.springframework__spring-context-support__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-context-support__version>
+		<m:dependency.management__org.springframework__spring-expression__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-expression__version>
+		<m:dependency.management__org.springframework__spring-jdbc__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-jdbc__version>
+		<m:dependency.management__org.springframework__spring-orm__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-orm__version>
+		<m:dependency.management__org.springframework__spring-web__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-web__version>
+		<m:dependency.management__org.springframework__spring-webmvc__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-webmvc__version>
+		<m:dependency.management__org.cryptacular__cryptacular__version>1.0</m:dependency.management__org.cryptacular__cryptacular__version>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>1.51</m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>
+		<m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>1.51</m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>
+		<m:dependency.management__org.ldaptive__ldaptive__version>1.0.6</m:dependency.management__org.ldaptive__ldaptive__version>
+		<m:dependency.management__org.apache.velocity__velocity__version>1.7</m:dependency.management__org.apache.velocity__velocity__version>
+		<m:dependency.management__org.apache.velocity__velocity__exclusion_0>oro__oro</m:dependency.management__org.apache.velocity__velocity__exclusion_0>
+		<m:dependency.management__org.apache.santuario__xmlsec__version>2.0.3</m:dependency.management__org.apache.santuario__xmlsec__version>
+		<m:dependency.management__com.beust__jcommander__version>1.47</m:dependency.management__com.beust__jcommander__version>
+		<m:dependency.management__jargs__jargs__version>1.0</m:dependency.management__jargs__jargs__version>
+		<m:dependency.management__org.tmatesoft.svnkit__svnkit__version>1.8.5</m:dependency.management__org.tmatesoft.svnkit__svnkit__version>
+		<m:dependency.management__javax.servlet.jsp__jsp-api__version>2.1</m:dependency.management__javax.servlet.jsp__jsp-api__version>
+		<m:dependency.management__javax.servlet.jsp__jsp-api__scope>provided</m:dependency.management__javax.servlet.jsp__jsp-api__scope>
+		<m:dependency.management__javax.servlet__javax.servlet-api__version>3.0.1</m:dependency.management__javax.servlet__javax.servlet-api__version>
+		<m:dependency.management__javax.servlet__javax.servlet-api__scope>provided</m:dependency.management__javax.servlet__javax.servlet-api__scope>
+		<m:dependency.management__javax.servlet__jstl__version>1.2</m:dependency.management__javax.servlet__jstl__version>
+		<m:dependency.management__javax.servlet__jstl__scope>provided</m:dependency.management__javax.servlet__jstl__scope>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.1.2</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__scope>runtime</m:dependency.management__ch.qos.logback__logback-classic__scope>
+		<m:dependency.management__ch.qos.logback__logback-core__version>1.1.2</m:dependency.management__ch.qos.logback__logback-core__version>
+		<m:dependency.management__ch.qos.logback__logback-core__scope>runtime</m:dependency.management__ch.qos.logback__logback-core__scope>
+		<m:dependency.management__ch.qos.logback__logback-access__version>1.1.2</m:dependency.management__ch.qos.logback__logback-access__version>
+		<m:dependency.management__ch.qos.logback__logback-access__scope>runtime</m:dependency.management__ch.qos.logback__logback-access__scope>
+		<m:dependency.management__org.glassfish__javax.json__version>1.0.4</m:dependency.management__org.glassfish__javax.json__version>
+		<m:dependency.management__org.glassfish__javax.json__scope>runtime</m:dependency.management__org.glassfish__javax.json__scope>
+		<m:dependency.management__org.mockito__mockito-all__version>1.10.8</m:dependency.management__org.mockito__mockito-all__version>
+		<m:dependency.management__org.mockito__mockito-all__scope>test</m:dependency.management__org.mockito__mockito-all__scope>
+		<m:dependency.management__com.unboundid__unboundid-ldapsdk__version>2.3.8</m:dependency.management__com.unboundid__unboundid-ldapsdk__version>
+		<m:dependency.management__com.unboundid__unboundid-ldapsdk__scope>test</m:dependency.management__com.unboundid__unboundid-ldapsdk__scope>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.7.10</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__scope>test</m:dependency.management__org.slf4j__jcl-over-slf4j__scope>
+		<m:dependency.management__org.slf4j__jul-to-slf4j__version>1.7.10</m:dependency.management__org.slf4j__jul-to-slf4j__version>
+		<m:dependency.management__org.slf4j__jul-to-slf4j__scope>test</m:dependency.management__org.slf4j__jul-to-slf4j__scope>
+		<m:dependency.management__org.slf4j__log4j-over-slf4j__version>1.7.10</m:dependency.management__org.slf4j__log4j-over-slf4j__version>
+		<m:dependency.management__org.slf4j__log4j-over-slf4j__scope>test</m:dependency.management__org.slf4j__log4j-over-slf4j__scope>
+		<m:dependency.management__org.springframework__spring-test__version>4.1.5.RELEASE</m:dependency.management__org.springframework__spring-test__version>
+		<m:dependency.management__org.springframework__spring-test__scope>test</m:dependency.management__org.springframework__spring-test__scope>
+		<m:maven.plugins>org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__null</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.10" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.testng" name="testng" rev="6.8.8" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.slf4j" name="jcl-over-slf4j" rev="1.7.10" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.slf4j" name="jul-to-slf4j" rev="1.7.10" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.slf4j" name="log4j-over-slf4j" rev="1.7.10" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="xmlunit" name="xmlunit" rev="1.5" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="commons-codec" module="commons-codec" matcher="exact" rev="1.10"/>
+		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.0"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="18.0"/>
+		<override org="com.mchange" module="c3p0" matcher="exact" rev="0.9.2.1"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.3.6"/>
+		<override org="org.apache.httpcomponents" module="httpclient-cache" matcher="exact" rev="4.3.6"/>
+		<override org="org.codehaus.janino" module="janino" matcher="exact" rev="2.7.8"/>
+		<override org="joda-time" module="joda-time" matcher="exact" rev="2.7"/>
+		<override org="javax.mail" module="mail" matcher="exact" rev="1.4.7"/>
+		<override org="javax.json" module="javax.json-api" matcher="exact" rev="1.0"/>
+		<override org="org.springframework" module="spring-core" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework" module="spring-beans" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework" module="spring-context" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework" module="spring-context-support" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework" module="spring-expression" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework" module="spring-jdbc" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework" module="spring-orm" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework" module="spring-web" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.springframework" module="spring-webmvc" matcher="exact" rev="4.1.5.RELEASE"/>
+		<override org="org.cryptacular" module="cryptacular" matcher="exact" rev="1.0"/>
+		<override org="org.bouncycastle" module="bcprov-jdk15on" matcher="exact" rev="1.51"/>
+		<override org="org.bouncycastle" module="bcpkix-jdk15on" matcher="exact" rev="1.51"/>
+		<override org="org.ldaptive" module="ldaptive" matcher="exact" rev="1.0.6"/>
+		<override org="org.apache.velocity" module="velocity" matcher="exact" rev="1.7"/>
+		<override org="org.apache.santuario" module="xmlsec" matcher="exact" rev="2.0.3"/>
+		<override org="com.beust" module="jcommander" matcher="exact" rev="1.47"/>
+		<override org="jargs" module="jargs" matcher="exact" rev="1.0"/>
+		<override org="org.tmatesoft.svnkit" module="svnkit" matcher="exact" rev="1.8.5"/>
+		<override org="javax.servlet.jsp" module="jsp-api" matcher="exact" rev="2.1"/>
+		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.0.1"/>
+		<override org="javax.servlet" module="jstl" matcher="exact" rev="1.2"/>
+		<override org="ch.qos.logback" module="logback-classic" matcher="exact" rev="1.1.2"/>
+		<override org="ch.qos.logback" module="logback-core" matcher="exact" rev="1.1.2"/>
+		<override org="ch.qos.logback" module="logback-access" matcher="exact" rev="1.1.2"/>
+		<override org="org.glassfish" module="javax.json" matcher="exact" rev="1.0.4"/>
+		<override org="org.mockito" module="mockito-all" matcher="exact" rev="1.10.8"/>
+		<override org="com.unboundid" module="unboundid-ldapsdk" matcher="exact" rev="2.3.8"/>
+		<override org="org.slf4j" module="jcl-over-slf4j" matcher="exact" rev="1.7.10"/>
+		<override org="org.slf4j" module="jul-to-slf4j" matcher="exact" rev="1.7.10"/>
+		<override org="org.slf4j" module="log4j-over-slf4j" matcher="exact" rev="1.7.10"/>
+		<override org="org.springframework" module="spring-test" matcher="exact" rev="4.1.5.RELEASE"/>
+	</dependencies>
+</ivy-module>

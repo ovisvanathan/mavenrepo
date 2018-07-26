@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.milyn"
+		module="milyn-smooks-fixed-length"
+		revision="1.5.2"
+		status="release"
+		publication="20140228011930"
+	>
+		<description homepage="">
+		A Smooks cartridge that can read fixed length files. The code of this cartridge was donated by Cedric Rathgeb.
+		</description>
+		<m:properties__xerces.version>2.9.1</m:properties__xerces.version>
+		<m:properties__jaxen.version>1.1.1</m:properties__jaxen.version>
+		<m:properties__commons_lang.version>2.4</m:properties__commons_lang.version>
+		<m:properties__xalan.version>2.7.1</m:properties__xalan.version>
+		<m:properties__spring.version>3.0.5.RELEASE</m:properties__spring.version>
+		<m:properties__xml_apis.version>1.3.02</m:properties__xml_apis.version>
+		<m:properties__javax.transaction.version>1.1</m:properties__javax.transaction.version>
+		<m:properties__mockito.version>1.8.0</m:properties__mockito.version>
+		<m:properties__mvel.version>2.0.17</m:properties__mvel.version>
+		<m:properties__nekohtml.version>0.9.5</m:properties__nekohtml.version>
+		<m:properties__xstream.version>1.4.1</m:properties__xstream.version>
+		<m:properties__dtdparser.version>1.21</m:properties__dtdparser.version>
+		<m:properties__opencsv.version>2.3</m:properties__opencsv.version>
+		<m:properties__ant.version>1.7.0</m:properties__ant.version>
+		<m:properties__freemarker.version>2.3.15</m:properties__freemarker.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__javassist.version>3.10.0.GA</m:properties__javassist.version>
+		<m:properties__groovy.version>1.5.7</m:properties__groovy.version>
+		<m:properties__camel.version>2.10.0</m:properties__camel.version>
+		<m:properties__mockejb.version>0.6-beta2</m:properties__mockejb.version>
+		<m:properties__codehausDistMgmtSnapshotsUrl>https://nexus.codehaus.org/content/repositories/snapshots/</m:properties__codehausDistMgmtSnapshotsUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|null__maven-compiler-plugin__2.3.2|null__maven-assembly-plugin__2.2|org.apache.maven.plugins__maven-surefire-plugin__2.9|org.apache.maven.plugins__maven-source-plugin__2.1.2|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|null__maven-compiler-plugin__2.3.2|null__maven-assembly-plugin__2.2|org.apache.maven.plugins__maven-surefire-plugin__2.9|org.apache.maven.plugins__maven-source-plugin__2.1.2|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|null__maven-compiler-plugin__2.3.2|null__maven-assembly-plugin__2.2|org.apache.maven.plugins__maven-surefire-plugin__2.9|org.apache.maven.plugins__maven-source-plugin__2.1.2|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|null__maven-compiler-plugin__2.3.2|null__maven-assembly-plugin__2.2|org.apache.maven.plugins__maven-surefire-plugin__2.9|org.apache.maven.plugins__maven-source-plugin__2.1.2</m:maven.plugins>
+		<m:dependency.management__xerces__xercesImpl__version>2.9.1</m:dependency.management__xerces__xercesImpl__version>
+		<m:dependency.management__xerces__xercesImpl__scope>provided</m:dependency.management__xerces__xercesImpl__scope>
+		<m:dependency.management__org.apache.maven.plugins__maven-surefire-plugin__version>2.9</m:dependency.management__org.apache.maven.plugins__maven-surefire-plugin__version>
+		<m:dependency.management__jaxen__jaxen__version>1.1.1</m:dependency.management__jaxen__jaxen__version>
+		<m:dependency.management__jaxen__jaxen__exclusion_0>dom4j__dom4j</m:dependency.management__jaxen__jaxen__exclusion_0>
+		<m:dependency.management__jaxen__jaxen__exclusion_1>jdom__jdom</m:dependency.management__jaxen__jaxen__exclusion_1>
+		<m:dependency.management__jaxen__jaxen__exclusion_2>xml-apis__xml-apis</m:dependency.management__jaxen__jaxen__exclusion_2>
+		<m:dependency.management__jaxen__jaxen__exclusion_3>xmlParserAPIs__xerces</m:dependency.management__jaxen__jaxen__exclusion_3>
+		<m:dependency.management__jaxen__jaxen__exclusion_4>xercesImpl__xerces</m:dependency.management__jaxen__jaxen__exclusion_4>
+		<m:dependency.management__jaxen__jaxen__exclusion_5>xom__xom</m:dependency.management__jaxen__jaxen__exclusion_5>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="milyn-smooks-fixed-length" type="jar" ext="jar" conf="master"/>
+		<artifact name="milyn-smooks-fixed-length" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="milyn-smooks-fixed-length" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.milyn" name="milyn-smooks-javabean" rev="1.5.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.testng" name="testng" rev="5.7" force="true" conf="test->runtime(*),master(*)">
+			<artifact name="testng" type="jar" ext="jar" conf="" m:classifier="jdk15"/>
+		</dependency>
+		<dependency org="org.milyn" name="testres" rev="1.5.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.milyn" name="milyn-smooks-core" rev="1.5.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="dtdparser" module="dtdparser" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="commons-lang" name="commons-lang" rev="2.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-logging" name="commons-logging" rev="1.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="logkit" module="logkit" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="avalon-framework" module="avalon-framework" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="javax.servlet" module="servlet-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<override org="xerces" module="xercesImpl" matcher="exact" rev="2.9.1"/>
+		<override org="org.apache.maven.plugins" module="maven-surefire-plugin" matcher="exact" rev="2.9"/>
+		<override org="jaxen" module="jaxen" matcher="exact" rev="1.1.1"/>
+	</dependencies>
+</ivy-module>

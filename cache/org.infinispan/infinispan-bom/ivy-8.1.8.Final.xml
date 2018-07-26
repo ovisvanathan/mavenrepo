@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.infinispan"
+		module="infinispan-bom"
+		revision="8.1.8.Final"
+		status="release"
+		publication="20170322145538"
+	>
+		<license name="Apache License" url="http://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="http://www.infinispan.org">
+		Infinispan BOM module
+		</description>
+		<m:properties__version.jta>1.0.1.Final</m:properties__version.jta>
+		<m:properties__version.hibernate_dep.antlr>2.7.7_5</m:properties__version.hibernate_dep.antlr>
+		<m:properties__version.scala>${version.scala.major}.7</m:properties__version.scala>
+		<m:properties__version.hibernate.core>5.0.4.Final</m:properties__version.hibernate.core>
+		<m:properties__version.javax.cache>1.0.0</m:properties__version.javax.cache>
+		<m:properties__version.hibernate_dep.javaassist>3.18.1-GA</m:properties__version.hibernate_dep.javaassist>
+		<m:properties__version.commons.pool>1.6</m:properties__version.commons.pool>
+		<m:properties__version.maven-compiler-plugin>3.1</m:properties__version.maven-compiler-plugin>
+		<m:properties__version.cdi>1.0-SP4</m:properties__version.cdi>
+		<m:properties__version.java>1.8</m:properties__version.java>
+		<m:properties__version.protostream>3.0.5.Final</m:properties__version.protostream>
+		<m:properties__version.hibernate.search>5.5.1.Final</m:properties__version.hibernate.search>
+		<m:properties__infinispan.codename>Mahou</m:properties__infinispan.codename>
+		<m:properties__uberjar.deps.optional>true</m:properties__uberjar.deps.optional>
+		<m:properties__version.hibernate.osgi>${version.hibernate.core}</m:properties__version.hibernate.osgi>
+		<m:properties__version.netty>4.0.25.Final</m:properties__version.netty>
+		<m:properties__version.c3p0_dep.mchange-commons-java>0.2.7</m:properties__version.c3p0_dep.mchange-commons-java>
+		<m:properties__version.hibernate_dep.dom4j>1.6.1_5</m:properties__version.hibernate_dep.dom4j>
+		<m:properties__version.rhq>4.4.0</m:properties__version.rhq>
+		<m:properties__version.aesh>0.33.14</m:properties__version.aesh>
+		<m:properties__version.jboss.logging>3.3.0.Final</m:properties__version.jboss.logging>
+		<m:properties__version.scala.major>2.11</m:properties__version.scala.major>
+		<m:properties__version.scala.xml>1.0.2</m:properties__version.scala.xml>
+		<m:properties__version.hibernate_dep.classmate>0.5.4</m:properties__version.hibernate_dep.classmate>
+		<m:properties__infinispan.core.schema.version>8.1</m:properties__infinispan.core.schema.version>
+		<m:properties__version.antlr>3.5.2</m:properties__version.antlr>
+		<m:properties__version.c3p0>0.9.5</m:properties__version.c3p0>
+		<m:properties__version.xstream>1.4.9</m:properties__version.xstream>
+		<m:properties__version.gnu.getopt>1.0.13</m:properties__version.gnu.getopt>
+		<m:properties__version.osgi>4.3.1</m:properties__version.osgi>
+		<m:properties__version.hibernate_dep.hibernate-commons-annotations>5.0.1.Final</m:properties__version.hibernate_dep.hibernate-commons-annotations>
+		<m:properties__version.hibernate.javax.persistence>1.0.0.Final</m:properties__version.hibernate.javax.persistence>
+		<m:properties__version.jgroups>3.6.4.Final</m:properties__version.jgroups>
+		<m:properties__version.jboss.marshalling>1.4.10.Final</m:properties__version.jboss.marshalling>
+		<m:properties__version.hibernate.entitymanager>${version.hibernate.core}</m:properties__version.hibernate.entitymanager>
+		<m:properties__version.hibernate_dep.jandex>2.0.0.Final</m:properties__version.hibernate_dep.jandex>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-jdbc__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-jdbc__version>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-jpa__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-jpa__version>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-rest__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-rest__version>
+		<m:dependency.management__org.infinispan__infinispan-persistence-cli__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-persistence-cli__version>
+		<m:dependency.management__org.infinispan__infinispan-cachestore-leveldb__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cachestore-leveldb__version>
+		<m:dependency.management__org.infinispan__infinispan-cdi-embedded__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cdi-embedded__version>
+		<m:dependency.management__org.infinispan__infinispan-cdi-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cdi-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-client-hotrod__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-client-hotrod__version>
+		<m:dependency.management__org.infinispan__infinispan-commons__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-commons__version>
+		<m:dependency.management__org.infinispan__infinispan-core__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-core__version>
+		<m:dependency.management__org.infinispan__infinispan-lucene-directory__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-lucene-directory__version>
+		<m:dependency.management__org.infinispan__infinispan-directory-provider__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-directory-provider__version>
+		<m:dependency.management__org.infinispan__infinispan-query__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-query__version>
+		<m:dependency.management__org.infinispan__infinispan-query-dsl__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-query-dsl__version>
+		<m:dependency.management__org.infinispan__infinispan-objectfilter__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-objectfilter__version>
+		<m:dependency.management__org.infinispan__infinispan-remote-query-client__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-remote-query-client__version>
+		<m:dependency.management__org.infinispan__infinispan-remote-query-server__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-remote-query-server__version>
+		<m:dependency.management__org.infinispan__infinispan-scripting__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-scripting__version>
+		<m:dependency.management__org.infinispan__infinispan-server-core__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-core__version>
+		<m:dependency.management__org.infinispan__infinispan-server-hotrod__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-hotrod__version>
+		<m:dependency.management__org.infinispan__infinispan-server-memcached__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-memcached__version>
+		<m:dependency.management__org.infinispan__infinispan-server-rest__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-rest__version>
+		<m:dependency.management__org.infinispan__infinispan-server-websocket__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-server-websocket__version>
+		<m:dependency.management__org.infinispan__infinispan-spring__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-spring__version>
+		<m:dependency.management__org.infinispan__infinispan-spring4-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-spring4-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-spring4-embedded__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-spring4-embedded__version>
+		<m:dependency.management__org.infinispan__infinispan-tasks__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-tasks__version>
+		<m:dependency.management__org.infinispan__infinispan-tools__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-tools__version>
+		<m:dependency.management__org.infinispan__infinispan-tree__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-tree__version>
+		<m:dependency.management__org.infinispan__infinispan-jcache__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-jcache__version>
+		<m:dependency.management__org.infinispan__infinispan-jcache-commons__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-jcache-commons__version>
+		<m:dependency.management__org.infinispan__infinispan-jcache-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-jcache-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-embedded__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-embedded__version>
+		<m:dependency.management__org.infinispan__infinispan-embedded-query__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-embedded-query__version>
+		<m:dependency.management__org.infinispan__infinispan-remote__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-remote__version>
+		<m:dependency.management__org.infinispan__infinispan-cli__version>8.1.8.Final</m:dependency.management__org.infinispan__infinispan-cli__version>
+		<m:dependency.management__gnu-getopt__getopt__version>1.0.13</m:dependency.management__gnu-getopt__getopt__version>
+		<m:dependency.management__org.antlr__antlr-runtime__version>3.5.2</m:dependency.management__org.antlr__antlr-runtime__version>
+		<m:dependency.management__org.jboss.spec.javax.transaction__jboss-transaction-api_1.1_spec__version>1.0.1.Final</m:dependency.management__org.jboss.spec.javax.transaction__jboss-transaction-api_1.1_spec__version>
+		<m:dependency.management__org.hibernate.javax.persistence__hibernate-jpa-2.1-api__version>1.0.0.Final</m:dependency.management__org.hibernate.javax.persistence__hibernate-jpa-2.1-api__version>
+		<m:dependency.management__org.jboss.logging__jboss-logging__version>3.3.0.Final</m:dependency.management__org.jboss.logging__jboss-logging__version>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling-osgi__version>1.4.10.Final</m:dependency.management__org.jboss.marshalling__jboss-marshalling-osgi__version>
+		<m:dependency.management__org.jgroups__jgroups__version>3.6.4.Final</m:dependency.management__org.jgroups__jgroups__version>
+		<m:dependency.management__org.jboss.aesh__aesh__version>0.33.14</m:dependency.management__org.jboss.aesh__aesh__version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>4.3.1</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>4.3.1</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__org.hibernate__hibernate-core__version>5.0.4.Final</m:dependency.management__org.hibernate__hibernate-core__version>
+		<m:dependency.management__org.rhq__rhq-core-domain__version>4.4.0</m:dependency.management__org.rhq__rhq-core-domain__version>
+		<m:dependency.management__org.rhq__rhq-core-plugin-api__version>4.4.0</m:dependency.management__org.rhq__rhq-core-plugin-api__version>
+		<m:dependency.management__org.rhq__rhq-core-plugin-api__exclusion_0>com.sun.xml.bind__jaxb-impl</m:dependency.management__org.rhq__rhq-core-plugin-api__exclusion_0>
+		<m:dependency.management__org.rhq__rhq-jmx-plugin__version>4.4.0</m:dependency.management__org.rhq__rhq-jmx-plugin__version>
+		<m:dependency.management__org.rhq__rhq-jboss-as-7-plugin__version>4.4.0</m:dependency.management__org.rhq__rhq-jboss-as-7-plugin__version>
+		<m:dependency.management__org.rhq__rhq-core-native-system__version>4.4.0</m:dependency.management__org.rhq__rhq-core-native-system__version>
+		<m:dependency.management__org.hibernate__hibernate-search-engine__version>5.5.1.Final</m:dependency.management__org.hibernate__hibernate-search-engine__version>
+		<m:dependency.management__org.hibernate__hibernate-search-serialization-avro__version>5.5.1.Final</m:dependency.management__org.hibernate__hibernate-search-serialization-avro__version>
+		<m:dependency.management__org.hibernate__hibernate-entitymanager__version>5.0.4.Final</m:dependency.management__org.hibernate__hibernate-entitymanager__version>
+		<m:dependency.management__org.infinispan.protostream__protostream__version>3.0.5.Final</m:dependency.management__org.infinispan.protostream__protostream__version>
+		<m:dependency.management__org.infinispan.protostream__sample-domain-definition__version>3.0.5.Final</m:dependency.management__org.infinispan.protostream__sample-domain-definition__version>
+		<m:dependency.management__org.infinispan.protostream__sample-domain-implementation__version>3.0.5.Final</m:dependency.management__org.infinispan.protostream__sample-domain-implementation__version>
+		<m:dependency.management__javax.enterprise__cdi-api__version>1.0-SP4</m:dependency.management__javax.enterprise__cdi-api__version>
+		<m:dependency.management__javax.enterprise__cdi-api__exclusion_0>org.testng__testng</m:dependency.management__javax.enterprise__cdi-api__exclusion_0>
+		<m:dependency.management__javax.cache__cache-api__version>1.0.0</m:dependency.management__javax.cache__cache-api__version>
+		<m:dependency.management__io.netty__netty-all__version>4.0.25.Final</m:dependency.management__io.netty__netty-all__version>
+		<m:dependency.management__org.scala-lang__scala-library__version>2.11.7</m:dependency.management__org.scala-lang__scala-library__version>
+		<m:dependency.management__org.scala-lang.modules__scala-xml_2.11__version>1.0.2</m:dependency.management__org.scala-lang.modules__scala-xml_2.11__version>
+		<m:dependency.management__com.thoughtworks.xstream__xstream__version>1.4.9</m:dependency.management__com.thoughtworks.xstream__xstream__version>
+		<m:dependency.management__commons-pool__commons-pool__version>1.6</m:dependency.management__commons-pool__commons-pool__version>
+		<m:dependency.management__com.mchange__c3p0__version>0.9.5</m:dependency.management__com.mchange__c3p0__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

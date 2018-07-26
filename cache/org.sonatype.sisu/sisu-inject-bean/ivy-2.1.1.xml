@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.sonatype.sisu"
+		module="sisu-inject-bean"
+		revision="2.1.1"
+		status="release"
+		publication="20110211231114"
+	>
+		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html" />
+		<description homepage="" />
+		<m:properties__sisu.guice.version>2.9.4</m:properties__sisu.guice.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__forgeReleaseUrl>https://repository.sonatype.org/service/local/staging/deploy/maven2</m:properties__forgeReleaseUrl>
+		<m:properties__forgeSnapshotId>forge-snapshots</m:properties__forgeSnapshotId>
+		<m:properties__forgeSnapshotUrl>https://repository.sonatype.org/content/repositories/snapshots</m:properties__forgeSnapshotUrl>
+		<m:properties__forgeSiteId>forge-sites</m:properties__forgeSiteId>
+		<m:properties__forgeSiteUrl>https://repository.sonatype.org/content/sites/maven-sites/forge-parent</m:properties__forgeSiteUrl>
+		<m:properties__forgeReleaseId>forge-releases</m:properties__forgeReleaseId>
+		<m:maven.plugins>null__maven-site-plugin__null|null__maven-site-plugin__null|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-site-plugin__null|null__maven-site-plugin__null|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-site-plugin__null|null__maven-site-plugin__null|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-site-plugin__null|null__maven-site-plugin__null|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-site-plugin__null|null__maven-site-plugin__null|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-site-plugin__null|null__maven-site-plugin__null|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-site-plugin__null|null__maven-site-plugin__null|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-site-plugin__null|null__maven-site-plugin__null|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|org.apache.felix__maven-bundle-plugin__null</m:maven.plugins>
+		<m:dependency.management__javax.inject__javax.inject__version>1</m:dependency.management__javax.inject__javax.inject__version>
+		<m:dependency.management__aopalliance__aopalliance__version>1.0</m:dependency.management__aopalliance__aopalliance__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.6.1</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>4.2.0</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>4.2.0</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.framework__version>3.0.8</m:dependency.management__org.apache.felix__org.apache.felix.framework__version>
+		<m:dependency.management__junit__junit__version>4.8.2</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.sonatype.sisu__sisu-guice__version>2.9.4</m:dependency.management__org.sonatype.sisu__sisu-guice__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-reflect__version>2.1.1</m:dependency.management__org.sonatype.sisu.inject__guice-bean-reflect__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-inject__version>2.1.1</m:dependency.management__org.sonatype.sisu.inject__guice-bean-inject__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-scanners__version>2.1.1</m:dependency.management__org.sonatype.sisu.inject__guice-bean-scanners__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-converters__version>2.1.1</m:dependency.management__org.sonatype.sisu.inject__guice-bean-converters__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-locators__version>2.1.1</m:dependency.management__org.sonatype.sisu.inject__guice-bean-locators__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-binders__version>2.1.1</m:dependency.management__org.sonatype.sisu.inject__guice-bean-binders__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-containers__version>2.1.1</m:dependency.management__org.sonatype.sisu.inject__guice-bean-containers__version>
+		<m:dependency.management__org.sonatype.sisu__sisu-inject-bean__version>2.1.1</m:dependency.management__org.sonatype.sisu__sisu-inject-bean__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="sisu-inject-bean" type="bundle" ext="jar" conf="master"/>
+		<artifact name="sisu-inject-bean" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="sisu-inject-bean" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.sonatype.sisu" name="sisu-guice" rev="2.9.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="sisu-guice" type="jar" ext="jar" conf="" m:classifier="no_aop"/>
+			<exclude org="javax.inject" module="javax.inject" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="aopalliance" module="aopalliance" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.sonatype.sisu.inject" name="guice-bean-containers" rev="2.1.1" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="0.9.28" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.testng" name="testng" rev="5.14.9" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="javax.inject" module="javax.inject" matcher="exact" rev="1"/>
+		<override org="aopalliance" module="aopalliance" matcher="exact" rev="1.0"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.6.1"/>
+		<override org="org.osgi" module="org.osgi.core" matcher="exact" rev="4.2.0"/>
+		<override org="org.osgi" module="org.osgi.compendium" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.felix" module="org.apache.felix.framework" matcher="exact" rev="3.0.8"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.8.2"/>
+		<override org="org.sonatype.sisu" module="sisu-guice" matcher="exact" rev="2.9.4"/>
+		<override org="org.sonatype.sisu.inject" module="guice-bean-reflect" matcher="exact" rev="2.1.1"/>
+		<override org="org.sonatype.sisu.inject" module="guice-bean-inject" matcher="exact" rev="2.1.1"/>
+		<override org="org.sonatype.sisu.inject" module="guice-bean-scanners" matcher="exact" rev="2.1.1"/>
+		<override org="org.sonatype.sisu.inject" module="guice-bean-converters" matcher="exact" rev="2.1.1"/>
+		<override org="org.sonatype.sisu.inject" module="guice-bean-locators" matcher="exact" rev="2.1.1"/>
+		<override org="org.sonatype.sisu.inject" module="guice-bean-binders" matcher="exact" rev="2.1.1"/>
+		<override org="org.sonatype.sisu.inject" module="guice-bean-containers" matcher="exact" rev="2.1.1"/>
+		<override org="org.sonatype.sisu" module="sisu-inject-bean" matcher="exact" rev="2.1.1"/>
+	</dependencies>
+</ivy-module>

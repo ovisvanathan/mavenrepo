@@ -1,0 +1,154 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>org.rhq</groupId>
+      <artifactId>rhq-parent</artifactId>
+      <version>4.8.0</version>
+      <relativePath>../../pom.xml</relativePath>
+   </parent>
+
+   <groupId>org.rhq</groupId>
+   <artifactId>rhq-core-parent</artifactId>
+   <packaging>pom</packaging>
+
+   <name>RHQ Core Modules</name>
+   <description>parent POM for modules comprising the RHQ core (i.e. modules required by both the enterprise and embedded editions of RHQ)</description>
+
+   <profiles>
+
+      <profile>
+         <id>default</id>
+         <activation>
+            <activeByDefault>true</activeByDefault>
+         </activation>
+         <modules>
+            <module>util</module>
+            <module>native-system</module>
+            <module>comm-api</module>
+            <module>dbutils</module>
+            <module>domain</module>
+            <module>plugin-api</module>
+            <module>client-api</module>
+            <module>plugin-container</module>
+            <module>gui</module>
+            <!-- spinder 8/29/11: disabling plugindoc for DocBook and Confluence as they don't seem to be used and causing brew build issues.
+            <module>plugindoc</module>-->
+            <module>plugin-validator</module>
+            <module>arquillian-integration</module>
+            <module>plugin-test-api</module>
+            <module>plugin-test-util</module>
+            <module>plugin-container-itest</module>
+         </modules>
+      </profile>
+
+      <profile>
+         <!--
+	        This profile has been created to avoid unnecessary resolution of test dependencies during a build that
+	        does not run, compile or need tests.
+	        More test dependencies are to be moved here if the set of sub-dependencies is complex, references project
+	        test jars, or conflicts with changing the container version.
+	     -->
+         <id>avoid.test.dependencies</id>
+	     <activation>
+	        <property>
+	           <name>maven.test.skip</name>
+	           <value>true</value>
+	        </property>
+	     </activation>
+         <modules>
+            <module>util</module>
+            <module>native-system</module>
+            <module>comm-api</module>
+            <module>dbutils</module>
+            <module>domain</module>
+            <module>plugin-api</module>
+            <module>client-api</module>
+            <module>plugin-container</module>
+            <module>gui</module>
+            <module>plugin-validator</module>
+            <module>arquillian-integration</module>
+            <module>plugin-test-api</module>
+            <module>plugin-container-itest</module>
+         </modules>
+      </profile>
+
+
+     <profile>
+        <id>plugindoc</id>
+        <modules>
+           <module>plugindoc</module>
+        </modules>
+     </profile>
+
+      <profile>
+         <id>rhq-perf</id>
+         <activation>
+            <property>
+               <name>rhq-perf</name>
+            </property>
+         </activation>
+         <modules>
+            <module>util</module>
+            <module>comm-api</module>
+            <module>dbutils</module>
+            <module>domain</module>
+            <module>client-api</module>
+         </modules>
+      </profile>
+
+      <profile>
+         <id>javadoc</id>
+         <activation>
+            <property>
+               <name>javadoc.outputDirectory</name>
+            </property>
+         </activation>
+
+         <modules>
+            <module>native-system</module>
+            <module>plugin-api</module>
+         </modules>
+
+         <build>
+            <plugins>
+               <plugin>
+                  <artifactId>maven-javadoc-plugin</artifactId>
+
+                  <executions>
+                     <execution>
+                        <id>javadoc-domain-api</id>
+                        <phase>compile</phase>
+                        <goals>
+                           <goal>javadoc</goal>
+                        </goals>
+
+                        <configuration>
+                           <doctitle>RHQ ${project.version} - Plugin API</doctitle>
+                           <reportOutputDirectory>${javadoc.outputDirectory}</reportOutputDirectory>
+                           <destDir>plugin-api</destDir>
+                           <aggregate>true</aggregate>
+                           <encoding>UTF-8</encoding>
+                           <charset>UTF-8</charset>
+                           <docencoding>UTF-8</docencoding>
+                           <author>false</author>
+                           <breakiterator>true</breakiterator>
+                           <links>
+                              <link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+                              <link>../domain</link>
+                           </links>
+                        </configuration>
+                     </execution>
+                  </executions>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+
+   </profiles>
+
+</project>
+

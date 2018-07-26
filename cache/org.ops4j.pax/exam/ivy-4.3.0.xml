@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.ops4j.pax"
+		module="exam"
+		revision="4.3.0"
+		status="release"
+		publication="20141015015457"
+	>
+		<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="http://team.ops4j.org/wiki/display/paxexam/">
+		Pax Exam Integration testing framework for Modern Java Platforms.
+		</description>
+		<m:properties__dependency.spring.version>4.0.6.RELEASE</m:properties__dependency.spring.version>
+		<m:properties__dependency.testng.version>6.8.8</m:properties__dependency.testng.version>
+		<m:properties__dependency.paxurl.version>2.2.0</m:properties__dependency.paxurl.version>
+		<m:properties__dependency.weld.version>2.1.2.Final</m:properties__dependency.weld.version>
+		<m:properties__dependency.swissbox.version>1.8.0</m:properties__dependency.swissbox.version>
+		<m:properties__dependency.asm.version>3.0</m:properties__dependency.asm.version>
+		<m:properties__dependency.tomcat.version>8.0.8</m:properties__dependency.tomcat.version>
+		<m:properties__dependency.pax.logging.version>1.8.0</m:properties__dependency.pax.logging.version>
+		<m:properties__dependency.wildfly.version>8.1.0.Final</m:properties__dependency.wildfly.version>
+		<m:properties__dependency.junit.version>4.11</m:properties__dependency.junit.version>
+		<m:properties__dependency.slf4j.version>1.6.6</m:properties__dependency.slf4j.version>
+		<m:properties__dependency.logback.version>1.0.6</m:properties__dependency.logback.version>
+		<m:properties__dependency.karaf.version>3.0.2</m:properties__dependency.karaf.version>
+		<m:properties__dependency.xbean.version>3.16</m:properties__dependency.xbean.version>
+		<m:properties__dependency.maven.version>3.0.5</m:properties__dependency.maven.version>
+		<m:properties__dependency.tinybundles.version>2.1.0</m:properties__dependency.tinybundles.version>
+		<m:properties__dependency.osgicore.version>4.3.1</m:properties__dependency.osgicore.version>
+		<m:properties__dependency.aether.version>1.0.0.v20140518</m:properties__dependency.aether.version>
+		<m:properties__dependency.base.version>1.5.0</m:properties__dependency.base.version>
+		<m:properties__dependency.mockito.version>1.9.5</m:properties__dependency.mockito.version>
+		<m:properties__dependency.deltaspike.version>1.0.1</m:properties__dependency.deltaspike.version>
+		<m:properties__dependency.glassfish.version>4.1</m:properties__dependency.glassfish.version>
+		<m:properties__dependency.atinject.version>1.0</m:properties__dependency.atinject.version>
+		<m:properties__namespace>org.ops4j.pax.exam</m:properties__namespace>
+		<m:properties__dependency.osgicomp.version>4.3.1</m:properties__dependency.osgicomp.version>
+		<m:properties__jacoco.argLine/>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__arguments/>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/ops4j-snapshots</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-checkstyle-plugin__null|org.sonatype.plugins__nexus-staging-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.sonatype.plugins__nexus-staging-maven-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.sonatype.plugins__nexus-staging-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.sonatype.plugins__nexus-staging-maven-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|null__maven-remote-resources-plugin__1.4</m:maven.plugins>
+		<m:dependency.management__org.osgi__org.osgi.core__version>4.3.1</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.osgi__org.osgi.core__scope>provided</m:dependency.management__org.osgi__org.osgi.core__scope>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>4.3.1</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__scope>provided</m:dependency.management__org.osgi__org.osgi.compendium__scope>
+		<m:dependency.management__org.apache.felix__org.apache.felix.framework__version>4.2.1</m:dependency.management__org.apache.felix__org.apache.felix.framework__version>
+		<m:dependency.management__org.eclipse.tycho__org.eclipse.osgi__version>3.7.0.v20110613</m:dependency.management__org.eclipse.tycho__org.eclipse.osgi__version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__org.testng__testng__version>6.8.8</m:dependency.management__org.testng__testng__version>
+		<m:dependency.management__org.mockito__mockito-all__version>1.9.5</m:dependency.management__org.mockito__mockito-all__version>
+		<m:dependency.management__org.mockito__mockito-all__scope>test</m:dependency.management__org.mockito__mockito-all__scope>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>2.2.0</m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-classpath__version>2.2.0</m:dependency.management__org.ops4j.pax.url__pax-url-classpath__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-link__version>2.2.0</m:dependency.management__org.ops4j.pax.url__pax-url-link__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base__version>1.5.0</m:dependency.management__org.ops4j.base__ops4j-base__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-exec__version>1.5.0</m:dependency.management__org.ops4j.base__ops4j-base-exec__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-lang__version>1.5.0</m:dependency.management__org.ops4j.base__ops4j-base-lang__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-monitors__version>1.5.0</m:dependency.management__org.ops4j.base__ops4j-base-monitors__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-store__version>1.5.0</m:dependency.management__org.ops4j.base__ops4j-base-store__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-io__version>1.5.0</m:dependency.management__org.ops4j.base__ops4j-base-io__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-net__version>1.5.0</m:dependency.management__org.ops4j.base__ops4j-base-net__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-spi__version>1.5.0</m:dependency.management__org.ops4j.base__ops4j-base-spi__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-util-property__version>1.5.0</m:dependency.management__org.ops4j.base__ops4j-base-util-property__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-core__version>1.8.0</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-core__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-extender__version>1.8.0</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-extender__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-lifecycle__version>1.8.0</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-lifecycle__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-framework__version>1.8.0</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-framework__version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-tracker__version>1.8.0</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-tracker__version>
+		<m:dependency.management__org.ops4j.pax.logging__pax-logging-api__version>1.8.0</m:dependency.management__org.ops4j.pax.logging__pax-logging-api__version>
+		<m:dependency.management__org.ops4j.pax.tinybundles__tinybundles__version>2.1.0</m:dependency.management__org.ops4j.pax.tinybundles__tinybundles__version>
+		<m:dependency.management__asm__asm__version>3.0</m:dependency.management__asm__asm__version>
+		<m:dependency.management__commons-io__commons-io__version>2.4</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__commons-logging__commons-logging-api__version>1.1</m:dependency.management__commons-logging__commons-logging-api__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.6.6</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-ext__version>1.6.6</m:dependency.management__org.slf4j__slf4j-ext__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.6.6</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.6.6</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__org.slf4j__jul-to-slf4j__version>1.6.6</m:dependency.management__org.slf4j__jul-to-slf4j__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.6.6</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__ch.qos.logback__logback-core__version>1.0.6</m:dependency.management__ch.qos.logback__logback-core__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.0.6</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__org.kohsuke.metainf-services__metainf-services__version>1.2</m:dependency.management__org.kohsuke.metainf-services__metainf-services__version>
+		<m:dependency.management__org.glassfish.main.common__simple-glassfish-api__version>4.1</m:dependency.management__org.glassfish.main.common__simple-glassfish-api__version>
+		<m:dependency.management__org.glassfish.main.extras__glassfish-embedded-all__version>4.1</m:dependency.management__org.glassfish.main.extras__glassfish-embedded-all__version>
+		<m:dependency.management__org.jboss.weld.se__weld-se-core__version>2.1.2.Final</m:dependency.management__org.jboss.weld.se__weld-se-core__version>
+		<m:dependency.management__org.jboss.weld.se__weld-se-core__exclusion_0>javax.enterprise__cdi-api</m:dependency.management__org.jboss.weld.se__weld-se-core__exclusion_0>
+		<m:dependency.management__javax__javaee-api__version>7.0</m:dependency.management__javax__javaee-api__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-atinject_1.0_spec__version>1.0</m:dependency.management__org.apache.geronimo.specs__geronimo-atinject_1.0_spec__version>
+		<m:dependency.management__javax.enterprise__cdi-api__version>1.1-20130918</m:dependency.management__javax.enterprise__cdi-api__version>
+		<m:dependency.management__org.jboss.logging__jboss-logging__version>3.1.0.GA</m:dependency.management__org.jboss.logging__jboss-logging__version>
+		<m:dependency.management__org.jboss.logmanager__jboss-logmanager__version>1.2.2.GA</m:dependency.management__org.jboss.logmanager__jboss-logmanager__version>
+		<m:dependency.management__org.jboss.weld.servlet__weld-servlet-core__version>2.1.2.Final</m:dependency.management__org.jboss.weld.servlet__weld-servlet-core__version>
+		<m:dependency.management__org.jboss.weld.servlet__weld-servlet-core__exclusion_0>javax.enterprise__cdi-api</m:dependency.management__org.jboss.weld.servlet__weld-servlet-core__exclusion_0>
+		<m:dependency.management__org.jboss.weld__weld-core__version>2.1.2.Final</m:dependency.management__org.jboss.weld__weld-core__version>
+		<m:dependency.management__org.jboss.weld__weld-core__exclusion_0>javax.enterprise__cdi-api</m:dependency.management__org.jboss.weld__weld-core__exclusion_0>
+		<m:dependency.management__org.apache.tomcat.embed__tomcat-embed-core__version>8.0.8</m:dependency.management__org.apache.tomcat.embed__tomcat-embed-core__version>
+		<m:dependency.management__org.apache.tomcat.embed__tomcat-embed-logging-juli__version>8.0.8</m:dependency.management__org.apache.tomcat.embed__tomcat-embed-logging-juli__version>
+		<m:dependency.management__org.apache.tomcat.embed__tomcat-embed-jasper__version>8.0.8</m:dependency.management__org.apache.tomcat.embed__tomcat-embed-jasper__version>
+		<m:dependency.management__org.apache.tomcat__tomcat-dbcp__version>8.0.8</m:dependency.management__org.apache.tomcat__tomcat-dbcp__version>
+		<m:dependency.management__org.hibernate__hibernate-entitymanager__version>4.3.6.Final</m:dependency.management__org.hibernate__hibernate-entitymanager__version>
+		<m:dependency.management__org.hibernate__hibernate-entitymanager__scope>test</m:dependency.management__org.hibernate__hibernate-entitymanager__scope>
+		<m:dependency.management__org.apache.derby__derby__version>10.8.2.2</m:dependency.management__org.apache.derby__derby__version>
+		<m:dependency.management__org.apache.derby__derby__scope>test</m:dependency.management__org.apache.derby__derby__scope>
+		<m:dependency.management__org.springframework__spring-context__version>4.0.6.RELEASE</m:dependency.management__org.springframework__spring-context__version>
+		<m:dependency.management__org.springframework__spring-core__version>4.0.6.RELEASE</m:dependency.management__org.springframework__spring-core__version>
+		<m:dependency.management__org.springframework__spring-core__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework__spring-core__exclusion_0>
+		<m:dependency.management__org.springframework__spring-orm__version>4.0.6.RELEASE</m:dependency.management__org.springframework__spring-orm__version>
+		<m:dependency.management__org.springframework__spring-web__version>4.0.6.RELEASE</m:dependency.management__org.springframework__spring-web__version>
+		<m:dependency.management__org.springframework__spring-webmvc__version>4.0.6.RELEASE</m:dependency.management__org.springframework__spring-webmvc__version>
+		<m:dependency.management__org.codehaus.plexus__plexus-utils__version>3.0.15</m:dependency.management__org.codehaus.plexus__plexus-utils__version>
+		<m:dependency.management__org.codehaus.plexus__plexus-classworlds__version>2.4</m:dependency.management__org.codehaus.plexus__plexus-classworlds__version>
+		<m:dependency.management__org.jboss.xnio__xnio-api__version>3.0.3.GA</m:dependency.management__org.jboss.xnio__xnio-api__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.2.1</m:dependency.management__commons-collections__commons-collections__version>
+		<m:dependency.management__commons-beanutils__commons-beanutils__version>1.8.3</m:dependency.management__commons-beanutils__commons-beanutils__version>
+		<m:dependency.management__commons-codec__commons-codec__version>1.3</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__commons-pool__commons-pool__version>1.5.7</m:dependency.management__commons-pool__commons-pool__version>
+		<m:dependency.management__org.apache.deltaspike.core__deltaspike-core-api__version>1.0.1</m:dependency.management__org.apache.deltaspike.core__deltaspike-core-api__version>
+		<m:dependency.management__org.apache.deltaspike.core__deltaspike-core-impl__version>1.0.1</m:dependency.management__org.apache.deltaspike.core__deltaspike-core-impl__version>
+		<m:dependency.management__org.apache.deltaspike.modules__deltaspike-jpa-module-api__version>1.0.1</m:dependency.management__org.apache.deltaspike.modules__deltaspike-jpa-module-api__version>
+		<m:dependency.management__org.apache.deltaspike.modules__deltaspike-jpa-module-impl__version>1.0.1</m:dependency.management__org.apache.deltaspike.modules__deltaspike-jpa-module-impl__version>
+		<m:dependency.management__org.apache.deltaspike.modules__deltaspike-data-module-api__version>1.0.1</m:dependency.management__org.apache.deltaspike.modules__deltaspike-data-module-api__version>
+		<m:dependency.management__org.apache.deltaspike.modules__deltaspike-data-module-impl__version>1.0.1</m:dependency.management__org.apache.deltaspike.modules__deltaspike-data-module-impl__version>
+		<m:dependency.management__org.apache.deltaspike.modules__deltaspike-partialbean-module-api__version>1.0.1</m:dependency.management__org.apache.deltaspike.modules__deltaspike-partialbean-module-api__version>
+		<m:dependency.management__org.apache.deltaspike.modules__deltaspike-partialbean-module-impl__version>1.0.1</m:dependency.management__org.apache.deltaspike.modules__deltaspike-partialbean-module-impl__version>
+		<m:dependency.management__org.webjars__jquery__version>2.1.0-1</m:dependency.management__org.webjars__jquery__version>
+		<m:dependency.management__org.apache.commons__commons-lang3__version>3.2.1</m:dependency.management__org.apache.commons__commons-lang3__version>
+		<m:dependency.management__org.eclipse.aether__aether-api__version>1.0.0.v20140518</m:dependency.management__org.eclipse.aether__aether-api__version>
+		<m:dependency.management__com.google.guava__guava__version>14.0</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__org.jboss.resteasy__resteasy-client__version>3.0.4.Final</m:dependency.management__org.jboss.resteasy__resteasy-client__version>
+		<m:dependency.management__org.jboss.resteasy__resteasy-client__exclusion_0>org.slf4j__slf4j-simple</m:dependency.management__org.jboss.resteasy__resteasy-client__exclusion_0>
+		<m:dependency.management__org.glassfish.jersey.core__jersey-client__version>2.9.1</m:dependency.management__org.glassfish.jersey.core__jersey-client__version>
+		<m:dependency.management__javassist__javassist__version>3.12.1.GA</m:dependency.management__javassist__javassist__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

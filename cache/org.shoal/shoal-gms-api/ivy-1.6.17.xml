@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.shoal"
+		module="shoal-gms-api"
+		revision="1.6.17"
+		status="release"
+		publication="20120107082046"
+	>
+		<license name="CDDL+GPL" url="http://glassfish.java.net/public/CDDL+GPL.html" />
+		<description homepage="" />
+		<m:properties__shoal.home>${basedir}</m:properties__shoal.home>
+		<m:properties__grizzly2.version>2.1</m:properties__grizzly2.version>
+		<m:properties__junit.group.id>junit</m:properties__junit.group.id>
+		<m:properties__findbugs.exclude/>
+		<m:properties__findbugs.version>2.3.1</m:properties__findbugs.version>
+		<m:properties__findbugs.threshold>High</m:properties__findbugs.threshold>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__junit.version>3.8.1</m:properties__junit.version>
+		<m:properties__grizzly.version>1.9.36</m:properties__grizzly.version>
+		<m:properties__grizzly2.group.id>org.glassfish.grizzly</m:properties__grizzly2.group.id>
+		<m:properties__ha.api.version>3.1.8</m:properties__ha.api.version>
+		<m:properties__grizzly.group.id>com.sun.grizzly</m:properties__grizzly.group.id>
+		<m:properties__jvnetDistMgmtSnapshotsUrl>https://maven.java.net/content/repositories/snapshots/</m:properties__jvnetDistMgmtSnapshotsUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-compiler-plugin__null|org.codehaus.mojo__findbugs-maven-plugin__2.3.1|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-compiler-plugin__null|org.codehaus.mojo__findbugs-maven-plugin__2.3.1|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-compiler-plugin__null|org.codehaus.mojo__findbugs-maven-plugin__2.3.1|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-compiler-plugin__null|org.codehaus.mojo__findbugs-maven-plugin__2.3.1|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.felix__maven-bundle-plugin__null</m:maven.plugins>
+		<m:dependency.management__com.sun.grizzly__grizzly-utils__version>1.9.36</m:dependency.management__com.sun.grizzly__grizzly-utils__version>
+		<m:dependency.management__com.sun.grizzly__grizzly-framework__version>1.9.36</m:dependency.management__com.sun.grizzly__grizzly-framework__version>
+		<m:dependency.management__com.sun.grizzly__grizzly-http__version>1.9.36</m:dependency.management__com.sun.grizzly__grizzly-http__version>
+		<m:dependency.management__org.glassfish.grizzly__grizzly-framework__version>2.1</m:dependency.management__org.glassfish.grizzly__grizzly-framework__version>
+		<m:dependency.management__junit__junit__version>3.8.1</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.glassfish.ha__ha-api__version>3.1.8</m:dependency.management__org.glassfish.ha__ha-api__version>
+		<m:dependency.management__org.glassfish.ha__ha-api__scope>provided</m:dependency.management__org.glassfish.ha__ha-api__scope>
+		<m:dependency.management__org.osgi__osgi_R4_core__version>1.0</m:dependency.management__org.osgi__osgi_R4_core__version>
+		<m:dependency.management__org.osgi__osgi_R4_core__scope>provided</m:dependency.management__org.osgi__osgi_R4_core__scope>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="shoal-gms-api" type="bundle" ext="jar" conf="master"/>
+		<artifact name="shoal-gms-api" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="shoal-gms-api" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="junit" name="junit" rev="3.8.1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.osgi" name="osgi_R4_core" rev="1.0" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<override org="com.sun.grizzly" module="grizzly-utils" matcher="exact" rev="1.9.36"/>
+		<override org="com.sun.grizzly" module="grizzly-framework" matcher="exact" rev="1.9.36"/>
+		<override org="com.sun.grizzly" module="grizzly-http" matcher="exact" rev="1.9.36"/>
+		<override org="org.glassfish.grizzly" module="grizzly-framework" matcher="exact" rev="2.1"/>
+		<override org="junit" module="junit" matcher="exact" rev="3.8.1"/>
+		<override org="org.glassfish.ha" module="ha-api" matcher="exact" rev="3.1.8"/>
+		<override org="org.osgi" module="osgi_R4_core" matcher="exact" rev="1.0"/>
+	</dependencies>
+</ivy-module>

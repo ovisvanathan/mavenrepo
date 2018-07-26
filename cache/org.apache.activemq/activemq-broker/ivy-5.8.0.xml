@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.activemq"
+		module="activemq-broker"
+		revision="5.8.0"
+		status="release"
+		publication="20130206215039"
+	>
+		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="">
+		The ActiveMQ Message Broker implementation
+		</description>
+		<m:properties__surefire.argLine>-Xmx512M</m:properties__surefire.argLine>
+		<m:properties__jmdns-version>3.4.1</m:properties__jmdns-version>
+		<m:properties__paxexam-karaf-container-version>1.0.0</m:properties__paxexam-karaf-container-version>
+		<m:properties__taglist-maven-plugin-version>2.4</m:properties__taglist-maven-plugin-version>
+		<m:properties__regexp-version>1.3</m:properties__regexp-version>
+		<m:properties__stax2-api-version>3.0.2</m:properties__stax2-api-version>
+		<m:properties__org-apache-derby-version>10.9.1.0</m:properties__org-apache-derby-version>
+		<m:properties__jackson-version>1.9.2</m:properties__jackson-version>
+		<m:properties__xmlbeans-version>2.5.0</m:properties__xmlbeans-version>
+		<m:properties__depends-maven-plugin-version>1.2</m:properties__depends-maven-plugin-version>
+		<m:properties__saxon-bundle-version>9.4.0.1_2</m:properties__saxon-bundle-version>
+		<m:properties__log4j-version>1.2.17</m:properties__log4j-version>
+		<m:properties__slf4j-version>1.6.6</m:properties__slf4j-version>
+		<m:properties__activemq.osgi.import.pkg>*</m:properties__activemq.osgi.import.pkg>
+		<m:properties__openjpa-version>1.2.0</m:properties__openjpa-version>
+		<m:properties__activemq.osgi.symbolic.name>${project.groupId}.${project.artifactId}</m:properties__activemq.osgi.symbolic.name>
+		<m:properties__hsqldb-version>1.8.0.12</m:properties__hsqldb-version>
+		<m:properties__maven-assembly-plugin-version>2.4</m:properties__maven-assembly-plugin-version>
+		<m:properties__pax-exam-version>2.6.0</m:properties__pax-exam-version>
+		<m:properties__ant-version>1.8.4</m:properties__ant-version>
+		<m:properties__velocity-version>1.7</m:properties__velocity-version>
+		<m:properties__directory-version>2.0.0-M6</m:properties__directory-version>
+		<m:properties__jettison-version>1.3.3</m:properties__jettison-version>
+		<m:properties__javaee-javadoc-url>http://download.oracle.com/javaee/6/api/</m:properties__javaee-javadoc-url>
+		<m:properties__felix-configadmin-version>1.4.0</m:properties__felix-configadmin-version>
+		<m:properties__maven-eclipse-plugin-version>2.9</m:properties__maven-eclipse-plugin-version>
+		<m:properties__staging.siteURL>scp://people.apache.org/x1/www/activemq.apache.org</m:properties__staging.siteURL>
+		<m:properties__maven-install-plugin-version>2.4</m:properties__maven-install-plugin-version>
+		<m:properties__findbugs-maven-plugin-version>2.5.2</m:properties__findbugs-maven-plugin-version>
+		<m:properties__maven-release-plugin-version>2.4</m:properties__maven-release-plugin-version>
+		<m:properties__cobertura-maven-plugin-version>2.5.2</m:properties__cobertura-maven-plugin-version>
+		<m:properties__commons-daemon-version>1.0.12</m:properties__commons-daemon-version>
+		<m:properties__xmlresolver-bundle-version>1.2_5</m:properties__xmlresolver-bundle-version>
+		<m:properties__source-version>1.6</m:properties__source-version>
+		<m:properties__mqtt-client-version>1.4</m:properties__mqtt-client-version>
+		<m:properties__commons-io-version>1.4</m:properties__commons-io-version>
+		<m:properties__xmlbeans-bundle-version>2.5.0_2</m:properties__xmlbeans-bundle-version>
+		<m:properties__hawtbuf-version>1.9</m:properties__hawtbuf-version>
+		<m:properties__target-version>1.6</m:properties__target-version>
+		<m:properties__qpid-proton-version>0.3.0-fuse-2</m:properties__qpid-proton-version>
+		<m:properties__scala-plugin-version>3.1.0</m:properties__scala-plugin-version>
+		<m:properties__maven-shade-plugin-version>2.0</m:properties__maven-shade-plugin-version>
+		<m:properties__annogen-version>0.1.0</m:properties__annogen-version>
+		<m:properties__xbean-version>3.12</m:properties__xbean-version>
+		<m:properties__xerces-version>2.9.1</m:properties__xerces-version>
+		<m:properties__spring-version>3.1.3.RELEASE</m:properties__spring-version>
+		<m:properties__jmock-version>2.5.1</m:properties__jmock-version>
+		<m:properties__xpp3-version>1.1.4c</m:properties__xpp3-version>
+		<m:properties__javase-javadoc-url>http://download.oracle.com/javase/6/docs/api/</m:properties__javase-javadoc-url>
+		<m:properties__maven-war-plugin-version>2.3</m:properties__maven-war-plugin-version>
+		<m:properties__org.osgi.core-version>4.3.1</m:properties__org.osgi.core-version>
+		<m:properties__opensymphony-version>2.4.2</m:properties__opensymphony-version>
+		<m:properties__jstl-version>1.1.2</m:properties__jstl-version>
+		<m:properties__jsp-version>2.1.v20100127</m:properties__jsp-version>
+		<m:properties__activeio-version>3.1.4</m:properties__activeio-version>
+		<m:properties__leveldb-version>0.5</m:properties__leveldb-version>
+		<m:properties__camel-version>2.10.3</m:properties__camel-version>
+		<m:properties__maven-jar-plugin-version>2.4</m:properties__maven-jar-plugin-version>
+		<m:properties__saxon-version>9.4</m:properties__saxon-version>
+		<m:properties__maven-archiver-version>2.5</m:properties__maven-archiver-version>
+		<m:properties__woodstox-core-asl-version>4.1.4</m:properties__woodstox-core-asl-version>
+		<m:properties__pax-runner-version>1.6.1</m:properties__pax-runner-version>
+		<m:properties__karaf-version>2.3.0</m:properties__karaf-version>
+		<m:properties__maven-bundle-plugin-version>2.3.7</m:properties__maven-bundle-plugin-version>
+		<m:properties__maven-antrun-plugin-version>1.3</m:properties__maven-antrun-plugin-version>
+		<m:properties__maven-jaxb2-plugin-version>0.7.2</m:properties__maven-jaxb2-plugin-version>
+		<m:properties__zookeeper-version>3.3.5</m:properties__zookeeper-version>
+		<m:properties__aopalliance-version>1.0</m:properties__aopalliance-version>
+		<m:properties__commons-beanutils-version>1.8.3</m:properties__commons-beanutils-version>
+		<m:properties__hadoop-version>1.0.0</m:properties__hadoop-version>
+		<m:properties__maven-javadoc-plugin-version>2.9</m:properties__maven-javadoc-plugin-version>
+		<m:properties__leveldbjni-version>1.5</m:properties__leveldbjni-version>
+		<m:properties__build-helper-maven-plugin-version>1.7</m:properties__build-helper-maven-plugin-version>
+		<m:properties__commons-logging-version>1.1.1</m:properties__commons-logging-version>
+		<m:properties__activemq.osgi.export>${activemq.osgi.export.pkg}*;version=${activemq.osgi.export.version};-noimport:=true</m:properties__activemq.osgi.export>
+		<m:properties__junit-version>4.11</m:properties__junit-version>
+		<m:properties__activemq.osgi.export.version>${project.version}</m:properties__activemq.osgi.export.version>
+		<m:properties__leveldb-api-version>0.5</m:properties__leveldb-api-version>
+		<m:properties__site-repo-url>scpexe://people.apache.org/www/activemq.apache.org/maven/</m:properties__site-repo-url>
+		<m:properties__spring-oxm-version>1.5.10</m:properties__spring-oxm-version>
+		<m:properties__jasypt-version>1.9.0</m:properties__jasypt-version>
+		<m:properties__josql-version>1.5_5</m:properties__josql-version>
+		<m:properties__commons-net-version>3.2</m:properties__commons-net-version>
+		<m:properties__hawtdispatch-version>1.12</m:properties__hawtdispatch-version>
+		<m:properties__httpcore-version>4.2.3</m:properties__httpcore-version>
+		<m:properties__ftpserver-version>1.0.6</m:properties__ftpserver-version>
+		<m:properties__geronimo-version>1.0</m:properties__geronimo-version>
+		<m:properties__javacc-maven-plugin-version>2.6</m:properties__javacc-maven-plugin-version>
+		<m:properties__xstream-version>1.4.4</m:properties__xstream-version>
+		<m:properties__rome-version>1.0</m:properties__rome-version>
+		<m:properties__scalatest-version>1.8</m:properties__scalatest-version>
+		<m:properties__activemq-protobuf-version>1.1</m:properties__activemq-protobuf-version>
+		<m:properties__projectName>Apache ActiveMQ</m:properties__projectName>
+		<m:properties__maven-source-plugin-version>2.2</m:properties__maven-source-plugin-version>
+		<m:properties__apache-rat-plugin-version>0.8</m:properties__apache-rat-plugin-version>
+		<m:properties__howl-version>0.1.8</m:properties__howl-version>
+		<m:properties__jxta-version>2.0</m:properties__jxta-version>
+		<m:properties__jetty-version>7.6.7.v20120910</m:properties__jetty-version>
+		<m:properties__qpid-jms-version>0.20</m:properties__qpid-jms-version>
+		<m:properties__activemq.osgi.private.pkg>!*</m:properties__activemq.osgi.private.pkg>
+		<m:properties__jdom-version>1.0</m:properties__jdom-version>
+		<m:properties__commons-primitives-version>1.0</m:properties__commons-primitives-version>
+		<m:properties__activemq.osgi.import>${activemq.osgi.import.pkg}</m:properties__activemq.osgi.import>
+		<m:properties__hamcrest-version>1.3</m:properties__hamcrest-version>
+		<m:properties__ianal-maven-plugin-version>1.0-alpha-1</m:properties__ianal-maven-plugin-version>
+		<m:properties__httpclient-version>4.2.3</m:properties__httpclient-version>
+		<m:properties__cglib-version>2.0</m:properties__cglib-version>
+		<m:properties__commons-dbcp-version>1.4</m:properties__commons-dbcp-version>
+		<m:properties__ant-bundle-version>1.7.0_6</m:properties__ant-bundle-version>
+		<m:properties__commons-pool-version>1.6</m:properties__commons-pool-version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__activesoap-version>1.3</m:properties__activesoap-version>
+		<m:properties__spring-osgi-version>1.2.1</m:properties__spring-osgi-version>
+		<m:properties__pax-tiny-bundle-version>1.3.1</m:properties__pax-tiny-bundle-version>
+		<m:properties__aries-version>1.0.0</m:properties__aries-version>
+		<m:properties__slf4j-javadoc-url>http://www.slf4j.org/apidocs/</m:properties__slf4j-javadoc-url>
+		<m:properties__xalan-version>2.7.1</m:properties__xalan-version>
+		<m:properties__commons-collections-version>3.2.1</m:properties__commons-collections-version>
+		<m:properties__activemq.osgi.export.pkg>org.apache.activemq*</m:properties__activemq.osgi.export.pkg>
+		<m:properties__maven-compiler-plugin-version>2.5.1</m:properties__maven-compiler-plugin-version>
+		<m:properties__commons-lang-version>2.6</m:properties__commons-lang-version>
+		<m:properties__maven-surefire-plugin-version>2.10</m:properties__maven-surefire-plugin-version>
+		<m:properties__siteId>activemq-${project.version}</m:properties__siteId>
+		<m:properties__camel-version-range>[2.10,3)</m:properties__camel-version-range>
+		<m:properties__scala-version>2.10.0</m:properties__scala-version>
+		<m:properties__p2psockets-version>1.1.2</m:properties__p2psockets-version>
+		<m:properties__activemq.osgi.dynamic.import/>
+		<m:properties__axion-version>1.0-M3-dev</m:properties__axion-version>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__ianal-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.rat__apache-rat-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__ianal-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-surefire-plugin__null|org.apache.maven.plugins__maven-clean-plugin__null|null__maven-jar-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.apache.activemq__activemq-amqp__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-amqp__version>
+		<m:dependency.management__org.apache.activemq__activemq-http__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-http__version>
+		<m:dependency.management__org.apache.activemq__activemq-log4j-appender__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-log4j-appender__version>
+		<m:dependency.management__org.apache.activemq__activemq-amq-store__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-amq-store__version>
+		<m:dependency.management__org.apache.activemq__activemq-kahadb-store__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-kahadb-store__version>
+		<m:dependency.management__org.apache.activemq__activemq-jdbc-store__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-jdbc-store__version>
+		<m:dependency.management__org.apache.activemq__activemq-leveldb-store__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-leveldb-store__version>
+		<m:dependency.management__org.apache.activemq__activemq-mqtt__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-mqtt__version>
+		<m:dependency.management__org.apache.activemq__activemq-stomp__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-stomp__version>
+		<m:dependency.management__org.apache.activemq__activemq-client__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-client__version>
+		<m:dependency.management__org.apache.activemq__activemq-openwire-legacy__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-openwire-legacy__version>
+		<m:dependency.management__org.apache.activemq__activemq-broker__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-broker__version>
+		<m:dependency.management__org.apache.activemq__activemq-all__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-all__version>
+		<m:dependency.management__org.apache.activemq__activemq-camel__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-camel__version>
+		<m:dependency.management__org.apache.activemq__activemq-unit-tests__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-unit-tests__version>
+		<m:dependency.management__org.apache.activemq__activemq-unit-tests__scope>test</m:dependency.management__org.apache.activemq__activemq-unit-tests__scope>
+		<m:dependency.management__org.apache.activemq__activemq-broker__scope>test</m:dependency.management__org.apache.activemq__activemq-broker__scope>
+		<m:dependency.management__org.apache.activemq__activemq-jaas__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-jaas__version>
+		<m:dependency.management__org.apache.activemq__activemq-pool__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-pool__version>
+		<m:dependency.management__org.apache.activemq__activemq-spring__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-spring__version>
+		<m:dependency.management__org.apache.activemq__activemq-web__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-web__version>
+		<m:dependency.management__org.apache.activemq__activemq-xmpp__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-xmpp__version>
+		<m:dependency.management__org.apache.activemq__activemq-web-demo__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-web-demo__version>
+		<m:dependency.management__org.apache.activemq__activemq-web-console__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-web-console__version>
+		<m:dependency.management__org.apache.activemq__activemq-console__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-console__version>
+		<m:dependency.management__org.apache.activemq__activemq-fileserver__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-fileserver__version>
+		<m:dependency.management__org.apache.activemq__activemq-ra__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-ra__version>
+		<m:dependency.management__org.apache.activemq__activemq-rar__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-rar__version>
+		<m:dependency.management__org.apache.activemq__activemq-run__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-run__version>
+		<m:dependency.management__org.apache.activemq__activeio-core__version>3.1.4</m:dependency.management__org.apache.activemq__activeio-core__version>
+		<m:dependency.management__org.apache.activemq__activeio-core__scope>test</m:dependency.management__org.apache.activemq__activeio-core__scope>
+		<m:dependency.management__org.apache.activemq__activemq-openwire-generator__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-openwire-generator__version>
+		<m:dependency.management__org.apache.activemq__activemq-karaf__version>5.8.0</m:dependency.management__org.apache.activemq__activemq-karaf__version>
+		<m:dependency.management__org.apache.activemq.protobuf__activemq-protobuf__version>1.1</m:dependency.management__org.apache.activemq.protobuf__activemq-protobuf__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.1.1</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__commons-logging__commons-logging__exclusion_0>avalon-framework__avalon-framework</m:dependency.management__commons-logging__commons-logging__exclusion_0>
+		<m:dependency.management__commons-logging__commons-logging__exclusion_1>logkit__logkit</m:dependency.management__commons-logging__commons-logging__exclusion_1>
+		<m:dependency.management__commons-logging__commons-logging__exclusion_2>log4j__log4j</m:dependency.management__commons-logging__commons-logging__exclusion_2>
+		<m:dependency.management__commons-logging__commons-logging__exclusion_3>javax.servlet__servlet-api</m:dependency.management__commons-logging__commons-logging__exclusion_3>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jms_1.1_spec__version>1.1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jms_1.1_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jta_1.0.1B_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jta_1.0.1B_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-management_1.1_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-management_1.1_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jacc_1.1_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jacc_1.1_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-connector_1.5_spec__version>2.0.0</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-connector_1.5_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jsp_2.1_spec__version>1.0.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jsp_2.1_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-servlet_2.5_spec__version>1.2</m:dependency.management__org.apache.geronimo.specs__geronimo-servlet_2.5_spec__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-annotation_1.0_spec__version>1.1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-annotation_1.0_spec__version>
+		<m:dependency.management__org.apache.camel__camel-core__version>2.10.3</m:dependency.management__org.apache.camel__camel-core__version>
+		<m:dependency.management__org.apache.camel__camel-spring__version>2.10.3</m:dependency.management__org.apache.camel__camel-spring__version>
+		<m:dependency.management__org.apache.camel__camel-jetty__version>2.10.3</m:dependency.management__org.apache.camel__camel-jetty__version>
+		<m:dependency.management__org.apache.camel__camel-jms__version>2.10.3</m:dependency.management__org.apache.camel__camel-jms__version>
+		<m:dependency.management__org.apache.camel__camel-test__version>2.10.3</m:dependency.management__org.apache.camel__camel-test__version>
+		<m:dependency.management__org.apache.camel__camel-test-spring__version>2.10.3</m:dependency.management__org.apache.camel__camel-test-spring__version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>4.3.1</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.apache.hadoop.zookeeper__zookeeper__version>3.3.5</m:dependency.management__org.apache.hadoop.zookeeper__zookeeper__version>
+		<m:dependency.management__javax.jmdns__jmdns__version>3.4.1</m:dependency.management__javax.jmdns__jmdns__version>
+		<m:dependency.management__commons-daemon__commons-daemon__version>1.0.12</m:dependency.management__commons-daemon__commons-daemon__version>
+		<m:dependency.management__org.apache.camel__camel-core__scope>test</m:dependency.management__org.apache.camel__camel-core__scope>
+		<m:dependency.management__org.apache.camel__camel-spring__scope>test</m:dependency.management__org.apache.camel__camel-spring__scope>
+		<m:dependency.management__org.apache.xbean__xbean-spring__version>3.12</m:dependency.management__org.apache.xbean__xbean-spring__version>
+		<m:dependency.management__org.apache.xbean__xbean-spring__exclusion_0>qdox__qdox</m:dependency.management__org.apache.xbean__xbean-spring__exclusion_0>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__log4j__log4j__scope>runtime</m:dependency.management__log4j__log4j__scope>
+		<m:dependency.management__commons-beanutils__commons-beanutils__version>1.8.3</m:dependency.management__commons-beanutils__commons-beanutils__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.2.1</m:dependency.management__commons-collections__commons-collections__version>
+		<m:dependency.management__org.apache.openjpa__openjpa-persistence-jdbc__version>1.2.0</m:dependency.management__org.apache.openjpa__openjpa-persistence-jdbc__version>
+		<m:dependency.management__org.springframework__spring-aop__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-aop__version>
+		<m:dependency.management__org.springframework__spring-beans__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-beans__version>
+		<m:dependency.management__org.springframework__spring-context__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-context__version>
+		<m:dependency.management__org.springframework__spring-core__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-core__version>
+		<m:dependency.management__org.springframework__spring-jms__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-jms__version>
+		<m:dependency.management__org.springframework__spring-tx__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-tx__version>
+		<m:dependency.management__org.springframework__spring-webmvc__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-webmvc__version>
+		<m:dependency.management__org.springframework__spring-web__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-web__version>
+		<m:dependency.management__org.springframework__spring-test__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-test__version>
+		<m:dependency.management__org.springframework__spring-oxm__version>3.1.3.RELEASE</m:dependency.management__org.springframework__spring-oxm__version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-core__version>1.2.1</m:dependency.management__org.springframework.osgi__spring-osgi-core__version>
+		<m:dependency.management__org.apache.derby__derby__version>10.9.1.0</m:dependency.management__org.apache.derby__derby__version>
+		<m:dependency.management__org.apache.derby__derbynet__version>10.9.1.0</m:dependency.management__org.apache.derby__derbynet__version>
+		<m:dependency.management__axion__axion__version>1.0-M3-dev</m:dependency.management__axion__axion__version>
+		<m:dependency.management__commons-primitives__commons-primitives__version>1.0</m:dependency.management__commons-primitives__commons-primitives__version>
+		<m:dependency.management__regexp__regexp__version>1.3</m:dependency.management__regexp__regexp__version>
+		<m:dependency.management__commons-dbcp__commons-dbcp__version>1.4</m:dependency.management__commons-dbcp__commons-dbcp__version>
+		<m:dependency.management__commons-pool__commons-pool__version>1.6</m:dependency.management__commons-pool__commons-pool__version>
+		<m:dependency.management__activemq__smack__version>1.5.0</m:dependency.management__activemq__smack__version>
+		<m:dependency.management__activemq__smackx__version>1.5.0</m:dependency.management__activemq__smackx__version>
+		<m:dependency.management__org.apache.xmlbeans__xmlbeans__version>2.5.0</m:dependency.management__org.apache.xmlbeans__xmlbeans__version>
+		<m:dependency.management__org.apache.xmlbeans__xmlbeans-xpath__version>2.5.0</m:dependency.management__org.apache.xmlbeans__xmlbeans-xpath__version>
+		<m:dependency.management__activesoap__jaxp-api__version>1.3</m:dependency.management__activesoap__jaxp-api__version>
+		<m:dependency.management__xalan__xalan__version>2.7.1</m:dependency.management__xalan__xalan__version>
+		<m:dependency.management__com.thoughtworks.xstream__xstream__version>1.4.4</m:dependency.management__com.thoughtworks.xstream__xstream__version>
+		<m:dependency.management__com.thoughtworks.xstream__xstream__exclusion_0>xom__xom</m:dependency.management__com.thoughtworks.xstream__xstream__exclusion_0>
+		<m:dependency.management__xpp3__xpp3__version>1.1.4c</m:dependency.management__xpp3__xpp3__version>
+		<m:dependency.management__org.mortbay.jetty__jsp-2.1-glassfish__version>2.1.v20100127</m:dependency.management__org.mortbay.jetty__jsp-2.1-glassfish__version>
+		<m:dependency.management__org.eclipse.jetty.aggregate__jetty-all-server__version>7.6.7.v20120910</m:dependency.management__org.eclipse.jetty.aggregate__jetty-all-server__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.2.3</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__version>4.2.3</m:dependency.management__org.apache.httpcomponents__httpcore__version>
+		<m:dependency.management__aopalliance__aopalliance__version>1.0</m:dependency.management__aopalliance__aopalliance__version>
+		<m:dependency.management__org.jasypt__jasypt__version>1.9.0</m:dependency.management__org.jasypt__jasypt__version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__org.jmock__jmock-junit4__version>2.5.1</m:dependency.management__org.jmock__jmock-junit4__version>
+		<m:dependency.management__org.jmock__jmock-junit4__scope>test</m:dependency.management__org.jmock__jmock-junit4__scope>
+		<m:dependency.management__org.jmock__jmock-legacy__version>2.5.1</m:dependency.management__org.jmock__jmock-legacy__version>
+		<m:dependency.management__org.jmock__jmock-legacy__scope>test</m:dependency.management__org.jmock__jmock-legacy__scope>
+		<m:dependency.management__org.hamcrest__hamcrest-all__version>1.3</m:dependency.management__org.hamcrest__hamcrest-all__version>
+		<m:dependency.management__org.hamcrest__hamcrest-all__scope>test</m:dependency.management__org.hamcrest__hamcrest-all__scope>
+		<m:dependency.management__org.codehaus.jettison__jettison__version>1.3.3</m:dependency.management__org.codehaus.jettison__jettison__version>
+		<m:dependency.management__annogen__annogen__version>0.1.0</m:dependency.management__annogen__annogen__version>
+		<m:dependency.management__commons-io__commons-io__version>1.4</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__org.apache.ant__ant__version>1.8.4</m:dependency.management__org.apache.ant__ant__version>
+		<m:dependency.management__rome__rome__version>1.0</m:dependency.management__rome__rome__version>
+		<m:dependency.management__jdom__jdom__version>1.0</m:dependency.management__jdom__jdom__version>
+		<m:dependency.management__org.fusesource.mqtt-client__mqtt-client__version>1.4</m:dependency.management__org.fusesource.mqtt-client__mqtt-client__version>
+		<m:dependency.management__p2psockets__p2psockets-core__version>1.1.2</m:dependency.management__p2psockets__p2psockets-core__version>
+		<m:dependency.management__jxta__jxta__version>2.0</m:dependency.management__jxta__jxta__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.6.6</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.6.6</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.6.6</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__opensymphony__sitemesh__version>2.4.2</m:dependency.management__opensymphony__sitemesh__version>
+		<m:dependency.management__javax.servlet__jstl__version>1.1.2</m:dependency.management__javax.servlet__jstl__version>
+		<m:dependency.management__taglibs__standard__version>1.1.2</m:dependency.management__taglibs__standard__version>
+		<m:dependency.management__org.apache.geronimo.components__geronimo-transaction__version>2.2.1</m:dependency.management__org.apache.geronimo.components__geronimo-transaction__version>
+		<m:dependency.management__commons-net__commons-net__version>3.2</m:dependency.management__commons-net__commons-net__version>
+		<m:dependency.management__org.apache.velocity__velocity__version>1.7</m:dependency.management__org.apache.velocity__velocity__version>
+		<m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.josql__version>1.5_5</m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.josql__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="activemq-broker" type="jar" ext="jar" conf="master"/>
+		<artifact name="activemq-broker" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="activemq-broker" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.apache.activemq" name="activemq-client" rev="5.8.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.activemq" name="activemq-openwire-legacy" rev="5.8.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.osgi" name="org.osgi.core" rev="4.3.1" force="true" conf="optional->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.apache.activemq" name="activemq-jaas" rev="5.8.0" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="xalan" name="xalan" rev="2.7.1" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.6.6" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.apache.activemq" module="activemq-amqp" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-http" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-log4j-appender" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-amq-store" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-kahadb-store" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-jdbc-store" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-leveldb-store" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-mqtt" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-stomp" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-client" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-openwire-legacy" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-broker" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-all" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-camel" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-unit-tests" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-jaas" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-pool" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-spring" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-web" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-xmpp" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-web-demo" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-web-console" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-console" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-fileserver" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-ra" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-rar" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-run" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activeio-core" matcher="exact" rev="3.1.4"/>
+		<override org="org.apache.activemq" module="activemq-openwire-generator" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq" module="activemq-karaf" matcher="exact" rev="5.8.0"/>
+		<override org="org.apache.activemq.protobuf" module="activemq-protobuf" matcher="exact" rev="1.1"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jms_1.1_spec" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jta_1.0.1B_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee-management_1.1_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jacc_1.1_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee-connector_1.5_spec" matcher="exact" rev="2.0.0"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jsp_2.1_spec" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-servlet_2.5_spec" matcher="exact" rev="1.2"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-annotation_1.0_spec" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.camel" module="camel-core" matcher="exact" rev="2.10.3"/>
+		<override org="org.apache.camel" module="camel-spring" matcher="exact" rev="2.10.3"/>
+		<override org="org.apache.camel" module="camel-jetty" matcher="exact" rev="2.10.3"/>
+		<override org="org.apache.camel" module="camel-jms" matcher="exact" rev="2.10.3"/>
+		<override org="org.apache.camel" module="camel-test" matcher="exact" rev="2.10.3"/>
+		<override org="org.apache.camel" module="camel-test-spring" matcher="exact" rev="2.10.3"/>
+		<override org="org.osgi" module="org.osgi.core" matcher="exact" rev="4.3.1"/>
+		<override org="org.apache.hadoop.zookeeper" module="zookeeper" matcher="exact" rev="3.3.5"/>
+		<override org="javax.jmdns" module="jmdns" matcher="exact" rev="3.4.1"/>
+		<override org="commons-daemon" module="commons-daemon" matcher="exact" rev="1.0.12"/>
+		<override org="org.apache.xbean" module="xbean-spring" matcher="exact" rev="3.12"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.17"/>
+		<override org="commons-beanutils" module="commons-beanutils" matcher="exact" rev="1.8.3"/>
+		<override org="commons-collections" module="commons-collections" matcher="exact" rev="3.2.1"/>
+		<override org="org.apache.openjpa" module="openjpa-persistence-jdbc" matcher="exact" rev="1.2.0"/>
+		<override org="org.springframework" module="spring-aop" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="spring-beans" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="spring-context" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="spring-core" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="spring-jms" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="spring-tx" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="spring-webmvc" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="spring-web" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="spring-test" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="spring-oxm" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework.osgi" module="spring-osgi-core" matcher="exact" rev="1.2.1"/>
+		<override org="org.apache.derby" module="derby" matcher="exact" rev="10.9.1.0"/>
+		<override org="org.apache.derby" module="derbynet" matcher="exact" rev="10.9.1.0"/>
+		<override org="axion" module="axion" matcher="exact" rev="1.0-M3-dev"/>
+		<override org="commons-primitives" module="commons-primitives" matcher="exact" rev="1.0"/>
+		<override org="regexp" module="regexp" matcher="exact" rev="1.3"/>
+		<override org="commons-dbcp" module="commons-dbcp" matcher="exact" rev="1.4"/>
+		<override org="commons-pool" module="commons-pool" matcher="exact" rev="1.6"/>
+		<override org="activemq" module="smack" matcher="exact" rev="1.5.0"/>
+		<override org="activemq" module="smackx" matcher="exact" rev="1.5.0"/>
+		<override org="org.apache.xmlbeans" module="xmlbeans" matcher="exact" rev="2.5.0"/>
+		<override org="org.apache.xmlbeans" module="xmlbeans-xpath" matcher="exact" rev="2.5.0"/>
+		<override org="activesoap" module="jaxp-api" matcher="exact" rev="1.3"/>
+		<override org="xalan" module="xalan" matcher="exact" rev="2.7.1"/>
+		<override org="com.thoughtworks.xstream" module="xstream" matcher="exact" rev="1.4.4"/>
+		<override org="xpp3" module="xpp3" matcher="exact" rev="1.1.4c"/>
+		<override org="org.mortbay.jetty" module="jsp-2.1-glassfish" matcher="exact" rev="2.1.v20100127"/>
+		<override org="org.eclipse.jetty.aggregate" module="jetty-all-server" matcher="exact" rev="7.6.7.v20120910"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.2.3"/>
+		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.2.3"/>
+		<override org="aopalliance" module="aopalliance" matcher="exact" rev="1.0"/>
+		<override org="org.jasypt" module="jasypt" matcher="exact" rev="1.9.0"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.11"/>
+		<override org="org.jmock" module="jmock-junit4" matcher="exact" rev="2.5.1"/>
+		<override org="org.jmock" module="jmock-legacy" matcher="exact" rev="2.5.1"/>
+		<override org="org.hamcrest" module="hamcrest-all" matcher="exact" rev="1.3"/>
+		<override org="org.codehaus.jettison" module="jettison" matcher="exact" rev="1.3.3"/>
+		<override org="annogen" module="annogen" matcher="exact" rev="0.1.0"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="1.4"/>
+		<override org="org.apache.ant" module="ant" matcher="exact" rev="1.8.4"/>
+		<override org="rome" module="rome" matcher="exact" rev="1.0"/>
+		<override org="jdom" module="jdom" matcher="exact" rev="1.0"/>
+		<override org="org.fusesource.mqtt-client" module="mqtt-client" matcher="exact" rev="1.4"/>
+		<override org="p2psockets" module="p2psockets-core" matcher="exact" rev="1.1.2"/>
+		<override org="jxta" module="jxta" matcher="exact" rev="2.0"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.6.6"/>
+		<override org="org.slf4j" module="slf4j-log4j12" matcher="exact" rev="1.6.6"/>
+		<override org="org.slf4j" module="jcl-over-slf4j" matcher="exact" rev="1.6.6"/>
+		<override org="opensymphony" module="sitemesh" matcher="exact" rev="2.4.2"/>
+		<override org="javax.servlet" module="jstl" matcher="exact" rev="1.1.2"/>
+		<override org="taglibs" module="standard" matcher="exact" rev="1.1.2"/>
+		<override org="org.apache.geronimo.components" module="geronimo-transaction" matcher="exact" rev="2.2.1"/>
+		<override org="commons-net" module="commons-net" matcher="exact" rev="3.2"/>
+		<override org="org.apache.velocity" module="velocity" matcher="exact" rev="1.7"/>
+		<override org="org.apache.servicemix.bundles" module="org.apache.servicemix.bundles.josql" matcher="exact" rev="1.5_5"/>
+	</dependencies>
+</ivy-module>
