@@ -1,0 +1,2 @@
+set classpath=.\rule-compiler\ivyparser\target\ivyparser-1.0-SNAPSHOT.jar;.\rule-compiler\ivyclient\target\ivyclient-1.0-SNAPSHOT.jar;.;c:\projects\commons-vfs-2.2\commons-vfs2\target\commons-vfs2-2.2.jar;c:\projects\common\gwt\antlr4-runtime-4.3.jar;C:\jbpm\standalone\deployments\kie-server\slf4j-api-1.7.25.jar;C:\projects\logback-1.2.3\logback-classic-1.2.3.jar;C:\projects\logback-1.2.3\logback-core-1.2.3.jar
+c:\groovy-2.5.1\bin\groovy -cp %CLASSPATH% -d scanpom.groovy

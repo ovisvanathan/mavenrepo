@@ -1,0 +1,104 @@
+grammar MyGrammar;
+
+if Input1=Blue and Input2=Yellow then Red
+
+if Input1=Orange and Input2=Black then Red
+
+if Input1=Pink and Input2=black then Red
+
+if Input=#ffffff and Input2="RED" then Red
+
+if Input=Red and Input2="BLACK" then MAROON
+
+if Input=Red and Input2="GREY" then MAGENTA
+
+if Input1=MAGENTA and Input2=GREEN then LAVENDER
+
+if MAROON and PINK then MUSTARD
+
+if  RED, BLUE, YELLOW then INput2=RESULT=WHITE 
+
+if GREEN, WHITE and PINK then Input2 != BLUE if RESULT want GREY
+
+if GREEN, WHITE and PINK then Input2 = BLACK  if RESULT want WHITE
+
+if LAVENDER then INPut2 always= PINK and RESULT either BLACK or MAROON
+
+if YELLOW and BLUE, then must be INPUT3 either BROWN, GREEN or ORANGE but not RED
+
+if TEAL also present, RED may BE present but GREEN result will not be there
+
+if ORANGE and GREEN then BLUE will be eliminated from all rules
+
+BLUE is needed for a successful run
+
+Atleast u RED, v WHITE and w BLUE for FIRST PRIZE
+
+Atleast u RED, v WHITE and w BLUE for II PRIZE
+
+Atleast u RED, v WHITE and w BLUE for III prize
+
+No YELLOW allowed in the winning combo
+
+YELLOW can be replaced only with a BROWN or ORANGE
+
+LIGHT BLUE, LIGHT RED, LIGHT GREEN are all valid as Blue, Red, Green but will be awarded fewer points
+
+DARK shades are also valid but too dark shades will be penalized 50 points
+
+X teams of Y persons each
+
+F Rounds of 3 trials
+
+1 trial - 30
+
+2- trial - 20
+
+3 trial - 32
+
+Highest score wins
+
+Each color has a value 
+
+COLORS are randomly chosen N at a time
+
+Total M colors available
+
+Users bring their colors but easily identifiable. Blue is Blue and Green is Green. No Bluish Green or vice versa
+Colors will be assigned to their closest identifiable color automatically
+
+if user brings unassignable color they get 1000 points
+
+No switching colors after tabling, swapping with other contestants etc. 
+
+Must always table P colors at a time or  Q colors on avarage every R trials
+
+No missing P colors more then 3 in a row
+
+No repeating colors in a set. When tabling Q colors, no more then 1/3 of the colors may be repeated
+
+willing Candidates can opt to table at the end but be advised colors may change for the good or worse affecting score between rounds
+score will be announced at the end of every round
+
+Judges decision is final
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

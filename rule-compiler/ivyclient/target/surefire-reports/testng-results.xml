@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="852" started-at="2018-07-28T11:38:43Z" finished-at="2018-07-28T11:38:44Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="852" started-at="2018-07-28T11:38:43Z" finished-at="2018-07-28T11:38:44Z">
+      <class name="me.ivanyu.GrammarTest">
+        <test-method status="PASS" signature="ruleTest()[pri:0, instance:ruleTest(me.ivanyu.GrammarTest)]" name="ruleTest" duration-ms="205" started-at="2018-07-28T17:08:44Z" finished-at="2018-07-28T17:08:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ruleTest -->
+      </class> <!-- me.ivanyu.GrammarTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
