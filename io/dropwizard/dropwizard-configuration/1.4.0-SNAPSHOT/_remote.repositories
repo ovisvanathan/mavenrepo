@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Aug 12 17:33:41 IST 2018
+dropwizard-configuration-1.4.0-SNAPSHOT-javadoc.jar>=
+dropwizard-configuration-1.4.0-20180727.150857-70.jar>sonatype-nexus-snapshots=
+dropwizard-configuration-1.4.0-SNAPSHOT.pom>=
+dropwizard-configuration-1.4.0-20180727.150857-70.pom>sonatype-nexus-snapshots=
+dropwizard-configuration-1.4.0-SNAPSHOT-sources.jar>=
+dropwizard-configuration-1.4.0-SNAPSHOT.jar>=

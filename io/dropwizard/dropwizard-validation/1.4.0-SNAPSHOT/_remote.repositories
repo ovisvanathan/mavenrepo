@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Aug 12 17:33:39 IST 2018
+dropwizard-validation-1.4.0-SNAPSHOT.pom>=
+dropwizard-validation-1.4.0-20180802.234501-77.pom>sonatype-nexus-snapshots=
+dropwizard-validation-1.4.0-SNAPSHOT-sources.jar>=
+dropwizard-validation-1.4.0-SNAPSHOT-javadoc.jar>=
+dropwizard-validation-1.4.0-SNAPSHOT.jar>=
+dropwizard-validation-1.4.0-20180802.234501-77.jar>sonatype-nexus-snapshots=

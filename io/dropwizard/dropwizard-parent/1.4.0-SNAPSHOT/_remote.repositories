@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Aug 12 17:33:29 IST 2018
+dropwizard-parent-1.4.0-20180803.023820-79.pom>sonatype-nexus-snapshots=
+dropwizard-parent-1.4.0-SNAPSHOT.pom>=

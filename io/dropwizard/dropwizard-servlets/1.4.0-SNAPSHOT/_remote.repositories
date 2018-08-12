@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Aug 12 17:33:57 IST 2018
+dropwizard-servlets-1.4.0-SNAPSHOT.jar>=
+dropwizard-servlets-1.4.0-SNAPSHOT-sources.jar>=
+dropwizard-servlets-1.4.0-SNAPSHOT.pom>=
+dropwizard-servlets-1.4.0-SNAPSHOT-javadoc.jar>=

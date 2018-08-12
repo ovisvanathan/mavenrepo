@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Aug 12 17:33:55 IST 2018
+dropwizard-jersey-1.4.0-SNAPSHOT.jar>=
+dropwizard-jersey-1.4.0-SNAPSHOT-javadoc.jar>=
+dropwizard-jersey-1.4.0-SNAPSHOT.pom>=
+dropwizard-jersey-1.4.0-SNAPSHOT-sources.jar>=

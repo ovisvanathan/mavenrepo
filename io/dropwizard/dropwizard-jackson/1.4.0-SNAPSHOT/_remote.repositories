@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Aug 12 17:33:36 IST 2018
+dropwizard-jackson-1.4.0-20180803.025301-79.pom>sonatype-nexus-snapshots=
+dropwizard-jackson-1.4.0-SNAPSHOT-sources.jar>=
+dropwizard-jackson-1.4.0-SNAPSHOT.pom>=
+dropwizard-jackson-1.4.0-SNAPSHOT-javadoc.jar>=
+dropwizard-jackson-1.4.0-20180803.025301-79.jar>sonatype-nexus-snapshots=
+dropwizard-jackson-1.4.0-SNAPSHOT.jar>=

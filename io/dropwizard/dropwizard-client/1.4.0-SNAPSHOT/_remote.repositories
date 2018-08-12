@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Aug 12 17:34:35 IST 2018
+dropwizard-client-1.4.0-SNAPSHOT.jar>=
+dropwizard-client-1.4.0-SNAPSHOT.pom>=
+dropwizard-client-1.4.0-SNAPSHOT-sources.jar>=
+dropwizard-client-1.4.0-SNAPSHOT-javadoc.jar>=

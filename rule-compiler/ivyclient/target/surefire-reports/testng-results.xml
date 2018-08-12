@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="852" started-at="2018-07-28T11:38:43Z" finished-at="2018-07-28T11:38:44Z">
+  <suite name="Surefire suite" duration-ms="1182" started-at="2018-08-12T13:18:25Z" finished-at="2018-08-12T13:18:26Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="852" started-at="2018-07-28T11:38:43Z" finished-at="2018-07-28T11:38:44Z">
+    <test name="Surefire test" duration-ms="1182" started-at="2018-08-12T13:18:25Z" finished-at="2018-08-12T13:18:26Z">
       <class name="me.ivanyu.GrammarTest">
-        <test-method status="PASS" signature="ruleTest()[pri:0, instance:ruleTest(me.ivanyu.GrammarTest)]" name="ruleTest" duration-ms="205" started-at="2018-07-28T17:08:44Z" finished-at="2018-07-28T17:08:44Z">
+        <test-method status="PASS" signature="ruleTest()[pri:0, instance:ruleTest(me.ivanyu.GrammarTest)]" name="ruleTest" duration-ms="218" started-at="2018-08-12T18:48:26Z" finished-at="2018-08-12T18:48:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ruleTest -->

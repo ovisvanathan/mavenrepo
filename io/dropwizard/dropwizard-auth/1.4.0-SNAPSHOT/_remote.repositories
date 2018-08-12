@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Aug 12 17:35:24 IST 2018
+dropwizard-auth-1.4.0-SNAPSHOT-javadoc.jar>=
+dropwizard-auth-1.4.0-SNAPSHOT.jar>=
+dropwizard-auth-1.4.0-SNAPSHOT.pom>=
+dropwizard-auth-1.4.0-SNAPSHOT-sources.jar>=
